@@ -2398,3 +2398,23 @@ E, [2025-02-17T17:04:43.985999 #29526] ERROR -- : FFmpeg stderr:         vendor_
 
 E, [2025-02-17T17:04:43.986020 #29526] ERROR -- : FFmpeg stderr:         encoder         : Lavc61.19.100 libmp3lame
 
+I, [2025-02-18T09:34:33.193953 #3437]  INFO -- : 
+
+========================================
+I, [2025-02-18T09:34:33.194761 #3437]  INFO -- : Starting main process, Run ID: 20250218093433, 2025-02-18 09:34:33 -0800
+I, [2025-02-18T09:34:36.105716 #3437]  INFO -- : File already exists for Sookshma Darshini, skipping download
+I, [2025-02-18T09:34:36.105793 #3437]  INFO -- : File already exists for Pani, skipping download
+I, [2025-02-18T09:34:36.105834 #3437]  INFO -- : File already exists for Identity, skipping download
+I, [2025-02-18T09:34:36.105869 #3437]  INFO -- : File already exists for Marco, skipping download
+I, [2025-02-18T09:34:36.105904 #3437]  INFO -- : File already exists for Rifle Club, skipping download
+I, [2025-02-18T09:34:36.105937 #3437]  INFO -- : File already exists for Bougainvillea, skipping download
+I, [2025-02-18T09:34:49.784546 #3453]  INFO -- : 
+
+========================================
+I, [2025-02-18T09:34:49.784596 #3453]  INFO -- : Starting main process, Run ID: 20250218093449, 2025-02-18 09:34:49 -0800
+I, [2025-02-18T09:34:50.074575 #3453]  INFO -- : File already exists for Sookshma Darshini, skipping download
+I, [2025-02-18T09:34:50.074640 #3453]  INFO -- : File already exists for Pani, skipping download
+I, [2025-02-18T09:34:50.074681 #3453]  INFO -- : File already exists for Identity, skipping download
+I, [2025-02-18T09:34:50.074718 #3453]  INFO -- : File already exists for Marco, skipping download
+I, [2025-02-18T09:34:50.074752 #3453]  INFO -- : File already exists for Rifle Club, skipping download
+I, [2025-02-18T09:34:50.074787 #3453]  INFO -- : File already exists for Bougainvillea, skipping download

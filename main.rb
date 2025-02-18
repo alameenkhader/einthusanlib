@@ -2,7 +2,6 @@ require 'logger'
 require_relative 'config'
 require_relative 'extractor'
 require_relative 'downloader'
-require_relative 'streamer'
 
 LOGGER = Logger.new(LOG_FILE)
 
@@ -14,8 +13,6 @@ def main
   list = extract_movie_list
 
   download_movies(list)
-
-  generate_ffmpeg_streaming_urls(list)
 end
 
 main
