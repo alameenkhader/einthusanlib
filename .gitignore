@@ -1,0 +1,3 @@
+# Ignore the public/movies directory
+public/movies
+secrets/*

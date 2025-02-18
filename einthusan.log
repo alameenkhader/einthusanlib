@@ -1,0 +1,2400 @@
+# Logfile created on 2025-02-17 12:17:51 -0800 by logger.rb/v1.4.2
+I, [2025-02-17T12:17:51.754840 #8463]  INFO -- : Starting main process, 2025-02-17 12:17:51 -0800
+I, [2025-02-17T12:18:42.469955 #8494]  INFO -- : Starting main process, 2025-02-17 12:18:42 -0800
+I, [2025-02-17T12:33:57.260868 #8987]  INFO -- : Starting main process, 2025-02-17 12:33:57 -0800
+I, [2025-02-17T12:33:57.651763 #8987]  INFO -- : Downloading Sookshma Darshini from https://einthusan.tv/movie/watch/7uSR/?lang=malayalam to public/movies/sookshma_darshini.mp4
+I, [2025-02-17T12:33:57.651868 #8987]  INFO -- : Downloading Pani from https://einthusan.tv/movie/watch/FED5/?lang=malayalam to public/movies/pani.mp4
+I, [2025-02-17T12:33:57.651912 #8987]  INFO -- : Downloading Identity from https://einthusan.tv/movie/watch/3sGc/?lang=malayalam to public/movies/identity.mp4
+I, [2025-02-17T12:33:57.651948 #8987]  INFO -- : Downloading Marco from https://einthusan.tv/movie/watch/5GDI/?lang=malayalam to public/movies/marco.mp4
+I, [2025-02-17T12:33:57.651983 #8987]  INFO -- : Downloading Rifle Club from https://einthusan.tv/movie/watch/3ByK/?lang=malayalam to public/movies/rifle_club.mp4
+I, [2025-02-17T12:33:57.652016 #8987]  INFO -- : Downloading Bougainvillea from https://einthusan.tv/movie/watch/7tCn/?lang=malayalam to public/movies/bougainvillea.mp4
+I, [2025-02-17T12:35:25.416469 #9078]  INFO -- : Starting main process, 2025-02-17 12:35:25 -0800
+I, [2025-02-17T12:35:25.804861 #9078]  INFO -- : Downloading Sookshma Darshini from https://einthusan.tv/movie/watch/7uSR/?lang=malayalam to public/movies/sookshma_darshini.mp4
+I, [2025-02-17T12:37:14.527959 #9078]  INFO -- : Downloading Pani from https://einthusan.tv/movie/watch/FED5/?lang=malayalam to public/movies/pani.mp4
+I, [2025-02-17T12:38:37.103202 #9078]  INFO -- : Downloading Identity from https://einthusan.tv/movie/watch/3sGc/?lang=malayalam to public/movies/identity.mp4
+I, [2025-02-17T12:40:12.152408 #9078]  INFO -- : Downloading Marco from https://einthusan.tv/movie/watch/5GDI/?lang=malayalam to public/movies/marco.mp4
+I, [2025-02-17T12:40:13.078320 #9078]  INFO -- : Downloading Rifle Club from https://einthusan.tv/movie/watch/3ByK/?lang=malayalam to public/movies/rifle_club.mp4
+I, [2025-02-17T12:40:14.194010 #9078]  INFO -- : Downloading Bougainvillea from https://einthusan.tv/movie/watch/7tCn/?lang=malayalam to public/movies/bougainvillea.mp4
+I, [2025-02-17T12:43:10.432970 #9547]  INFO -- : Starting main process, 2025-02-17 12:43:10 -0800
+I, [2025-02-17T12:43:10.766794 #9547]  INFO -- : File already exists for Sookshma Darshini, skipping download
+I, [2025-02-17T12:43:10.766859 #9547]  INFO -- : File already exists for Pani, skipping download
+I, [2025-02-17T12:43:10.766900 #9547]  INFO -- : File already exists for Identity, skipping download
+I, [2025-02-17T12:43:10.766938 #9547]  INFO -- : Downloading Marco from https://einthusan.tv/movie/watch/5GDI/?lang=malayalam to public/movies/marco.mp4
+I, [2025-02-17T12:44:32.383754 #9547]  INFO -- : Downloading Rifle Club from https://einthusan.tv/movie/watch/3ByK/?lang=malayalam to public/movies/rifle_club.mp4
+I, [2025-02-17T12:45:47.732737 #9547]  INFO -- : File already exists for Bougainvillea, skipping download
+I, [2025-02-17T12:53:00.933054 #9834]  INFO -- : 
+
+========================================
+I, [2025-02-17T12:53:00.933127 #9834]  INFO -- : Starting main process, 2025-02-17 12:53:00 -0800
+I, [2025-02-17T12:53:01.311835 #9834]  INFO -- : File already exists for Sookshma Darshini, skipping download
+I, [2025-02-17T12:53:01.311898 #9834]  INFO -- : File already exists for Pani, skipping download
+I, [2025-02-17T12:53:01.311939 #9834]  INFO -- : File already exists for Identity, skipping download
+I, [2025-02-17T12:53:01.311977 #9834]  INFO -- : File already exists for Marco, skipping download
+I, [2025-02-17T12:53:01.312016 #9834]  INFO -- : File already exists for Rifle Club, skipping download
+I, [2025-02-17T12:53:01.312053 #9834]  INFO -- : File already exists for Bougainvillea, skipping download
+E, [2025-02-17T12:53:01.338467 #9834] ERROR -- : Failed to download Sookshma Darshini
+E, [2025-02-17T12:53:01.338582 #9834] ERROR -- : Command output: 
+E, [2025-02-17T12:53:01.346651 #9834] ERROR -- : Failed to download Pani
+E, [2025-02-17T12:53:01.346795 #9834] ERROR -- : Command output: 
+E, [2025-02-17T12:53:01.356537 #9834] ERROR -- : Failed to download Identity
+E, [2025-02-17T12:53:01.356649 #9834] ERROR -- : Command output: 
+E, [2025-02-17T12:53:01.366748 #9834] ERROR -- : Failed to download Marco
+E, [2025-02-17T12:53:01.366813 #9834] ERROR -- : Command output: 
+E, [2025-02-17T12:53:01.373860 #9834] ERROR -- : Failed to download Rifle Club
+E, [2025-02-17T12:53:01.373935 #9834] ERROR -- : Command output: 
+E, [2025-02-17T12:53:01.380890 #9834] ERROR -- : Failed to download Bougainvillea
+E, [2025-02-17T12:53:01.380977 #9834] ERROR -- : Command output: 
+I, [2025-02-17T12:53:48.892236 #9919]  INFO -- : 
+
+========================================
+I, [2025-02-17T12:53:48.892364 #9919]  INFO -- : Starting main process, 2025-02-17 12:53:48 -0800
+I, [2025-02-17T12:53:49.211183 #9919]  INFO -- : File already exists for Sookshma Darshini, skipping download
+I, [2025-02-17T12:53:49.211262 #9919]  INFO -- : File already exists for Pani, skipping download
+I, [2025-02-17T12:53:49.211302 #9919]  INFO -- : File already exists for Identity, skipping download
+I, [2025-02-17T12:53:49.211338 #9919]  INFO -- : File already exists for Marco, skipping download
+I, [2025-02-17T12:53:49.211374 #9919]  INFO -- : File already exists for Rifle Club, skipping download
+I, [2025-02-17T12:53:49.211409 #9919]  INFO -- : File already exists for Bougainvillea, skipping download
+E, [2025-02-17T12:53:49.219352 #9919] ERROR -- : Failed to upload Sookshma Darshini
+E, [2025-02-17T12:53:49.219431 #9919] ERROR -- : Command output: 
+E, [2025-02-17T12:53:49.226822 #9919] ERROR -- : Failed to upload Pani
+E, [2025-02-17T12:53:49.226906 #9919] ERROR -- : Command output: 
+E, [2025-02-17T12:53:49.235290 #9919] ERROR -- : Failed to upload Identity
+E, [2025-02-17T12:53:49.235417 #9919] ERROR -- : Command output: 
+E, [2025-02-17T12:53:49.245001 #9919] ERROR -- : Failed to upload Marco
+E, [2025-02-17T12:53:49.245114 #9919] ERROR -- : Command output: 
+E, [2025-02-17T12:53:49.252728 #9919] ERROR -- : Failed to upload Rifle Club
+E, [2025-02-17T12:53:49.252810 #9919] ERROR -- : Command output: 
+E, [2025-02-17T12:53:49.259658 #9919] ERROR -- : Failed to upload Bougainvillea
+E, [2025-02-17T12:53:49.259744 #9919] ERROR -- : Command output: 
+I, [2025-02-17T12:57:18.536830 #9982]  INFO -- : 
+
+========================================
+I, [2025-02-17T12:57:18.536894 #9982]  INFO -- : Starting main process, 2025-02-17 12:57:18 -0800
+I, [2025-02-17T12:57:18.834647 #9982]  INFO -- : File already exists for Sookshma Darshini, skipping download
+I, [2025-02-17T12:57:18.834706 #9982]  INFO -- : File already exists for Pani, skipping download
+I, [2025-02-17T12:57:18.834744 #9982]  INFO -- : File already exists for Identity, skipping download
+I, [2025-02-17T12:57:18.834779 #9982]  INFO -- : File already exists for Marco, skipping download
+I, [2025-02-17T12:57:18.834813 #9982]  INFO -- : File already exists for Rifle Club, skipping download
+I, [2025-02-17T12:57:18.834846 #9982]  INFO -- : File already exists for Bougainvillea, skipping download
+E, [2025-02-17T12:57:18.842539 #9982] ERROR -- : Failed to upload Sookshma Darshini
+E, [2025-02-17T12:57:18.842607 #9982] ERROR -- : Command output: 
+E, [2025-02-17T12:57:18.849025 #9982] ERROR -- : Failed to upload Pani
+E, [2025-02-17T12:57:18.849148 #9982] ERROR -- : Command output: 
+E, [2025-02-17T12:57:18.857350 #9982] ERROR -- : Failed to upload Identity
+E, [2025-02-17T12:57:18.857450 #9982] ERROR -- : Command output: 
+E, [2025-02-17T12:57:18.865852 #9982] ERROR -- : Failed to upload Marco
+E, [2025-02-17T12:57:18.865926 #9982] ERROR -- : Command output: 
+E, [2025-02-17T12:57:18.872849 #9982] ERROR -- : Failed to upload Rifle Club
+E, [2025-02-17T12:57:18.872934 #9982] ERROR -- : Command output: 
+E, [2025-02-17T12:57:18.879353 #9982] ERROR -- : Failed to upload Bougainvillea
+E, [2025-02-17T12:57:18.879423 #9982] ERROR -- : Command output: 
+I, [2025-02-17T12:57:32.861190 #10000]  INFO -- : 
+
+========================================
+I, [2025-02-17T12:57:32.861258 #10000]  INFO -- : Starting main process, 2025-02-17 12:57:32 -0800
+I, [2025-02-17T12:57:33.171613 #10000]  INFO -- : File already exists for Sookshma Darshini, skipping download
+I, [2025-02-17T12:57:33.171673 #10000]  INFO -- : File already exists for Pani, skipping download
+I, [2025-02-17T12:57:33.171717 #10000]  INFO -- : File already exists for Identity, skipping download
+I, [2025-02-17T12:57:33.171752 #10000]  INFO -- : File already exists for Marco, skipping download
+I, [2025-02-17T12:57:33.171785 #10000]  INFO -- : File already exists for Rifle Club, skipping download
+I, [2025-02-17T12:57:33.171817 #10000]  INFO -- : File already exists for Bougainvillea, skipping download
+E, [2025-02-17T12:57:33.179474 #10000] ERROR -- : Failed to upload Sookshma Darshini
+E, [2025-02-17T12:57:33.179541 #10000] ERROR -- : Command output: 
+E, [2025-02-17T12:57:33.185743 #10000] ERROR -- : Failed to upload Pani
+E, [2025-02-17T12:57:33.185806 #10000] ERROR -- : Command output: 
+E, [2025-02-17T12:57:33.193310 #10000] ERROR -- : Failed to upload Identity
+E, [2025-02-17T12:57:33.193415 #10000] ERROR -- : Command output: 
+E, [2025-02-17T12:57:33.202609 #10000] ERROR -- : Failed to upload Marco
+E, [2025-02-17T12:57:33.202697 #10000] ERROR -- : Command output: 
+E, [2025-02-17T12:57:33.209801 #10000] ERROR -- : Failed to upload Rifle Club
+E, [2025-02-17T12:57:33.209882 #10000] ERROR -- : Command output: 
+E, [2025-02-17T12:57:33.217022 #10000] ERROR -- : Failed to upload Bougainvillea
+E, [2025-02-17T12:57:33.217119 #10000] ERROR -- : Command output: 
+I, [2025-02-17T12:58:33.808101 #10055]  INFO -- : 
+
+========================================
+I, [2025-02-17T12:58:33.808190 #10055]  INFO -- : Starting main process, 2025-02-17 12:58:33 -0800
+I, [2025-02-17T12:58:34.119633 #10055]  INFO -- : File already exists for Sookshma Darshini, skipping download
+I, [2025-02-17T12:58:34.119705 #10055]  INFO -- : File already exists for Pani, skipping download
+I, [2025-02-17T12:58:34.119745 #10055]  INFO -- : File already exists for Identity, skipping download
+I, [2025-02-17T12:58:34.119780 #10055]  INFO -- : File already exists for Marco, skipping download
+I, [2025-02-17T12:58:34.119813 #10055]  INFO -- : File already exists for Rifle Club, skipping download
+I, [2025-02-17T12:58:34.119846 #10055]  INFO -- : File already exists for Bougainvillea, skipping download
+E, [2025-02-17T12:58:34.128979 #10055] ERROR -- : Failed to upload Sookshma Darshini
+E, [2025-02-17T12:58:34.129059 #10055] ERROR -- : Command output: sh: youtube-upload: command not found
+
+E, [2025-02-17T12:58:34.136062 #10055] ERROR -- : Failed to upload Pani
+E, [2025-02-17T12:58:34.136132 #10055] ERROR -- : Command output: sh: youtube-upload: command not found
+
+E, [2025-02-17T12:58:34.142529 #10055] ERROR -- : Failed to upload Identity
+E, [2025-02-17T12:58:34.142597 #10055] ERROR -- : Command output: sh: youtube-upload: command not found
+
+E, [2025-02-17T12:58:34.149049 #10055] ERROR -- : Failed to upload Marco
+E, [2025-02-17T12:58:34.149126 #10055] ERROR -- : Command output: sh: youtube-upload: command not found
+
+E, [2025-02-17T12:58:34.155659 #10055] ERROR -- : Failed to upload Rifle Club
+E, [2025-02-17T12:58:34.155724 #10055] ERROR -- : Command output: sh: youtube-upload: command not found
+
+E, [2025-02-17T12:58:34.162104 #10055] ERROR -- : Failed to upload Bougainvillea
+E, [2025-02-17T12:58:34.162162 #10055] ERROR -- : Command output: sh: youtube-upload: command not found
+
+I, [2025-02-17T13:51:34.552041 #12152]  INFO -- : 
+
+========================================
+I, [2025-02-17T13:51:34.552469 #12152]  INFO -- : Starting main process, Run ID: 20250217135134, 2025-02-17 13:51:34 -0800
+I, [2025-02-17T13:51:34.982774 #12152]  INFO -- : File already exists for Sookshma Darshini, skipping download
+I, [2025-02-17T13:51:34.983261 #12152]  INFO -- : File already exists for Pani, skipping download
+I, [2025-02-17T13:51:34.983587 #12152]  INFO -- : File already exists for Identity, skipping download
+I, [2025-02-17T13:51:34.983925 #12152]  INFO -- : File already exists for Marco, skipping download
+I, [2025-02-17T13:51:34.984226 #12152]  INFO -- : File already exists for Rifle Club, skipping download
+I, [2025-02-17T13:51:34.984277 #12152]  INFO -- : File already exists for Bougainvillea, skipping download
+I, [2025-02-17T14:00:13.560866 #20143]  INFO -- : 
+
+========================================
+I, [2025-02-17T14:00:13.560917 #20143]  INFO -- : Starting main process, Run ID: 20250217140013, 2025-02-17 14:00:13 -0800
+I, [2025-02-17T14:00:13.881038 #20143]  INFO -- : File already exists for Sookshma Darshini, skipping download
+I, [2025-02-17T14:00:13.881121 #20143]  INFO -- : File already exists for Pani, skipping download
+I, [2025-02-17T14:00:13.881162 #20143]  INFO -- : File already exists for Identity, skipping download
+I, [2025-02-17T14:00:13.881197 #20143]  INFO -- : File already exists for Marco, skipping download
+I, [2025-02-17T14:00:13.881240 #20143]  INFO -- : File already exists for Rifle Club, skipping download
+I, [2025-02-17T14:00:13.881274 #20143]  INFO -- : File already exists for Bougainvillea, skipping download
+I, [2025-02-17T14:00:13.885212 #20143]  INFO -- : Started streaming Sookshma Darshini at http://localhost:8842/live
+I, [2025-02-17T14:00:18.381745 #20143]  INFO -- : Started streaming Pani at http://localhost:8438/live
+I, [2025-02-17T14:00:18.467161 #20143]  INFO -- : Started streaming Identity at http://localhost:8135/live
+I, [2025-02-17T14:00:18.542074 #20143]  INFO -- : Started streaming Marco at http://localhost:8531/live
+I, [2025-02-17T14:00:18.617749 #20143]  INFO -- : Started streaming Rifle Club at http://localhost:8663/live
+I, [2025-02-17T14:00:18.693121 #20143]  INFO -- : Started streaming Bougainvillea at http://localhost:8473/live
+I, [2025-02-17T14:01:43.322513 #20239]  INFO -- : 
+
+========================================
+I, [2025-02-17T14:01:43.322566 #20239]  INFO -- : Starting main process, Run ID: 20250217140143, 2025-02-17 14:01:43 -0800
+I, [2025-02-17T14:01:43.629260 #20239]  INFO -- : File already exists for Sookshma Darshini, skipping download
+I, [2025-02-17T14:01:43.629325 #20239]  INFO -- : File already exists for Pani, skipping download
+I, [2025-02-17T14:01:43.629371 #20239]  INFO -- : File already exists for Identity, skipping download
+I, [2025-02-17T14:01:43.629407 #20239]  INFO -- : File already exists for Marco, skipping download
+I, [2025-02-17T14:01:43.629442 #20239]  INFO -- : File already exists for Rifle Club, skipping download
+I, [2025-02-17T14:01:43.629489 #20239]  INFO -- : File already exists for Bougainvillea, skipping download
+I, [2025-02-17T14:01:43.633161 #20239]  INFO -- : Started streaming Sookshma Darshini at http://localhost:8479/live. PID: 20240
+I, [2025-02-17T14:01:43.721570 #20239]  INFO -- : Started streaming Pani at http://localhost:8783/live. PID: 20241
+I, [2025-02-17T14:01:43.797019 #20239]  INFO -- : Started streaming Identity at http://localhost:8036/live. PID: 20242
+I, [2025-02-17T14:01:43.871996 #20239]  INFO -- : Started streaming Marco at http://localhost:8328/live. PID: 20243
+I, [2025-02-17T14:01:43.945509 #20239]  INFO -- : Started streaming Rifle Club at http://localhost:8929/live. PID: 20244
+I, [2025-02-17T14:01:44.024569 #20239]  INFO -- : Started streaming Bougainvillea at http://localhost:8966/live. PID: 20245
+I, [2025-02-17T14:04:12.392183 #20404]  INFO -- : 
+
+========================================
+I, [2025-02-17T14:04:12.392235 #20404]  INFO -- : Starting main process, Run ID: 20250217140412, 2025-02-17 14:04:12 -0800
+I, [2025-02-17T14:04:12.712356 #20404]  INFO -- : File already exists for Sookshma Darshini, skipping download
+I, [2025-02-17T14:04:12.712431 #20404]  INFO -- : File already exists for Pani, skipping download
+I, [2025-02-17T14:04:12.712477 #20404]  INFO -- : File already exists for Identity, skipping download
+I, [2025-02-17T14:04:12.712515 #20404]  INFO -- : File already exists for Marco, skipping download
+I, [2025-02-17T14:04:12.712565 #20404]  INFO -- : File already exists for Rifle Club, skipping download
+I, [2025-02-17T14:04:12.712616 #20404]  INFO -- : File already exists for Bougainvillea, skipping download
+I, [2025-02-17T14:04:12.716328 #20404]  INFO -- : Started streaming Sookshma Darshini at http://0.0.0.0:8362/live. PID: 20405
+I, [2025-02-17T14:04:12.804131 #20404]  INFO -- : Started streaming Pani at http://0.0.0.0:8384/live. PID: 20406
+I, [2025-02-17T14:04:12.878152 #20404]  INFO -- : Started streaming Identity at http://0.0.0.0:8216/live. PID: 20407
+I, [2025-02-17T14:04:12.951700 #20404]  INFO -- : Started streaming Marco at http://0.0.0.0:8553/live. PID: 20408
+I, [2025-02-17T14:04:13.025192 #20404]  INFO -- : Started streaming Rifle Club at http://0.0.0.0:8310/live. PID: 20409
+I, [2025-02-17T14:04:13.098614 #20404]  INFO -- : Started streaming Bougainvillea at http://0.0.0.0:8813/live. PID: 20410
+I, [2025-02-17T14:06:08.452074 #20488]  INFO -- : 
+
+========================================
+I, [2025-02-17T14:06:08.452136 #20488]  INFO -- : Starting main process, Run ID: 20250217140608, 2025-02-17 14:06:08 -0800
+I, [2025-02-17T14:06:08.753787 #20488]  INFO -- : File already exists for Sookshma Darshini, skipping download
+I, [2025-02-17T14:06:08.753847 #20488]  INFO -- : File already exists for Pani, skipping download
+I, [2025-02-17T14:06:08.753886 #20488]  INFO -- : File already exists for Identity, skipping download
+I, [2025-02-17T14:06:08.753919 #20488]  INFO -- : File already exists for Marco, skipping download
+I, [2025-02-17T14:06:08.753952 #20488]  INFO -- : File already exists for Rifle Club, skipping download
+I, [2025-02-17T14:06:08.753989 #20488]  INFO -- : File already exists for Bougainvillea, skipping download
+I, [2025-02-17T14:06:08.757526 #20488]  INFO -- : Started streaming Sookshma Darshini at http://0.0.0.0:8023/live. PID: 20489
+I, [2025-02-17T14:06:08.757606 #20488]  INFO -- : Started streaming Sookshma Darshini at http://0.0.0.0:8023/live. PID: 20489
+E, [2025-02-17T14:06:08.840361 #20488] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:06:08.840422 #20488] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:06:08.840447 #20488] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:06:08.840469 #20488] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:06:08.840486 #20488] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:06:08.840501 #20488] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:06:08.840517 #20488] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:06:08.840531 #20488] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:06:08.840544 #20488] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:06:08.840609 #20488] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:06:08.840624 #20488] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:06:08.884069 #20488] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/sookshma_darshini.mp4':
+
+E, [2025-02-17T14:06:08.884121 #20488] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:06:08.884138 #20488] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:06:08.884150 #20488] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:06:08.884161 #20488] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:06:08.884174 #20488] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-15T11:52:34.000000Z
+
+E, [2025-02-17T14:06:08.884188 #20488] ERROR -- : FFmpeg stderr:   Duration: 02:19:22.63, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:06:08.884222 #20488] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:06:08.884234 #20488] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:08.884244 #20488] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-15T09:15:10.000000Z
+
+E, [2025-02-17T14:06:08.884255 #20488] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:08.884265 #20488] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T14:06:08.884275 #20488] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:08.884288 #20488] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-15T11:48:31.000000Z
+
+E, [2025-02-17T14:06:08.884299 #20488] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:08.891766 #20488] ERROR -- : FFmpeg stderr: [tcp @ 0x7fda93004280] Connection to tcp://0.0.0.0:8023 failed: Connection refused
+
+E, [2025-02-17T14:06:08.891829 #20488] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7fdaa2740f80] Error opening output http://0.0.0.0:8023/live: Connection refused
+
+E, [2025-02-17T14:06:08.891846 #20488] ERROR -- : FFmpeg stderr: Error opening output file http://0.0.0.0:8023/live.
+
+E, [2025-02-17T14:06:08.891900 #20488] ERROR -- : FFmpeg stderr: Error opening output files: Connection refused
+
+E, [2025-02-17T14:06:08.897281 #20488] ERROR -- : FFmpeg process for Sookshma Darshini failed to start.
+I, [2025-02-17T14:06:08.899839 #20488]  INFO -- : Started streaming Pani at http://0.0.0.0:8822/live. PID: 20490
+I, [2025-02-17T14:06:08.899952 #20488]  INFO -- : Started streaming Pani at http://0.0.0.0:8822/live. PID: 20490
+E, [2025-02-17T14:06:08.973543 #20488] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:06:08.973597 #20488] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:06:08.973625 #20488] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:06:08.973644 #20488] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:06:08.973676 #20488] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:06:08.973691 #20488] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:06:08.973704 #20488] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:06:08.973717 #20488] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:06:08.973728 #20488] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:06:08.973760 #20488] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:06:08.973771 #20488] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:06:09.017016 #20488] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/pani.mp4':
+
+E, [2025-02-17T14:06:09.017099 #20488] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:06:09.017134 #20488] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:06:09.017161 #20488] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:06:09.017185 #20488] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:06:09.017272 #20488] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-17T13:56:09.000000Z
+
+E, [2025-02-17T14:06:09.017301 #20488] ERROR -- : FFmpeg stderr:   Duration: 02:18:49.79, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:06:09.017322 #20488] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:06:09.017348 #20488] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:09.017369 #20488] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-16T10:27:48.000000Z
+
+E, [2025-02-17T14:06:09.017395 #20488] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:09.017418 #20488] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T14:06:09.017446 #20488] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:09.017469 #20488] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-17T13:25:25.000000Z
+
+E, [2025-02-17T14:06:09.017501 #20488] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:09.025889 #20488] ERROR -- : FFmpeg stderr: [tcp @ 0x7fef851067c0] Connection to tcp://0.0.0.0:8822 failed: Connection refused
+
+E, [2025-02-17T14:06:09.025942 #20488] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7fef8520ed40] Error opening output http://0.0.0.0:8822/live: Connection refused
+
+E, [2025-02-17T14:06:09.025965 #20488] ERROR -- : FFmpeg stderr: Error opening output file http://0.0.0.0:8822/live.
+
+E, [2025-02-17T14:06:09.025984 #20488] ERROR -- : FFmpeg stderr: Error opening output files: Connection refused
+
+E, [2025-02-17T14:06:09.031452 #20488] ERROR -- : FFmpeg process for Pani failed to start.
+I, [2025-02-17T14:06:09.034597 #20488]  INFO -- : Started streaming Identity at http://0.0.0.0:8454/live. PID: 20491
+I, [2025-02-17T14:06:09.034661 #20488]  INFO -- : Started streaming Identity at http://0.0.0.0:8454/live. PID: 20491
+E, [2025-02-17T14:06:09.112912 #20488] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:06:09.112961 #20488] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:06:09.112981 #20488] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:06:09.113014 #20488] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:06:09.113027 #20488] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:06:09.113038 #20488] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:06:09.113050 #20488] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:06:09.113061 #20488] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:06:09.113072 #20488] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:06:09.113082 #20488] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:06:09.113092 #20488] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:06:09.150564 #20488] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/identity.mp4':
+
+E, [2025-02-17T14:06:09.150627 #20488] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:06:09.150642 #20488] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:06:09.150656 #20488] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:06:09.150673 #20488] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:06:09.150686 #20488] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-31T13:46:58.000000Z
+
+E, [2025-02-17T14:06:09.150703 #20488] ERROR -- : FFmpeg stderr:   Duration: 02:33:55.33, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:06:09.150726 #20488] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:06:09.150743 #20488] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:09.150756 #20488] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-31T13:38:29.000000Z
+
+E, [2025-02-17T14:06:09.150772 #20488] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:09.150785 #20488] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T14:06:09.150801 #20488] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:09.150817 #20488] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-31T13:40:02.000000Z
+
+E, [2025-02-17T14:06:09.150831 #20488] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:09.158715 #20488] ERROR -- : FFmpeg stderr: [tcp @ 0x7fe020a043c0] Connection to tcp://0.0.0.0:8454 failed: Connection refused
+
+E, [2025-02-17T14:06:09.158883 #20488] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7fe037f39080] Error opening output http://0.0.0.0:8454/live: Connection refused
+
+E, [2025-02-17T14:06:09.158933 #20488] ERROR -- : FFmpeg stderr: Error opening output file http://0.0.0.0:8454/live.
+
+E, [2025-02-17T14:06:09.158968 #20488] ERROR -- : FFmpeg stderr: Error opening output files: Connection refused
+
+E, [2025-02-17T14:06:09.165366 #20488] ERROR -- : FFmpeg process for Identity failed to start.
+I, [2025-02-17T14:06:09.169615 #20488]  INFO -- : Started streaming Marco at http://0.0.0.0:8407/live. PID: 20492
+I, [2025-02-17T14:06:09.169677 #20488]  INFO -- : Started streaming Marco at http://0.0.0.0:8407/live. PID: 20492
+E, [2025-02-17T14:06:09.243866 #20488] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:06:09.243922 #20488] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:06:09.243949 #20488] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:06:09.243972 #20488] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:06:09.243984 #20488] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:06:09.243998 #20488] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:06:09.244014 #20488] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:06:09.244030 #20488] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:06:09.244044 #20488] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:06:09.244056 #20488] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:06:09.244067 #20488] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:06:09.287128 #20488] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/marco.mp4':
+
+E, [2025-02-17T14:06:09.287183 #20488] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:06:09.287198 #20488] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:06:09.287210 #20488] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:06:09.287221 #20488] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:06:09.287232 #20488] ERROR -- : FFmpeg stderr:     creation_time   : 2025-02-14T11:33:30.000000Z
+
+E, [2025-02-17T14:06:09.287243 #20488] ERROR -- : FFmpeg stderr:   Duration: 02:17:25.54, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:06:09.287256 #20488] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:06:09.287273 #20488] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:09.287285 #20488] ERROR -- : FFmpeg stderr:         creation_time   : 2025-02-14T10:15:24.000000Z
+
+E, [2025-02-17T14:06:09.287350 #20488] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:09.287362 #20488] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T14:06:09.287373 #20488] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:09.287383 #20488] ERROR -- : FFmpeg stderr:         creation_time   : 2025-02-14T11:10:24.000000Z
+
+E, [2025-02-17T14:06:09.287394 #20488] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:09.291264 #20488] ERROR -- : FFmpeg stderr: [tcp @ 0x7fd505f2d280] Connection to tcp://0.0.0.0:8407 failed: Connection refused
+
+E, [2025-02-17T14:06:09.291360 #20488] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7fd50691b300] Error opening output http://0.0.0.0:8407/live: Connection refused
+
+E, [2025-02-17T14:06:09.291394 #20488] ERROR -- : FFmpeg stderr: Error opening output file http://0.0.0.0:8407/live.
+
+E, [2025-02-17T14:06:09.291433 #20488] ERROR -- : FFmpeg stderr: Error opening output files: Connection refused
+
+E, [2025-02-17T14:06:09.296028 #20488] ERROR -- : FFmpeg process for Marco failed to start.
+I, [2025-02-17T14:06:09.298608 #20488]  INFO -- : Started streaming Rifle Club at http://0.0.0.0:8821/live. PID: 20495
+I, [2025-02-17T14:06:09.298653 #20488]  INFO -- : Started streaming Rifle Club at http://0.0.0.0:8821/live. PID: 20495
+E, [2025-02-17T14:06:09.371466 #20488] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:06:09.371529 #20488] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:06:09.371611 #20488] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:06:09.371628 #20488] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:06:09.371646 #20488] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:06:09.371660 #20488] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:06:09.371679 #20488] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:06:09.371695 #20488] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:06:09.371708 #20488] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:06:09.371723 #20488] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:06:09.371740 #20488] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:06:09.401491 #20488] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/rifle_club.mp4':
+
+E, [2025-02-17T14:06:09.401562 #20488] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:06:09.401585 #20488] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:06:09.401606 #20488] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:06:09.401628 #20488] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:06:09.401647 #20488] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-16T12:23:48.000000Z
+
+E, [2025-02-17T14:06:09.401730 #20488] ERROR -- : FFmpeg stderr:   Duration: 01:51:04.58, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:06:09.401750 #20488] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:06:09.401766 #20488] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:09.401779 #20488] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-16T08:47:30.000000Z
+
+E, [2025-02-17T14:06:09.401812 #20488] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:09.401831 #20488] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 127 kb/s (default)
+
+E, [2025-02-17T14:06:09.401856 #20488] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:09.401883 #20488] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-16T11:29:34.000000Z
+
+E, [2025-02-17T14:06:09.401901 #20488] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:09.408939 #20488] ERROR -- : FFmpeg stderr: [tcp @ 0x7fbca97dd180] Connection to tcp://0.0.0.0:8821 failed: Connection refused
+
+E, [2025-02-17T14:06:09.408987 #20488] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7fbca9737c40] Error opening output http://0.0.0.0:8821/live: Connection refused
+
+E, [2025-02-17T14:06:09.409006 #20488] ERROR -- : FFmpeg stderr: Error opening output file http://0.0.0.0:8821/live.
+
+E, [2025-02-17T14:06:09.409021 #20488] ERROR -- : FFmpeg stderr: Error opening output files: Connection refused
+
+E, [2025-02-17T14:06:09.414433 #20488] ERROR -- : FFmpeg process for Rifle Club failed to start.
+I, [2025-02-17T14:06:09.417408 #20488]  INFO -- : Started streaming Bougainvillea at http://0.0.0.0:8805/live. PID: 20496
+I, [2025-02-17T14:06:09.417474 #20488]  INFO -- : Started streaming Bougainvillea at http://0.0.0.0:8805/live. PID: 20496
+E, [2025-02-17T14:06:09.494032 #20488] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:06:09.494080 #20488] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:06:09.494102 #20488] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:06:09.494152 #20488] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:06:09.494164 #20488] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:06:09.494175 #20488] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:06:09.494186 #20488] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:06:09.494196 #20488] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:06:09.494206 #20488] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:06:09.494369 #20488] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:06:09.494382 #20488] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:06:09.531435 #20488] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/bougainvillea.mp4':
+
+E, [2025-02-17T14:06:09.531486 #20488] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:06:09.531501 #20488] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:06:09.531513 #20488] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:06:09.531554 #20488] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:06:09.531569 #20488] ERROR -- : FFmpeg stderr:     creation_time   : 2024-12-13T12:56:05.000000Z
+
+E, [2025-02-17T14:06:09.531580 #20488] ERROR -- : FFmpeg stderr:   Duration: 02:14:32.98, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:06:09.531640 #20488] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:06:09.531652 #20488] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:09.531663 #20488] ERROR -- : FFmpeg stderr:         creation_time   : 2024-12-13T11:35:39.000000Z
+
+E, [2025-02-17T14:06:09.531673 #20488] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:09.531683 #20488] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 127 kb/s (default)
+
+E, [2025-02-17T14:06:09.531696 #20488] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:09.531707 #20488] ERROR -- : FFmpeg stderr:         creation_time   : 2024-12-13T12:26:19.000000Z
+
+E, [2025-02-17T14:06:09.531717 #20488] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:09.539331 #20488] ERROR -- : FFmpeg stderr: [tcp @ 0x7f7cbb9b3880] Connection to tcp://0.0.0.0:8805 failed: Connection refused
+
+E, [2025-02-17T14:06:09.539416 #20488] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7f7cbb90ed40] Error opening output http://0.0.0.0:8805/live: Connection refused
+
+E, [2025-02-17T14:06:09.539572 #20488] ERROR -- : FFmpeg stderr: Error opening output file http://0.0.0.0:8805/live.
+
+E, [2025-02-17T14:06:09.539606 #20488] ERROR -- : FFmpeg stderr: Error opening output files: Connection refused
+
+E, [2025-02-17T14:06:09.545003 #20488] ERROR -- : FFmpeg process for Bougainvillea failed to start.
+I, [2025-02-17T14:06:51.302015 #20553]  INFO -- : 
+
+========================================
+I, [2025-02-17T14:06:51.302087 #20553]  INFO -- : Starting main process, Run ID: 20250217140651, 2025-02-17 14:06:51 -0800
+I, [2025-02-17T14:06:51.603268 #20553]  INFO -- : File already exists for Sookshma Darshini, skipping download
+I, [2025-02-17T14:06:51.603346 #20553]  INFO -- : File already exists for Pani, skipping download
+I, [2025-02-17T14:06:51.603380 #20553]  INFO -- : File already exists for Identity, skipping download
+I, [2025-02-17T14:06:51.603411 #20553]  INFO -- : File already exists for Marco, skipping download
+I, [2025-02-17T14:06:51.603440 #20553]  INFO -- : File already exists for Rifle Club, skipping download
+I, [2025-02-17T14:06:51.603468 #20553]  INFO -- : File already exists for Bougainvillea, skipping download
+I, [2025-02-17T14:06:51.606790 #20553]  INFO -- : Started streaming Sookshma Darshini at http://0.0.0.0:8043/live. PID: 20554
+I, [2025-02-17T14:06:51.606862 #20553]  INFO -- : Started streaming Sookshma Darshini at http://0.0.0.0:8043/live. PID: 20554
+E, [2025-02-17T14:06:51.698771 #20553] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:06:51.698836 #20553] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:06:51.698859 #20553] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:06:51.698890 #20553] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:06:51.698905 #20553] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:06:51.698918 #20553] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:06:51.698929 #20553] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:06:51.698940 #20553] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:06:51.698952 #20553] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:06:51.698968 #20553] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:06:51.698998 #20553] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:06:51.736651 #20553] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/sookshma_darshini.mp4':
+
+E, [2025-02-17T14:06:51.736711 #20553] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:06:51.736726 #20553] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:06:51.736738 #20553] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:06:51.736750 #20553] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:06:51.736762 #20553] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-15T11:52:34.000000Z
+
+E, [2025-02-17T14:06:51.736773 #20553] ERROR -- : FFmpeg stderr:   Duration: 02:19:22.63, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:06:51.736808 #20553] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:06:51.736824 #20553] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:51.736836 #20553] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-15T09:15:10.000000Z
+
+E, [2025-02-17T14:06:51.736847 #20553] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:51.736858 #20553] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T14:06:51.736869 #20553] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:51.736897 #20553] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-15T11:48:31.000000Z
+
+E, [2025-02-17T14:06:51.736909 #20553] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:51.743969 #20553] ERROR -- : FFmpeg stderr: [tcp @ 0x7f87a5906a80] Connection to tcp://0.0.0.0:8043 failed: Connection refused
+
+E, [2025-02-17T14:06:51.744059 #20553] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7f8794f04800] Error opening output http://0.0.0.0:8043/live: Connection refused
+
+E, [2025-02-17T14:06:51.744093 #20553] ERROR -- : FFmpeg stderr: Error opening output file http://0.0.0.0:8043/live.
+
+E, [2025-02-17T14:06:51.744138 #20553] ERROR -- : FFmpeg stderr: Error opening output files: Connection refused
+
+E, [2025-02-17T14:06:51.749321 #20553] ERROR -- : FFmpeg process for Sookshma Darshini failed to start.
+I, [2025-02-17T14:06:51.752919 #20553]  INFO -- : Started streaming Pani at http://0.0.0.0:8653/live. PID: 20555
+I, [2025-02-17T14:06:51.753033 #20553]  INFO -- : Started streaming Pani at http://0.0.0.0:8653/live. PID: 20555
+E, [2025-02-17T14:06:51.847267 #20553] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:06:51.847320 #20553] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:06:51.847364 #20553] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:06:51.847379 #20553] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:06:51.847392 #20553] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:06:51.847404 #20553] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:06:51.847463 #20553] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:06:51.847474 #20553] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:06:51.847485 #20553] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:06:51.847496 #20553] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:06:51.847508 #20553] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:06:51.883173 #20553] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/pani.mp4':
+
+E, [2025-02-17T14:06:51.883251 #20553] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:06:51.883290 #20553] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:06:51.883306 #20553] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:06:51.883320 #20553] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:06:51.883334 #20553] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-17T13:56:09.000000Z
+
+E, [2025-02-17T14:06:51.883348 #20553] ERROR -- : FFmpeg stderr:   Duration: 02:18:49.79, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:06:51.883366 #20553] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:06:51.883384 #20553] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:51.883398 #20553] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-16T10:27:48.000000Z
+
+E, [2025-02-17T14:06:51.883412 #20553] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:51.883425 #20553] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T14:06:51.883439 #20553] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:51.883483 #20553] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-17T13:25:25.000000Z
+
+E, [2025-02-17T14:06:51.883498 #20553] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:51.891763 #20553] ERROR -- : FFmpeg stderr: [tcp @ 0x7fe83ff043c0] Connection to tcp://0.0.0.0:8653 failed: Connection refused
+
+E, [2025-02-17T14:06:51.891845 #20553] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7fe81800de00] Error opening output http://0.0.0.0:8653/live: Connection refused
+
+E, [2025-02-17T14:06:51.891873 #20553] ERROR -- : FFmpeg stderr: Error opening output file http://0.0.0.0:8653/live.
+
+E, [2025-02-17T14:06:51.891913 #20553] ERROR -- : FFmpeg stderr: Error opening output files: Connection refused
+
+E, [2025-02-17T14:06:51.898053 #20553] ERROR -- : FFmpeg process for Pani failed to start.
+I, [2025-02-17T14:06:51.901308 #20553]  INFO -- : Started streaming Identity at http://0.0.0.0:8228/live. PID: 20556
+I, [2025-02-17T14:06:51.901392 #20553]  INFO -- : Started streaming Identity at http://0.0.0.0:8228/live. PID: 20556
+E, [2025-02-17T14:06:52.001043 #20553] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:06:52.001099 #20553] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:06:52.001127 #20553] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:06:52.001155 #20553] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:06:52.001171 #20553] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:06:52.001185 #20553] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:06:52.001199 #20553] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:06:52.001212 #20553] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:06:52.001259 #20553] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:06:52.001273 #20553] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:06:52.001286 #20553] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:06:52.041203 #20553] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/identity.mp4':
+
+E, [2025-02-17T14:06:52.041263 #20553] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:06:52.041282 #20553] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:06:52.041304 #20553] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:06:52.041318 #20553] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:06:52.041333 #20553] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-31T13:46:58.000000Z
+
+E, [2025-02-17T14:06:52.041346 #20553] ERROR -- : FFmpeg stderr:   Duration: 02:33:55.33, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:06:52.041363 #20553] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:06:52.041377 #20553] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:52.041423 #20553] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-31T13:38:29.000000Z
+
+E, [2025-02-17T14:06:52.041439 #20553] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:52.041456 #20553] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T14:06:52.041489 #20553] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:52.041505 #20553] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-31T13:40:02.000000Z
+
+E, [2025-02-17T14:06:52.041519 #20553] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:52.049609 #20553] ERROR -- : FFmpeg stderr: [tcp @ 0x7f7a4f204400] Connection to tcp://0.0.0.0:8228 failed: Connection refused
+
+E, [2025-02-17T14:06:52.049673 #20553] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7f7a0f217d40] Error opening output http://0.0.0.0:8228/live: Connection refused
+
+E, [2025-02-17T14:06:52.049693 #20553] ERROR -- : FFmpeg stderr: Error opening output file http://0.0.0.0:8228/live.
+
+E, [2025-02-17T14:06:52.049709 #20553] ERROR -- : FFmpeg stderr: Error opening output files: Connection refused
+
+E, [2025-02-17T14:06:52.056029 #20553] ERROR -- : FFmpeg process for Identity failed to start.
+I, [2025-02-17T14:06:52.059292 #20553]  INFO -- : Started streaming Marco at http://0.0.0.0:8128/live. PID: 20557
+I, [2025-02-17T14:06:52.059407 #20553]  INFO -- : Started streaming Marco at http://0.0.0.0:8128/live. PID: 20557
+E, [2025-02-17T14:06:52.155225 #20553] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:06:52.155281 #20553] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:06:52.155301 #20553] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:06:52.155324 #20553] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:06:52.155337 #20553] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:06:52.155348 #20553] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:06:52.155359 #20553] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:06:52.155377 #20553] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:06:52.155388 #20553] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:06:52.155399 #20553] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:06:52.155410 #20553] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:06:52.200479 #20553] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/marco.mp4':
+
+E, [2025-02-17T14:06:52.200614 #20553] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:06:52.200673 #20553] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:06:52.200704 #20553] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:06:52.200736 #20553] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:06:52.200747 #20553] ERROR -- : FFmpeg stderr:     creation_time   : 2025-02-14T11:33:30.000000Z
+
+E, [2025-02-17T14:06:52.200758 #20553] ERROR -- : FFmpeg stderr:   Duration: 02:17:25.54, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:06:52.200789 #20553] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:06:52.200802 #20553] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:52.200838 #20553] ERROR -- : FFmpeg stderr:         creation_time   : 2025-02-14T10:15:24.000000Z
+
+E, [2025-02-17T14:06:52.200849 #20553] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:52.200860 #20553] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T14:06:52.200873 #20553] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:52.200884 #20553] ERROR -- : FFmpeg stderr:         creation_time   : 2025-02-14T11:10:24.000000Z
+
+E, [2025-02-17T14:06:52.200895 #20553] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:52.206804 #20553] ERROR -- : FFmpeg stderr: [tcp @ 0x7f907e7041c0] Connection to tcp://0.0.0.0:8128 failed: Connection refused
+
+E, [2025-02-17T14:06:52.206895 #20553] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7f909f017100] Error opening output http://0.0.0.0:8128/live: Connection refused
+
+E, [2025-02-17T14:06:52.206927 #20553] ERROR -- : FFmpeg stderr: Error opening output file http://0.0.0.0:8128/live.
+
+E, [2025-02-17T14:06:52.206967 #20553] ERROR -- : FFmpeg stderr: Error opening output files: Connection refused
+
+E, [2025-02-17T14:06:52.213465 #20553] ERROR -- : FFmpeg process for Marco failed to start.
+I, [2025-02-17T14:06:52.216299 #20553]  INFO -- : Started streaming Rifle Club at http://0.0.0.0:8364/live. PID: 20560
+I, [2025-02-17T14:06:52.216365 #20553]  INFO -- : Started streaming Rifle Club at http://0.0.0.0:8364/live. PID: 20560
+E, [2025-02-17T14:06:52.310165 #20553] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:06:52.310213 #20553] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:06:52.310233 #20553] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:06:52.310254 #20553] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:06:52.310270 #20553] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:06:52.310283 #20553] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:06:52.310295 #20553] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:06:52.310307 #20553] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:06:52.310328 #20553] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:06:52.310378 #20553] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:06:52.310389 #20553] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:06:52.335682 #20553] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/rifle_club.mp4':
+
+E, [2025-02-17T14:06:52.335737 #20553] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:06:52.335753 #20553] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:06:52.335771 #20553] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:06:52.335784 #20553] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:06:52.335795 #20553] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-16T12:23:48.000000Z
+
+E, [2025-02-17T14:06:52.335806 #20553] ERROR -- : FFmpeg stderr:   Duration: 01:51:04.58, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:06:52.335821 #20553] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:06:52.335832 #20553] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:52.335843 #20553] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-16T08:47:30.000000Z
+
+E, [2025-02-17T14:06:52.335855 #20553] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:52.335869 #20553] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 127 kb/s (default)
+
+E, [2025-02-17T14:06:52.335880 #20553] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:52.335929 #20553] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-16T11:29:34.000000Z
+
+E, [2025-02-17T14:06:52.335942 #20553] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:52.342818 #20553] ERROR -- : FFmpeg stderr: [tcp @ 0x7f8f30fb3dc0] Connection to tcp://0.0.0.0:8364 failed: Connection refused
+
+E, [2025-02-17T14:06:52.342926 #20553] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7f8f30f0e840] Error opening output http://0.0.0.0:8364/live: Connection refused
+
+E, [2025-02-17T14:06:52.342948 #20553] ERROR -- : FFmpeg stderr: Error opening output file http://0.0.0.0:8364/live.
+
+E, [2025-02-17T14:06:52.342967 #20553] ERROR -- : FFmpeg stderr: Error opening output files: Connection refused
+
+E, [2025-02-17T14:06:52.348167 #20553] ERROR -- : FFmpeg process for Rifle Club failed to start.
+I, [2025-02-17T14:06:52.350935 #20553]  INFO -- : Started streaming Bougainvillea at http://0.0.0.0:8662/live. PID: 20561
+I, [2025-02-17T14:06:52.350988 #20553]  INFO -- : Started streaming Bougainvillea at http://0.0.0.0:8662/live. PID: 20561
+E, [2025-02-17T14:06:52.441733 #20553] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:06:52.441782 #20553] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:06:52.441806 #20553] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:06:52.441824 #20553] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:06:52.441906 #20553] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:06:52.441919 #20553] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:06:52.441930 #20553] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:06:52.442016 #20553] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:06:52.442048 #20553] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:06:52.442074 #20553] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:06:52.442086 #20553] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:06:52.471196 #20553] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/bougainvillea.mp4':
+
+E, [2025-02-17T14:06:52.471272 #20553] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:06:52.471323 #20553] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:06:52.471341 #20553] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:06:52.471357 #20553] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:06:52.471377 #20553] ERROR -- : FFmpeg stderr:     creation_time   : 2024-12-13T12:56:05.000000Z
+
+E, [2025-02-17T14:06:52.471392 #20553] ERROR -- : FFmpeg stderr:   Duration: 02:14:32.98, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:06:52.471407 #20553] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:06:52.471421 #20553] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:52.471433 #20553] ERROR -- : FFmpeg stderr:         creation_time   : 2024-12-13T11:35:39.000000Z
+
+E, [2025-02-17T14:06:52.471490 #20553] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:52.471504 #20553] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 127 kb/s (default)
+
+E, [2025-02-17T14:06:52.471584 #20553] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:06:52.471614 #20553] ERROR -- : FFmpeg stderr:         creation_time   : 2024-12-13T12:26:19.000000Z
+
+E, [2025-02-17T14:06:52.471783 #20553] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:06:52.478101 #20553] ERROR -- : FFmpeg stderr: [tcp @ 0x7fddcd907000] Connection to tcp://0.0.0.0:8662 failed: Connection refused
+
+E, [2025-02-17T14:06:52.478159 #20553] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7fddbcf189c0] Error opening output http://0.0.0.0:8662/live: Connection refused
+
+E, [2025-02-17T14:06:52.478177 #20553] ERROR -- : FFmpeg stderr: Error opening output file http://0.0.0.0:8662/live.
+
+E, [2025-02-17T14:06:52.478219 #20553] ERROR -- : FFmpeg stderr: Error opening output files: Connection refused
+
+E, [2025-02-17T14:06:52.482833 #20553] ERROR -- : FFmpeg process for Bougainvillea failed to start.
+I, [2025-02-17T14:16:18.688789 #21308]  INFO -- : 
+
+========================================
+I, [2025-02-17T14:16:18.688841 #21308]  INFO -- : Starting main process, Run ID: 20250217141618, 2025-02-17 14:16:18 -0800
+I, [2025-02-17T14:16:19.023768 #21308]  INFO -- : File already exists for Sookshma Darshini, skipping download
+I, [2025-02-17T14:16:19.023832 #21308]  INFO -- : File already exists for Pani, skipping download
+I, [2025-02-17T14:16:19.023890 #21308]  INFO -- : File already exists for Identity, skipping download
+I, [2025-02-17T14:16:19.023928 #21308]  INFO -- : File already exists for Marco, skipping download
+I, [2025-02-17T14:16:19.023963 #21308]  INFO -- : File already exists for Rifle Club, skipping download
+I, [2025-02-17T14:16:19.023997 #21308]  INFO -- : File already exists for Bougainvillea, skipping download
+I, [2025-02-17T14:16:19.029013 #21308]  INFO -- : Started streaming Sookshma Darshini at http://localhost:8080/live/Sookshma Darshini. PID: 21309
+E, [2025-02-17T14:16:19.130434 #21308] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:16:19.130496 #21308] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:16:19.130518 #21308] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:16:19.130636 #21308] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:16:19.130651 #21308] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:16:19.130665 #21308] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:16:19.130678 #21308] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:16:19.130691 #21308] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:16:19.130705 #21308] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:16:19.130720 #21308] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:16:19.130733 #21308] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:16:19.169445 #21308] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/sookshma_darshini.mp4':
+
+E, [2025-02-17T14:16:19.169510 #21308] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:16:19.169598 #21308] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:16:19.169613 #21308] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:16:19.169627 #21308] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:16:19.169641 #21308] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-15T11:52:34.000000Z
+
+E, [2025-02-17T14:16:19.169654 #21308] ERROR -- : FFmpeg stderr:   Duration: 02:19:22.63, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:16:19.169673 #21308] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:16:19.169687 #21308] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:16:19.169700 #21308] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-15T09:15:10.000000Z
+
+E, [2025-02-17T14:16:19.169714 #21308] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:16:19.169762 #21308] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T14:16:19.169776 #21308] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:16:19.169789 #21308] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-15T11:48:31.000000Z
+
+E, [2025-02-17T14:16:19.169801 #21308] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:16:19.180706 #21308] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7f7ea4906f40] Error opening output rtmp://localhost/live/Sookshma: Input/output error
+
+E, [2025-02-17T14:16:19.180830 #21308] ERROR -- : FFmpeg stderr: Error opening output file rtmp://localhost/live/Sookshma.
+
+E, [2025-02-17T14:16:19.180938 #21308] ERROR -- : FFmpeg stderr: Error opening output files: Input/output error
+
+E, [2025-02-17T14:16:19.186424 #21308] ERROR -- : FFmpeg process for Sookshma Darshini failed to start.
+I, [2025-02-17T14:16:19.189175 #21308]  INFO -- : Started streaming Pani at http://localhost:8080/live/Pani. PID: 21310
+E, [2025-02-17T14:16:19.282856 #21308] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:16:19.282924 #21308] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:16:19.282951 #21308] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:16:19.282980 #21308] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:16:19.282998 #21308] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:16:19.283019 #21308] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:16:19.283038 #21308] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:16:19.283054 #21308] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:16:19.283071 #21308] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:16:19.283089 #21308] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:16:19.283171 #21308] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:16:19.312407 #21308] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/pani.mp4':
+
+E, [2025-02-17T14:16:19.312478 #21308] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:16:19.312498 #21308] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:16:19.312517 #21308] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:16:19.312532 #21308] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:16:19.312548 #21308] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-17T13:56:09.000000Z
+
+E, [2025-02-17T14:16:19.312563 #21308] ERROR -- : FFmpeg stderr:   Duration: 02:18:49.79, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:16:19.312583 #21308] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:16:19.312598 #21308] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:16:19.312613 #21308] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-16T10:27:48.000000Z
+
+E, [2025-02-17T14:16:19.312630 #21308] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:16:19.312646 #21308] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T14:16:19.312668 #21308] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:16:19.312685 #21308] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-17T13:25:25.000000Z
+
+E, [2025-02-17T14:16:19.312701 #21308] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:16:19.323021 #21308] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7fcd27704600] Error opening output rtmp://localhost/live/Pani: Input/output error
+
+E, [2025-02-17T14:16:19.323145 #21308] ERROR -- : FFmpeg stderr: Error opening output file rtmp://localhost/live/Pani.
+
+E, [2025-02-17T14:16:19.323324 #21308] ERROR -- : FFmpeg stderr: Error opening output files: Input/output error
+
+E, [2025-02-17T14:16:19.328685 #21308] ERROR -- : FFmpeg process for Pani failed to start.
+I, [2025-02-17T14:16:19.331245 #21308]  INFO -- : Started streaming Identity at http://localhost:8080/live/Identity. PID: 21311
+E, [2025-02-17T14:16:19.426179 #21308] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:16:19.426239 #21308] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:16:19.426262 #21308] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:16:19.426285 #21308] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:16:19.426299 #21308] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:16:19.426313 #21308] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:16:19.426326 #21308] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:16:19.426340 #21308] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:16:19.426355 #21308] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:16:19.426370 #21308] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:16:19.426384 #21308] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:16:19.458616 #21308] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/identity.mp4':
+
+E, [2025-02-17T14:16:19.458679 #21308] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:16:19.458698 #21308] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:16:19.458812 #21308] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:16:19.458826 #21308] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:16:19.458842 #21308] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-31T13:46:58.000000Z
+
+E, [2025-02-17T14:16:19.458856 #21308] ERROR -- : FFmpeg stderr:   Duration: 02:33:55.33, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:16:19.458875 #21308] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:16:19.458892 #21308] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:16:19.458906 #21308] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-31T13:38:29.000000Z
+
+E, [2025-02-17T14:16:19.458919 #21308] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:16:19.458932 #21308] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T14:16:19.458945 #21308] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:16:19.458958 #21308] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-31T13:40:02.000000Z
+
+E, [2025-02-17T14:16:19.458972 #21308] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:16:19.469574 #21308] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7fb21c743cc0] Error opening output rtmp://localhost/live/Identity: Input/output error
+
+E, [2025-02-17T14:16:19.469715 #21308] ERROR -- : FFmpeg stderr: Error opening output file rtmp://localhost/live/Identity.
+
+E, [2025-02-17T14:16:19.469750 #21308] ERROR -- : FFmpeg stderr: Error opening output files: Input/output error
+
+E, [2025-02-17T14:16:19.476407 #21308] ERROR -- : FFmpeg process for Identity failed to start.
+I, [2025-02-17T14:16:19.479304 #21308]  INFO -- : Started streaming Marco at http://localhost:8080/live/Marco. PID: 21314
+E, [2025-02-17T14:16:19.580933 #21308] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:16:19.580995 #21308] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:16:19.581020 #21308] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:16:19.581045 #21308] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:16:19.581060 #21308] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:16:19.581074 #21308] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:16:19.581090 #21308] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:16:19.581103 #21308] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:16:19.581117 #21308] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:16:19.581216 #21308] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:16:19.581230 #21308] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:16:19.619540 #21308] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/marco.mp4':
+
+E, [2025-02-17T14:16:19.619606 #21308] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:16:19.619633 #21308] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:16:19.619649 #21308] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:16:19.619665 #21308] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:16:19.619680 #21308] ERROR -- : FFmpeg stderr:     creation_time   : 2025-02-14T11:33:30.000000Z
+
+E, [2025-02-17T14:16:19.619693 #21308] ERROR -- : FFmpeg stderr:   Duration: 02:17:25.54, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:16:19.619709 #21308] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:16:19.619723 #21308] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:16:19.619736 #21308] ERROR -- : FFmpeg stderr:         creation_time   : 2025-02-14T10:15:24.000000Z
+
+E, [2025-02-17T14:16:19.619752 #21308] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:16:19.619766 #21308] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T14:16:19.619779 #21308] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:16:19.619793 #21308] ERROR -- : FFmpeg stderr:         creation_time   : 2025-02-14T11:10:24.000000Z
+
+E, [2025-02-17T14:16:19.619806 #21308] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:16:19.627385 #21308] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7f9a53f1a480] Error opening output rtmp://localhost/live/Marco: Input/output error
+
+E, [2025-02-17T14:16:19.627533 #21308] ERROR -- : FFmpeg stderr: Error opening output file rtmp://localhost/live/Marco.
+
+E, [2025-02-17T14:16:19.627562 #21308] ERROR -- : FFmpeg stderr: Error opening output files: Input/output error
+
+E, [2025-02-17T14:16:19.633145 #21308] ERROR -- : FFmpeg process for Marco failed to start.
+I, [2025-02-17T14:16:19.635892 #21308]  INFO -- : Started streaming Rifle Club at http://localhost:8080/live/Rifle Club. PID: 21315
+E, [2025-02-17T14:16:19.731742 #21308] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:16:19.731808 #21308] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:16:19.731834 #21308] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:16:19.731862 #21308] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:16:19.732016 #21308] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:16:19.732038 #21308] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:16:19.732058 #21308] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:16:19.732078 #21308] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:16:19.732096 #21308] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:16:19.732115 #21308] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:16:19.732140 #21308] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:16:19.756360 #21308] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/rifle_club.mp4':
+
+E, [2025-02-17T14:16:19.756420 #21308] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:16:19.756439 #21308] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:16:19.756457 #21308] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:16:19.756471 #21308] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:16:19.756488 #21308] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-16T12:23:48.000000Z
+
+E, [2025-02-17T14:16:19.756503 #21308] ERROR -- : FFmpeg stderr:   Duration: 01:51:04.58, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:16:19.756517 #21308] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:16:19.756530 #21308] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:16:19.756544 #21308] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-16T08:47:30.000000Z
+
+E, [2025-02-17T14:16:19.756568 #21308] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:16:19.756640 #21308] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 127 kb/s (default)
+
+E, [2025-02-17T14:16:19.756654 #21308] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:16:19.756670 #21308] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-16T11:29:34.000000Z
+
+E, [2025-02-17T14:16:19.756683 #21308] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:16:19.766896 #21308] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7f962c719b80] Error opening output rtmp://localhost/live/Rifle: Input/output error
+
+E, [2025-02-17T14:16:19.767056 #21308] ERROR -- : FFmpeg stderr: Error opening output file rtmp://localhost/live/Rifle.
+
+E, [2025-02-17T14:16:19.767096 #21308] ERROR -- : FFmpeg stderr: Error opening output files: Input/output error
+
+E, [2025-02-17T14:16:19.772807 #21308] ERROR -- : FFmpeg process for Rifle Club failed to start.
+I, [2025-02-17T14:16:19.775708 #21308]  INFO -- : Started streaming Bougainvillea at http://localhost:8080/live/Bougainvillea. PID: 21316
+E, [2025-02-17T14:16:19.869808 #21308] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:16:19.869869 #21308] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:16:19.869893 #21308] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:16:19.869916 #21308] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:16:19.869931 #21308] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:16:19.869947 #21308] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:16:19.869962 #21308] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:16:19.869975 #21308] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:16:19.869988 #21308] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:16:19.870001 #21308] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:16:19.870015 #21308] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:16:19.898109 #21308] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/bougainvillea.mp4':
+
+E, [2025-02-17T14:16:19.898180 #21308] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:16:19.898199 #21308] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:16:19.898214 #21308] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:16:19.898236 #21308] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:16:19.898251 #21308] ERROR -- : FFmpeg stderr:     creation_time   : 2024-12-13T12:56:05.000000Z
+
+E, [2025-02-17T14:16:19.898264 #21308] ERROR -- : FFmpeg stderr:   Duration: 02:14:32.98, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:16:19.898280 #21308] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:16:19.898294 #21308] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:16:19.898308 #21308] ERROR -- : FFmpeg stderr:         creation_time   : 2024-12-13T11:35:39.000000Z
+
+E, [2025-02-17T14:16:19.898346 #21308] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:16:19.898378 #21308] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 127 kb/s (default)
+
+E, [2025-02-17T14:16:19.898392 #21308] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:16:19.898405 #21308] ERROR -- : FFmpeg stderr:         creation_time   : 2024-12-13T12:26:19.000000Z
+
+E, [2025-02-17T14:16:19.898418 #21308] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:16:19.908666 #21308] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7fe94981a880] Error opening output rtmp://localhost/live/Bougainvillea: Input/output error
+
+E, [2025-02-17T14:16:19.908779 #21308] ERROR -- : FFmpeg stderr: Error opening output file rtmp://localhost/live/Bougainvillea.
+
+E, [2025-02-17T14:16:19.908811 #21308] ERROR -- : FFmpeg stderr: Error opening output files: Input/output error
+
+E, [2025-02-17T14:16:19.914532 #21308] ERROR -- : FFmpeg process for Bougainvillea failed to start.
+I, [2025-02-17T14:21:11.988878 #21499]  INFO -- : 
+
+========================================
+I, [2025-02-17T14:21:11.988928 #21499]  INFO -- : Starting main process, Run ID: 20250217142111, 2025-02-17 14:21:11 -0800
+I, [2025-02-17T14:21:12.294575 #21499]  INFO -- : File already exists for Sookshma Darshini, skipping download
+I, [2025-02-17T14:21:12.294640 #21499]  INFO -- : File already exists for Pani, skipping download
+I, [2025-02-17T14:21:12.294675 #21499]  INFO -- : File already exists for Identity, skipping download
+I, [2025-02-17T14:21:12.294710 #21499]  INFO -- : File already exists for Marco, skipping download
+I, [2025-02-17T14:21:12.294740 #21499]  INFO -- : File already exists for Rifle Club, skipping download
+I, [2025-02-17T14:21:12.294769 #21499]  INFO -- : File already exists for Bougainvillea, skipping download
+I, [2025-02-17T14:21:12.298856 #21499]  INFO -- : Started streaming Sookshma Darshini at http://localhost:8080/live/Sookshma Darshini. PID: 21500
+E, [2025-02-17T14:21:12.400131 #21499] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:21:12.400196 #21499] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:21:12.400227 #21499] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:21:12.400251 #21499] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:21:12.400267 #21499] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:21:12.400285 #21499] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:21:12.400322 #21499] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:21:12.400339 #21499] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:21:12.400354 #21499] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:21:12.400369 #21499] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:21:12.400383 #21499] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:21:12.439588 #21499] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/sookshma_darshini.mp4':
+
+E, [2025-02-17T14:21:12.439646 #21499] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:21:12.439666 #21499] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:21:12.439685 #21499] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:21:12.439701 #21499] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:21:12.439717 #21499] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-15T11:52:34.000000Z
+
+E, [2025-02-17T14:21:12.439731 #21499] ERROR -- : FFmpeg stderr:   Duration: 02:19:22.63, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:21:12.439755 #21499] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:21:12.439802 #21499] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:21:12.439820 #21499] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-15T09:15:10.000000Z
+
+E, [2025-02-17T14:21:12.439838 #21499] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:21:12.439853 #21499] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T14:21:12.439868 #21499] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:21:12.439884 #21499] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-15T11:48:31.000000Z
+
+E, [2025-02-17T14:21:12.439923 #21499] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:21:12.450519 #21499] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7f9f5d005580] Error opening output rtmp://localhost/live/Sookshma: Input/output error
+
+E, [2025-02-17T14:21:12.450712 #21499] ERROR -- : FFmpeg stderr: Error opening output file rtmp://localhost/live/Sookshma.
+
+E, [2025-02-17T14:21:12.450742 #21499] ERROR -- : FFmpeg stderr: Error opening output files: Input/output error
+
+E, [2025-02-17T14:21:12.456858 #21499] ERROR -- : FFmpeg process for Sookshma Darshini failed to start.
+I, [2025-02-17T14:21:12.459881 #21499]  INFO -- : Started streaming Pani at http://localhost:8080/live/Pani. PID: 21501
+E, [2025-02-17T14:21:12.558371 #21499] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:21:12.558441 #21499] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:21:12.558473 #21499] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:21:12.558502 #21499] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:21:12.558524 #21499] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:21:12.558541 #21499] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:21:12.558560 #21499] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:21:12.558575 #21499] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:21:12.558594 #21499] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:21:12.558678 #21499] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:21:12.558695 #21499] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:21:12.595145 #21499] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/pani.mp4':
+
+E, [2025-02-17T14:21:12.595223 #21499] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:21:12.595252 #21499] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:21:12.595274 #21499] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:21:12.595297 #21499] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:21:12.595323 #21499] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-17T13:56:09.000000Z
+
+E, [2025-02-17T14:21:12.595347 #21499] ERROR -- : FFmpeg stderr:   Duration: 02:18:49.79, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:21:12.595375 #21499] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:21:12.595396 #21499] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:21:12.595416 #21499] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-16T10:27:48.000000Z
+
+E, [2025-02-17T14:21:12.595439 #21499] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:21:12.595463 #21499] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T14:21:12.595485 #21499] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:21:12.595506 #21499] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-17T13:25:25.000000Z
+
+E, [2025-02-17T14:21:12.595533 #21499] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:21:12.607587 #21499] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7f84def10c80] Error opening output rtmp://localhost/live/Pani: Input/output error
+
+E, [2025-02-17T14:21:12.607718 #21499] ERROR -- : FFmpeg stderr: Error opening output file rtmp://localhost/live/Pani.
+
+E, [2025-02-17T14:21:12.607746 #21499] ERROR -- : FFmpeg stderr: Error opening output files: Input/output error
+
+E, [2025-02-17T14:21:12.614180 #21499] ERROR -- : FFmpeg process for Pani failed to start.
+I, [2025-02-17T14:21:12.617333 #21499]  INFO -- : Started streaming Identity at http://localhost:8080/live/Identity. PID: 21502
+E, [2025-02-17T14:21:12.714015 #21499] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:21:12.714086 #21499] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:21:12.714119 #21499] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:21:12.714147 #21499] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:21:12.714168 #21499] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:21:12.714191 #21499] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:21:12.714215 #21499] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:21:12.714236 #21499] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:21:12.714257 #21499] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:21:12.714273 #21499] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:21:12.714293 #21499] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:21:12.746268 #21499] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/identity.mp4':
+
+E, [2025-02-17T14:21:12.746340 #21499] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:21:12.746420 #21499] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:21:12.746438 #21499] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:21:12.746452 #21499] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:21:12.746471 #21499] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-31T13:46:58.000000Z
+
+E, [2025-02-17T14:21:12.746487 #21499] ERROR -- : FFmpeg stderr:   Duration: 02:33:55.33, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:21:12.746508 #21499] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:21:12.746525 #21499] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:21:12.746540 #21499] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-31T13:38:29.000000Z
+
+E, [2025-02-17T14:21:12.746561 #21499] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:21:12.746580 #21499] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T14:21:12.746597 #21499] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:21:12.746615 #21499] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-31T13:40:02.000000Z
+
+E, [2025-02-17T14:21:12.746679 #21499] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:21:12.757557 #21499] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7faba7a06dc0] Error opening output rtmp://localhost/live/Identity: Input/output error
+
+E, [2025-02-17T14:21:12.757680 #21499] ERROR -- : FFmpeg stderr: Error opening output file rtmp://localhost/live/Identity.
+
+E, [2025-02-17T14:21:12.757732 #21499] ERROR -- : FFmpeg stderr: Error opening output files: Input/output error
+
+E, [2025-02-17T14:21:12.763784 #21499] ERROR -- : FFmpeg process for Identity failed to start.
+I, [2025-02-17T14:21:12.766807 #21499]  INFO -- : Started streaming Marco at http://localhost:8080/live/Marco. PID: 21503
+E, [2025-02-17T14:21:12.943612 #21499] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:21:12.943700 #21499] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:21:12.943742 #21499] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:21:12.943773 #21499] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:21:12.943795 #21499] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:21:12.943818 #21499] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:21:12.943907 #21499] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:21:12.943928 #21499] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:21:12.943947 #21499] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:21:12.943967 #21499] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:21:12.943986 #21499] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:21:12.995038 #21499] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/marco.mp4':
+
+E, [2025-02-17T14:21:12.995113 #21499] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:21:12.995136 #21499] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:21:12.995157 #21499] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:21:12.995176 #21499] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:21:12.995195 #21499] ERROR -- : FFmpeg stderr:     creation_time   : 2025-02-14T11:33:30.000000Z
+
+E, [2025-02-17T14:21:12.995219 #21499] ERROR -- : FFmpeg stderr:   Duration: 02:17:25.54, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:21:12.995246 #21499] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:21:12.995269 #21499] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:21:12.995292 #21499] ERROR -- : FFmpeg stderr:         creation_time   : 2025-02-14T10:15:24.000000Z
+
+E, [2025-02-17T14:21:12.995317 #21499] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:21:12.995339 #21499] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T14:21:12.995360 #21499] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:21:12.995382 #21499] ERROR -- : FFmpeg stderr:         creation_time   : 2025-02-14T11:10:24.000000Z
+
+E, [2025-02-17T14:21:12.995406 #21499] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:21:13.008311 #21499] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7fa65d80e580] Error opening output rtmp://localhost/live/Marco: Input/output error
+
+E, [2025-02-17T14:21:13.008441 #21499] ERROR -- : FFmpeg stderr: Error opening output file rtmp://localhost/live/Marco.
+
+E, [2025-02-17T14:21:13.008481 #21499] ERROR -- : FFmpeg stderr: Error opening output files: Input/output error
+
+E, [2025-02-17T14:21:13.017956 #21499] ERROR -- : FFmpeg process for Marco failed to start.
+I, [2025-02-17T14:21:13.021551 #21499]  INFO -- : Started streaming Rifle Club at http://localhost:8080/live/Rifle Club. PID: 21506
+E, [2025-02-17T14:21:13.121609 #21499] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:21:13.121683 #21499] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:21:13.121860 #21499] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:21:13.121883 #21499] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:21:13.121898 #21499] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:21:13.121913 #21499] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:21:13.121949 #21499] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:21:13.121979 #21499] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:21:13.121992 #21499] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:21:13.122006 #21499] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:21:13.122023 #21499] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:21:13.145698 #21499] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/rifle_club.mp4':
+
+E, [2025-02-17T14:21:13.145767 #21499] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:21:13.145787 #21499] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:21:13.145802 #21499] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:21:13.145817 #21499] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:21:13.145832 #21499] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-16T12:23:48.000000Z
+
+E, [2025-02-17T14:21:13.145846 #21499] ERROR -- : FFmpeg stderr:   Duration: 01:51:04.58, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:21:13.145872 #21499] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:21:13.145957 #21499] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:21:13.145972 #21499] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-16T08:47:30.000000Z
+
+E, [2025-02-17T14:21:13.145986 #21499] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:21:13.146000 #21499] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 127 kb/s (default)
+
+E, [2025-02-17T14:21:13.146014 #21499] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:21:13.146028 #21499] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-16T11:29:34.000000Z
+
+E, [2025-02-17T14:21:13.146042 #21499] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:21:13.156657 #21499] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7fa64dc04800] Error opening output rtmp://localhost/live/Rifle: Input/output error
+
+E, [2025-02-17T14:21:13.156820 #21499] ERROR -- : FFmpeg stderr: Error opening output file rtmp://localhost/live/Rifle.
+
+E, [2025-02-17T14:21:13.156883 #21499] ERROR -- : FFmpeg stderr: Error opening output files: Input/output error
+
+E, [2025-02-17T14:21:13.163126 #21499] ERROR -- : FFmpeg process for Rifle Club failed to start.
+I, [2025-02-17T14:21:13.165926 #21499]  INFO -- : Started streaming Bougainvillea at http://localhost:8080/live/Bougainvillea. PID: 21507
+E, [2025-02-17T14:21:13.269691 #21499] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T14:21:13.269762 #21499] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T14:21:13.269793 #21499] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T14:21:13.269820 #21499] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T14:21:13.269838 #21499] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T14:21:13.269859 #21499] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T14:21:13.269877 #21499] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T14:21:13.269894 #21499] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T14:21:13.269915 #21499] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T14:21:13.269935 #21499] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T14:21:13.269952 #21499] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T14:21:13.306108 #21499] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/bougainvillea.mp4':
+
+E, [2025-02-17T14:21:13.306210 #21499] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T14:21:13.306242 #21499] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T14:21:13.306270 #21499] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T14:21:13.306299 #21499] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T14:21:13.306329 #21499] ERROR -- : FFmpeg stderr:     creation_time   : 2024-12-13T12:56:05.000000Z
+
+E, [2025-02-17T14:21:13.306353 #21499] ERROR -- : FFmpeg stderr:   Duration: 02:14:32.98, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T14:21:13.306458 #21499] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T14:21:13.306486 #21499] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:21:13.306529 #21499] ERROR -- : FFmpeg stderr:         creation_time   : 2024-12-13T11:35:39.000000Z
+
+E, [2025-02-17T14:21:13.306555 #21499] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:21:13.306576 #21499] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 127 kb/s (default)
+
+E, [2025-02-17T14:21:13.306601 #21499] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T14:21:13.306680 #21499] ERROR -- : FFmpeg stderr:         creation_time   : 2024-12-13T12:26:19.000000Z
+
+E, [2025-02-17T14:21:13.306703 #21499] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T14:21:13.317049 #21499] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7ff76df25d00] Error opening output rtmp://localhost/live/Bougainvillea: Input/output error
+
+E, [2025-02-17T14:21:13.317127 #21499] ERROR -- : FFmpeg stderr: Error opening output file rtmp://localhost/live/Bougainvillea.
+
+E, [2025-02-17T14:21:13.317152 #21499] ERROR -- : FFmpeg stderr: Error opening output files: Input/output error
+
+E, [2025-02-17T14:21:13.323538 #21499] ERROR -- : FFmpeg process for Bougainvillea failed to start.
+I, [2025-02-17T16:59:50.291406 #29151]  INFO -- : 
+
+========================================
+I, [2025-02-17T16:59:50.291466 #29151]  INFO -- : Starting main process, Run ID: 20250217165950, 2025-02-17 16:59:50 -0800
+I, [2025-02-17T16:59:50.695696 #29151]  INFO -- : File already exists for Sookshma Darshini, skipping download
+I, [2025-02-17T16:59:50.695755 #29151]  INFO -- : File already exists for Pani, skipping download
+I, [2025-02-17T16:59:50.695791 #29151]  INFO -- : File already exists for Identity, skipping download
+I, [2025-02-17T16:59:50.695822 #29151]  INFO -- : File already exists for Marco, skipping download
+I, [2025-02-17T16:59:50.695852 #29151]  INFO -- : File already exists for Rifle Club, skipping download
+I, [2025-02-17T16:59:50.695881 #29151]  INFO -- : File already exists for Bougainvillea, skipping download
+I, [2025-02-17T16:59:50.702120 #29151]  INFO -- : Started streaming Sookshma Darshini at http://174.66.183.162:8080/hls/Sookshma Darshini.m3u8. PID: 29152
+E, [2025-02-17T16:59:50.794361 #29151] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T16:59:50.794425 #29151] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T16:59:50.794445 #29151] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T16:59:50.794480 #29151] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T16:59:50.794494 #29151] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T16:59:50.794506 #29151] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T16:59:50.794521 #29151] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T16:59:50.794535 #29151] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T16:59:50.794548 #29151] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T16:59:50.794561 #29151] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T16:59:50.794595 #29151] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T16:59:50.837808 #29151] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/sookshma_darshini.mp4':
+
+E, [2025-02-17T16:59:50.837865 #29151] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T16:59:50.837885 #29151] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T16:59:50.837897 #29151] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T16:59:50.837909 #29151] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T16:59:50.837920 #29151] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-15T11:52:34.000000Z
+
+E, [2025-02-17T16:59:50.837933 #29151] ERROR -- : FFmpeg stderr:   Duration: 02:19:22.63, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T16:59:50.837967 #29151] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T16:59:50.837979 #29151] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T16:59:50.837990 #29151] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-15T09:15:10.000000Z
+
+E, [2025-02-17T16:59:50.838001 #29151] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T16:59:50.838012 #29151] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T16:59:50.838023 #29151] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T16:59:50.838047 #29151] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-15T11:48:31.000000Z
+
+E, [2025-02-17T16:59:50.838058 #29151] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T16:59:50.897770 #29151] ERROR -- : FFmpeg stderr: [tcp @ 0x7fd90af2f300] Connection to tcp://174.66.183.162:1935?tcp_nodelay=0 failed: Connection refused
+
+E, [2025-02-17T16:59:50.897875 #29151] ERROR -- : FFmpeg stderr: [rtmp @ 0x7fd90b8b40c0] Cannot open connection tcp://174.66.183.162:1935?tcp_nodelay=0
+
+E, [2025-02-17T16:59:50.897915 #29151] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7fd90b819380] Error opening output rtmp://174.66.183.162/live/Sookshma: Connection refused
+
+E, [2025-02-17T16:59:50.897952 #29151] ERROR -- : FFmpeg stderr: Error opening output file rtmp://174.66.183.162/live/Sookshma.
+
+E, [2025-02-17T16:59:50.897988 #29151] ERROR -- : FFmpeg stderr: Error opening output files: Connection refused
+
+E, [2025-02-17T16:59:50.905226 #29151] ERROR -- : FFmpeg process for Sookshma Darshini failed to start.
+I, [2025-02-17T16:59:50.908846 #29151]  INFO -- : Started streaming Pani at http://174.66.183.162:8080/hls/Pani.m3u8. PID: 29153
+E, [2025-02-17T16:59:51.011424 #29151] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T16:59:51.011499 #29151] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T16:59:51.011526 #29151] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T16:59:51.011552 #29151] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T16:59:51.011570 #29151] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T16:59:51.011609 #29151] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T16:59:51.011625 #29151] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T16:59:51.011641 #29151] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T16:59:51.011656 #29151] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T16:59:51.011675 #29151] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T16:59:51.011690 #29151] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T16:59:51.047360 #29151] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/pani.mp4':
+
+E, [2025-02-17T16:59:51.047419 #29151] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T16:59:51.047441 #29151] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T16:59:51.047459 #29151] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T16:59:51.047473 #29151] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T16:59:51.047487 #29151] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-17T13:56:09.000000Z
+
+E, [2025-02-17T16:59:51.047499 #29151] ERROR -- : FFmpeg stderr:   Duration: 02:18:49.79, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T16:59:51.047515 #29151] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T16:59:51.047532 #29151] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T16:59:51.047544 #29151] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-16T10:27:48.000000Z
+
+E, [2025-02-17T16:59:51.047580 #29151] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T16:59:51.047596 #29151] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T16:59:51.047674 #29151] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T16:59:51.047691 #29151] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-17T13:25:25.000000Z
+
+E, [2025-02-17T16:59:51.047708 #29151] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T16:59:51.057667 #29151] ERROR -- : FFmpeg stderr: [tcp @ 0x7fab40712240] Connection to tcp://174.66.183.162:1935?tcp_nodelay=0 failed: Connection refused
+
+E, [2025-02-17T16:59:51.057806 #29151] ERROR -- : FFmpeg stderr: [rtmp @ 0x7fab219b3080] Cannot open connection tcp://174.66.183.162:1935?tcp_nodelay=0
+
+E, [2025-02-17T16:59:51.057868 #29151] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7fab2190e580] Error opening output rtmp://174.66.183.162/live/Pani: Connection refused
+
+E, [2025-02-17T16:59:51.057913 #29151] ERROR -- : FFmpeg stderr: Error opening output file rtmp://174.66.183.162/live/Pani.
+
+E, [2025-02-17T16:59:51.057930 #29151] ERROR -- : FFmpeg stderr: Error opening output files: Connection refused
+
+E, [2025-02-17T16:59:51.064608 #29151] ERROR -- : FFmpeg process for Pani failed to start.
+I, [2025-02-17T16:59:51.068033 #29151]  INFO -- : Started streaming Identity at http://174.66.183.162:8080/hls/Identity.m3u8. PID: 29156
+E, [2025-02-17T16:59:51.160759 #29151] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T16:59:51.160819 #29151] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T16:59:51.160845 #29151] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T16:59:51.160865 #29151] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T16:59:51.160879 #29151] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T16:59:51.160891 #29151] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T16:59:51.160902 #29151] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T16:59:51.160949 #29151] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T16:59:51.160960 #29151] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T16:59:51.160971 #29151] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T16:59:51.160983 #29151] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T16:59:51.199579 #29151] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/identity.mp4':
+
+E, [2025-02-17T16:59:51.199636 #29151] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T16:59:51.199658 #29151] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T16:59:51.199674 #29151] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T16:59:51.199686 #29151] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T16:59:51.199697 #29151] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-31T13:46:58.000000Z
+
+E, [2025-02-17T16:59:51.199708 #29151] ERROR -- : FFmpeg stderr:   Duration: 02:33:55.33, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T16:59:51.199726 #29151] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T16:59:51.199738 #29151] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T16:59:51.199771 #29151] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-31T13:38:29.000000Z
+
+E, [2025-02-17T16:59:51.199783 #29151] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T16:59:51.199794 #29151] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T16:59:51.199805 #29151] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T16:59:51.199815 #29151] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-31T13:40:02.000000Z
+
+E, [2025-02-17T16:59:51.199826 #29151] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T16:59:51.208634 #29151] ERROR -- : FFmpeg stderr: [tcp @ 0x7faa35904280] Connection to tcp://174.66.183.162:1935?tcp_nodelay=0 failed: Connection refused
+
+E, [2025-02-17T16:59:51.208691 #29151] ERROR -- : FFmpeg stderr: [rtmp @ 0x7faa458b4200] Cannot open connection tcp://174.66.183.162:1935?tcp_nodelay=0
+
+E, [2025-02-17T16:59:51.208711 #29151] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7faa45819a80] Error opening output rtmp://174.66.183.162/live/Identity: Connection refused
+
+E, [2025-02-17T16:59:51.208727 #29151] ERROR -- : FFmpeg stderr: Error opening output file rtmp://174.66.183.162/live/Identity.
+
+E, [2025-02-17T16:59:51.208742 #29151] ERROR -- : FFmpeg stderr: Error opening output files: Connection refused
+
+E, [2025-02-17T16:59:51.213510 #29151] ERROR -- : FFmpeg process for Identity failed to start.
+I, [2025-02-17T16:59:51.216245 #29151]  INFO -- : Started streaming Marco at http://174.66.183.162:8080/hls/Marco.m3u8. PID: 29157
+E, [2025-02-17T16:59:51.307791 #29151] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T16:59:51.307928 #29151] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T16:59:51.308012 #29151] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T16:59:51.308031 #29151] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T16:59:51.308060 #29151] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T16:59:51.308071 #29151] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T16:59:51.308084 #29151] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T16:59:51.308095 #29151] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T16:59:51.308106 #29151] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T16:59:51.308116 #29151] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T16:59:51.308129 #29151] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T16:59:51.355898 #29151] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/marco.mp4':
+
+E, [2025-02-17T16:59:51.355955 #29151] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T16:59:51.355971 #29151] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T16:59:51.355983 #29151] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T16:59:51.355998 #29151] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T16:59:51.356010 #29151] ERROR -- : FFmpeg stderr:     creation_time   : 2025-02-14T11:33:30.000000Z
+
+E, [2025-02-17T16:59:51.356021 #29151] ERROR -- : FFmpeg stderr:   Duration: 02:17:25.54, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T16:59:51.356040 #29151] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T16:59:51.356093 #29151] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T16:59:51.356104 #29151] ERROR -- : FFmpeg stderr:         creation_time   : 2025-02-14T10:15:24.000000Z
+
+E, [2025-02-17T16:59:51.356119 #29151] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T16:59:51.356130 #29151] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T16:59:51.356141 #29151] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T16:59:51.356152 #29151] ERROR -- : FFmpeg stderr:         creation_time   : 2025-02-14T11:10:24.000000Z
+
+E, [2025-02-17T16:59:51.356165 #29151] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T16:59:51.428961 #29151] ERROR -- : FFmpeg stderr: [tcp @ 0x7f917b1041c0] Connection to tcp://174.66.183.162:1935?tcp_nodelay=0 failed: Connection refused
+
+E, [2025-02-17T16:59:51.429118 #29151] ERROR -- : FFmpeg stderr: [rtmp @ 0x7f917a7b3040] Cannot open connection tcp://174.66.183.162:1935?tcp_nodelay=0
+
+E, [2025-02-17T16:59:51.429176 #29151] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7f917a71a480] Error opening output rtmp://174.66.183.162/live/Marco: Connection refused
+
+E, [2025-02-17T16:59:51.429221 #29151] ERROR -- : FFmpeg stderr: Error opening output file rtmp://174.66.183.162/live/Marco.
+
+E, [2025-02-17T16:59:51.429282 #29151] ERROR -- : FFmpeg stderr: Error opening output files: Connection refused
+
+E, [2025-02-17T16:59:51.438831 #29151] ERROR -- : FFmpeg process for Marco failed to start.
+I, [2025-02-17T16:59:51.442815 #29151]  INFO -- : Started streaming Rifle Club at http://174.66.183.162:8080/hls/Rifle Club.m3u8. PID: 29158
+E, [2025-02-17T16:59:51.544737 #29151] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T16:59:51.544795 #29151] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T16:59:51.544814 #29151] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T16:59:51.544835 #29151] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T16:59:51.544847 #29151] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T16:59:51.544857 #29151] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T16:59:51.544872 #29151] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T16:59:51.544884 #29151] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T16:59:51.544904 #29151] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T16:59:51.545016 #29151] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T16:59:51.545064 #29151] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T16:59:51.573147 #29151] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/rifle_club.mp4':
+
+E, [2025-02-17T16:59:51.573203 #29151] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T16:59:51.573218 #29151] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T16:59:51.573230 #29151] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T16:59:51.573248 #29151] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T16:59:51.573260 #29151] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-16T12:23:48.000000Z
+
+E, [2025-02-17T16:59:51.573271 #29151] ERROR -- : FFmpeg stderr:   Duration: 01:51:04.58, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T16:59:51.573286 #29151] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T16:59:51.573297 #29151] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T16:59:51.573308 #29151] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-16T08:47:30.000000Z
+
+E, [2025-02-17T16:59:51.573320 #29151] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T16:59:51.573331 #29151] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 127 kb/s (default)
+
+E, [2025-02-17T16:59:51.573342 #29151] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T16:59:51.573416 #29151] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-16T11:29:34.000000Z
+
+E, [2025-02-17T16:59:51.573430 #29151] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T16:59:51.582464 #29151] ERROR -- : FFmpeg stderr: [tcp @ 0x7fe2c7104840] Connection to tcp://174.66.183.162:1935?tcp_nodelay=0 failed: Connection refused
+
+E, [2025-02-17T16:59:51.582519 #29151] ERROR -- : FFmpeg stderr: [rtmp @ 0x7fe2c70d2500] Cannot open connection tcp://174.66.183.162:1935?tcp_nodelay=0
+
+E, [2025-02-17T16:59:51.582538 #29151] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7fe2c702ce80] Error opening output rtmp://174.66.183.162/live/Rifle: Connection refused
+
+E, [2025-02-17T16:59:51.582556 #29151] ERROR -- : FFmpeg stderr: Error opening output file rtmp://174.66.183.162/live/Rifle.
+
+E, [2025-02-17T16:59:51.582580 #29151] ERROR -- : FFmpeg stderr: Error opening output files: Connection refused
+
+E, [2025-02-17T16:59:51.587724 #29151] ERROR -- : FFmpeg process for Rifle Club failed to start.
+I, [2025-02-17T16:59:51.590430 #29151]  INFO -- : Started streaming Bougainvillea at http://174.66.183.162:8080/hls/Bougainvillea.m3u8. PID: 29159
+E, [2025-02-17T16:59:51.684607 #29151] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T16:59:51.684665 #29151] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T16:59:51.684685 #29151] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T16:59:51.684705 #29151] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T16:59:51.684718 #29151] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T16:59:51.684730 #29151] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T16:59:51.684818 #29151] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T16:59:51.684830 #29151] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T16:59:51.684857 #29151] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T16:59:51.684871 #29151] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T16:59:51.684882 #29151] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T16:59:51.713687 #29151] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/bougainvillea.mp4':
+
+E, [2025-02-17T16:59:51.713744 #29151] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T16:59:51.713760 #29151] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T16:59:51.713772 #29151] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T16:59:51.713783 #29151] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T16:59:51.713794 #29151] ERROR -- : FFmpeg stderr:     creation_time   : 2024-12-13T12:56:05.000000Z
+
+E, [2025-02-17T16:59:51.713805 #29151] ERROR -- : FFmpeg stderr:   Duration: 02:14:32.98, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T16:59:51.713822 #29151] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T16:59:51.713834 #29151] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T16:59:51.713844 #29151] ERROR -- : FFmpeg stderr:         creation_time   : 2024-12-13T11:35:39.000000Z
+
+E, [2025-02-17T16:59:51.713855 #29151] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T16:59:51.713865 #29151] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 127 kb/s (default)
+
+E, [2025-02-17T16:59:51.713876 #29151] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T16:59:51.713886 #29151] ERROR -- : FFmpeg stderr:         creation_time   : 2024-12-13T12:26:19.000000Z
+
+E, [2025-02-17T16:59:51.713897 #29151] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T16:59:51.723742 #29151] ERROR -- : FFmpeg stderr: [tcp @ 0x7f9beef0e200] Connection to tcp://174.66.183.162:1935?tcp_nodelay=0 failed: Connection refused
+
+E, [2025-02-17T16:59:51.723828 #29151] ERROR -- : FFmpeg stderr: [rtmp @ 0x7f9bef9d1c40] Cannot open connection tcp://174.66.183.162:1935?tcp_nodelay=0
+
+E, [2025-02-17T16:59:51.723849 #29151] ERROR -- : FFmpeg stderr: [out#0/flv @ 0x7f9bef936fc0] Error opening output rtmp://174.66.183.162/live/Bougainvillea: Connection refused
+
+E, [2025-02-17T16:59:51.723867 #29151] ERROR -- : FFmpeg stderr: Error opening output file rtmp://174.66.183.162/live/Bougainvillea.
+
+E, [2025-02-17T16:59:51.723923 #29151] ERROR -- : FFmpeg stderr: Error opening output files: Connection refused
+
+E, [2025-02-17T16:59:51.728718 #29151] ERROR -- : FFmpeg process for Bougainvillea failed to start.
+I, [2025-02-17T17:02:12.199769 #29305]  INFO -- : 
+
+========================================
+I, [2025-02-17T17:02:12.199842 #29305]  INFO -- : Starting main process, Run ID: 20250217170212, 2025-02-17 17:02:12 -0800
+I, [2025-02-17T17:02:13.235494 #29305]  INFO -- : File already exists for Sookshma Darshini, skipping download
+I, [2025-02-17T17:02:13.235564 #29305]  INFO -- : File already exists for Pani, skipping download
+I, [2025-02-17T17:02:13.235600 #29305]  INFO -- : File already exists for Identity, skipping download
+I, [2025-02-17T17:02:13.235632 #29305]  INFO -- : File already exists for Marco, skipping download
+I, [2025-02-17T17:02:13.235662 #29305]  INFO -- : File already exists for Rifle Club, skipping download
+I, [2025-02-17T17:02:13.235692 #29305]  INFO -- : File already exists for Bougainvillea, skipping download
+I, [2025-02-17T17:02:13.239085 #29305]  INFO -- : Started streaming Sookshma Darshini at http://174.66.183.162:8080/hls/Sookshma Darshini.m3u8. PID: 29308
+E, [2025-02-17T17:02:13.336352 #29305] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T17:02:13.336416 #29305] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T17:02:13.336442 #29305] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T17:02:13.336465 #29305] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T17:02:13.336480 #29305] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T17:02:13.336494 #29305] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T17:02:13.336509 #29305] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T17:02:13.336523 #29305] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T17:02:13.336536 #29305] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T17:02:13.336577 #29305] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T17:02:13.336591 #29305] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T17:02:13.372878 #29305] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/sookshma_darshini.mp4':
+
+E, [2025-02-17T17:02:13.372943 #29305] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T17:02:13.372962 #29305] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T17:02:13.372977 #29305] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T17:02:13.372991 #29305] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T17:02:13.373034 #29305] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-15T11:52:34.000000Z
+
+E, [2025-02-17T17:02:13.373051 #29305] ERROR -- : FFmpeg stderr:   Duration: 02:19:22.63, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T17:02:13.373070 #29305] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T17:02:13.373084 #29305] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T17:02:13.373097 #29305] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-15T09:15:10.000000Z
+
+E, [2025-02-17T17:02:13.373114 #29305] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T17:02:13.373127 #29305] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T17:02:13.373158 #29305] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T17:02:13.373172 #29305] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-15T11:48:31.000000Z
+
+E, [2025-02-17T17:02:13.373185 #29305] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T17:02:13.431671 #29305] ERROR -- : FFmpeg stderr: [AVFormatContext @ 0x7fbf33804b00] Unable to choose an output format for 'Darshini'; use a standard extension for the filename or specify the format manually.
+
+E, [2025-02-17T17:02:13.431828 #29305] ERROR -- : FFmpeg stderr: [out#1 @ 0x7fbf33804a00] Error initializing the muxer for Darshini: Invalid argument
+
+E, [2025-02-17T17:02:13.431902 #29305] ERROR -- : FFmpeg stderr: Error opening output file Darshini.
+
+E, [2025-02-17T17:02:13.431999 #29305] ERROR -- : FFmpeg stderr: Error opening output files: Invalid argument
+
+E, [2025-02-17T17:02:13.439737 #29305] ERROR -- : FFmpeg process for Sookshma Darshini failed to start.
+I, [2025-02-17T17:02:13.443526 #29305]  INFO -- : Started streaming Pani at http://174.66.183.162:8080/hls/Pani.m3u8. PID: 29309
+E, [2025-02-17T17:02:13.543822 #29305] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T17:02:13.543895 #29305] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T17:02:13.543928 #29305] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T17:02:13.543955 #29305] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T17:02:13.543974 #29305] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T17:02:13.544066 #29305] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T17:02:13.544084 #29305] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T17:02:13.544103 #29305] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T17:02:13.544123 #29305] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T17:02:13.544141 #29305] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T17:02:13.544160 #29305] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T17:02:13.572369 #29305] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/pani.mp4':
+
+E, [2025-02-17T17:02:13.572437 #29305] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T17:02:13.572457 #29305] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T17:02:13.572476 #29305] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T17:02:13.572495 #29305] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T17:02:13.572514 #29305] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-17T13:56:09.000000Z
+
+E, [2025-02-17T17:02:13.572532 #29305] ERROR -- : FFmpeg stderr:   Duration: 02:18:49.79, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T17:02:13.572557 #29305] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T17:02:13.572576 #29305] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T17:02:13.572594 #29305] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-16T10:27:48.000000Z
+
+E, [2025-02-17T17:02:13.572613 #29305] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T17:02:13.572629 #29305] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T17:02:13.572688 #29305] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T17:02:13.572708 #29305] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-17T13:25:25.000000Z
+
+E, [2025-02-17T17:02:13.572726 #29305] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T17:02:13.625622 #29305] ERROR -- : FFmpeg stderr: Stream mapping:
+
+E, [2025-02-17T17:02:13.625712 #29305] ERROR -- : FFmpeg stderr:   Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+
+E, [2025-02-17T17:02:13.625750 #29305] ERROR -- : FFmpeg stderr:   Stream #0:1 -> #0:1 (aac (native) -> mp3 (libmp3lame))
+
+E, [2025-02-17T17:02:13.625785 #29305] ERROR -- : FFmpeg stderr: Press [q] to stop, [?] for help
+
+E, [2025-02-17T17:02:13.835519 #29305] ERROR -- : FFmpeg stderr: [libx264 @ 0x7f9c297387c0] using SAR=175/144
+
+E, [2025-02-17T17:02:13.836104 #29305] ERROR -- : FFmpeg stderr: [libx264 @ 0x7f9c297387c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+
+E, [2025-02-17T17:02:13.838282 #29305] ERROR -- : FFmpeg stderr: [libx264 @ 0x7f9c297387c0] profile High, level 3.0, 4:2:0, 8-bit
+
+E, [2025-02-17T17:02:13.838345 #29305] ERROR -- : FFmpeg stderr: [libx264 @ 0x7f9c297387c0] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=15 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+
+E, [2025-02-17T17:02:13.838389 #29305] ERROR -- : FFmpeg stderr: Output #0, flv, to 'rtmp://localhost/live/Pani':
+
+E, [2025-02-17T17:02:13.838412 #29305] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T17:02:13.838440 #29305] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T17:02:13.838467 #29305] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T17:02:13.838496 #29305] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T17:02:13.838526 #29305] ERROR -- : FFmpeg stderr:     encoder         : Lavf61.7.100
+
+E, [2025-02-17T17:02:13.838559 #29305] ERROR -- : FFmpeg stderr:   Stream #0:0(und): Video: h264 ([7][0][0][0] / 0x0007), yuv420p(tv, progressive), 720x480 [SAR 175:144 DAR 175:96], q=2-31, 24 fps, 1k tbn (default)
+
+E, [2025-02-17T17:02:13.838592 #29305] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T17:02:13.838620 #29305] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-16T10:27:48.000000Z
+
+E, [2025-02-17T17:02:13.838647 #29305] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T17:02:13.838669 #29305] ERROR -- : FFmpeg stderr:         encoder         : Lavc61.19.100 libx264
+
+E, [2025-02-17T17:02:13.838693 #29305] ERROR -- : FFmpeg stderr:       Side data:
+
+E, [2025-02-17T17:02:13.838757 #29305] ERROR -- : FFmpeg stderr:         cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+
+E, [2025-02-17T17:02:13.838786 #29305] ERROR -- : FFmpeg stderr:   Stream #0:1(msa): Audio: mp3 ([2][0][0][0] / 0x0002), 48000 Hz, stereo, fltp (default)
+
+E, [2025-02-17T17:02:13.838812 #29305] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T17:02:13.838836 #29305] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-17T13:25:25.000000Z
+
+E, [2025-02-17T17:02:13.838864 #29305] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T17:02:13.838886 #29305] ERROR -- : FFmpeg stderr:         encoder         : Lavc61.19.100 libmp3lame
+
+I, [2025-02-17T17:04:43.225752 #29526]  INFO -- : 
+
+========================================
+I, [2025-02-17T17:04:43.225806 #29526]  INFO -- : Starting main process, Run ID: 20250217170443, 2025-02-17 17:04:43 -0800
+I, [2025-02-17T17:04:43.574279 #29526]  INFO -- : File already exists for Sookshma Darshini, skipping download
+I, [2025-02-17T17:04:43.574355 #29526]  INFO -- : File already exists for Pani, skipping download
+I, [2025-02-17T17:04:43.574392 #29526]  INFO -- : File already exists for Identity, skipping download
+I, [2025-02-17T17:04:43.574423 #29526]  INFO -- : File already exists for Marco, skipping download
+I, [2025-02-17T17:04:43.574454 #29526]  INFO -- : File already exists for Rifle Club, skipping download
+I, [2025-02-17T17:04:43.574483 #29526]  INFO -- : File already exists for Bougainvillea, skipping download
+I, [2025-02-17T17:04:43.578084 #29526]  INFO -- : Started streaming Sookshma Darshini at http://174.66.183.162:8080/hls/sookshma_darshini.mp4.m3u8. PID: 29527
+E, [2025-02-17T17:04:43.674514 #29526] ERROR -- : FFmpeg stderr: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+
+E, [2025-02-17T17:04:43.674687 #29526] ERROR -- : FFmpeg stderr:   built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+E, [2025-02-17T17:04:43.674713 #29526] ERROR -- : FFmpeg stderr:   configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+
+E, [2025-02-17T17:04:43.674737 #29526] ERROR -- : FFmpeg stderr:   libavutil      59. 39.100 / 59. 39.100
+
+E, [2025-02-17T17:04:43.674752 #29526] ERROR -- : FFmpeg stderr:   libavcodec     61. 19.100 / 61. 19.100
+
+E, [2025-02-17T17:04:43.674769 #29526] ERROR -- : FFmpeg stderr:   libavformat    61.  7.100 / 61.  7.100
+
+E, [2025-02-17T17:04:43.674784 #29526] ERROR -- : FFmpeg stderr:   libavdevice    61.  3.100 / 61.  3.100
+
+E, [2025-02-17T17:04:43.674803 #29526] ERROR -- : FFmpeg stderr:   libavfilter    10.  4.100 / 10.  4.100
+
+E, [2025-02-17T17:04:43.674820 #29526] ERROR -- : FFmpeg stderr:   libswscale      8.  3.100 /  8.  3.100
+
+E, [2025-02-17T17:04:43.674839 #29526] ERROR -- : FFmpeg stderr:   libswresample   5.  3.100 /  5.  3.100
+
+E, [2025-02-17T17:04:43.674854 #29526] ERROR -- : FFmpeg stderr:   libpostproc    58.  3.100 / 58.  3.100
+
+E, [2025-02-17T17:04:43.715302 #29526] ERROR -- : FFmpeg stderr: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movies/sookshma_darshini.mp4':
+
+E, [2025-02-17T17:04:43.715405 #29526] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T17:04:43.715424 #29526] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T17:04:43.715441 #29526] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T17:04:43.715459 #29526] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T17:04:43.715474 #29526] ERROR -- : FFmpeg stderr:     creation_time   : 2025-01-15T11:52:34.000000Z
+
+E, [2025-02-17T17:04:43.715487 #29526] ERROR -- : FFmpeg stderr:   Duration: 02:19:22.63, start: 0.000000, bitrate: 1430 kb/s
+
+E, [2025-02-17T17:04:43.715506 #29526] ERROR -- : FFmpeg stderr:   Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 5760:4739 DAR 8640:4739], 1299 kb/s, SAR 175:144 DAR 175:96, 24 fps, 24 tbr, 24k tbn (default)
+
+E, [2025-02-17T17:04:43.715520 #29526] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T17:04:43.715552 #29526] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-15T09:15:10.000000Z
+
+E, [2025-02-17T17:04:43.715566 #29526] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T17:04:43.715580 #29526] ERROR -- : FFmpeg stderr:   Stream #0:1[0x2](msa): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 126 kb/s (default)
+
+E, [2025-02-17T17:04:43.715596 #29526] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T17:04:43.715641 #29526] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-15T11:48:31.000000Z
+
+E, [2025-02-17T17:04:43.715659 #29526] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T17:04:43.768999 #29526] ERROR -- : FFmpeg stderr: Stream mapping:
+
+E, [2025-02-17T17:04:43.769103 #29526] ERROR -- : FFmpeg stderr:   Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+
+E, [2025-02-17T17:04:43.769144 #29526] ERROR -- : FFmpeg stderr:   Stream #0:1 -> #0:1 (aac (native) -> mp3 (libmp3lame))
+
+E, [2025-02-17T17:04:43.769178 #29526] ERROR -- : FFmpeg stderr: Press [q] to stop, [?] for help
+
+E, [2025-02-17T17:04:43.982158 #29526] ERROR -- : FFmpeg stderr: [libx264 @ 0x7febfb738a40] using SAR=175/144
+
+E, [2025-02-17T17:04:43.982844 #29526] ERROR -- : FFmpeg stderr: [libx264 @ 0x7febfb738a40] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+
+E, [2025-02-17T17:04:43.985422 #29526] ERROR -- : FFmpeg stderr: [libx264 @ 0x7febfb738a40] profile High, level 3.0, 4:2:0, 8-bit
+
+E, [2025-02-17T17:04:43.985482 #29526] ERROR -- : FFmpeg stderr: [libx264 @ 0x7febfb738a40] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=15 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+
+E, [2025-02-17T17:04:43.985517 #29526] ERROR -- : FFmpeg stderr: Output #0, flv, to 'rtmp://localhost/live/sookshma_darshini.mp4':
+
+E, [2025-02-17T17:04:43.985578 #29526] ERROR -- : FFmpeg stderr:   Metadata:
+
+E, [2025-02-17T17:04:43.985604 #29526] ERROR -- : FFmpeg stderr:     major_brand     : isom
+
+E, [2025-02-17T17:04:43.985630 #29526] ERROR -- : FFmpeg stderr:     minor_version   : 1
+
+E, [2025-02-17T17:04:43.985652 #29526] ERROR -- : FFmpeg stderr:     compatible_brands: isom
+
+E, [2025-02-17T17:04:43.985674 #29526] ERROR -- : FFmpeg stderr:     encoder         : Lavf61.7.100
+
+E, [2025-02-17T17:04:43.985696 #29526] ERROR -- : FFmpeg stderr:   Stream #0:0(und): Video: h264 ([7][0][0][0] / 0x0007), yuv420p(tv, progressive), 720x480 [SAR 175:144 DAR 175:96], q=2-31, 24 fps, 1k tbn (default)
+
+E, [2025-02-17T17:04:43.985718 #29526] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T17:04:43.985738 #29526] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-15T09:15:10.000000Z
+
+E, [2025-02-17T17:04:43.985763 #29526] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T17:04:43.985784 #29526] ERROR -- : FFmpeg stderr:         encoder         : Lavc61.19.100 libx264
+
+E, [2025-02-17T17:04:43.985807 #29526] ERROR -- : FFmpeg stderr:       Side data:
+
+E, [2025-02-17T17:04:43.985902 #29526] ERROR -- : FFmpeg stderr:         cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+
+E, [2025-02-17T17:04:43.985933 #29526] ERROR -- : FFmpeg stderr:   Stream #0:1(msa): Audio: mp3 ([2][0][0][0] / 0x0002), 48000 Hz, stereo, fltp (default)
+
+E, [2025-02-17T17:04:43.985956 #29526] ERROR -- : FFmpeg stderr:       Metadata:
+
+E, [2025-02-17T17:04:43.985978 #29526] ERROR -- : FFmpeg stderr:         creation_time   : 2025-01-15T11:48:31.000000Z
+
+E, [2025-02-17T17:04:43.985999 #29526] ERROR -- : FFmpeg stderr:         vendor_id       : [0][0][0][0]
+
+E, [2025-02-17T17:04:43.986020 #29526] ERROR -- : FFmpeg stderr:         encoder         : Lavc61.19.100 libmp3lame
+
