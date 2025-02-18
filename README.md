@@ -2,13 +2,15 @@
 
 ## Description
 
-This script downloads movies listed in the popular section from the URL provided in the configuration file. It uses Nokogiri to parse the HTML content and youtube-dl to download the movies. The downloaded movies are saved in the specified directory and can be served using Caddy.
+This script downloads movies listed in the popular section from the URL provided in the configuration file. It uses Nokogiri to parse the HTML content and youtube-dl to download the movies. The downloaded movies are saved in the specified directory and can be served using a file server like Caddy.
 
 ## Dependencies
 
 - Ruby
 - Nokogiri
 - youtube-dl (you need Python and pip)
+- Logger (Ruby standard library)
+- Caddy (for serving the downloaded movies)
 
 ## How to Run the Script
 
@@ -27,6 +29,29 @@ This script downloads movies listed in the popular section from the URL provided
 
 - The configuration settings are located in the `config.rb` file.
 - Update the `URL`, `BASE_URL`, `DOWNLOAD_PATH`, and `LOG_FILE` constants as needed.
+
+## How to Install Caddy
+
+### On Mac
+
+1. Install Caddy using Homebrew:
+   ```sh
+   brew install caddy
+   ```
+
+### On Linux
+
+1. Update the package list and install Caddy:
+   ```sh
+   sudo apt update
+   sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
+   curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo apt-key add -
+   curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
+   sudo apt update
+   sudo apt install caddy
+   ```
+
+For more detailed installation instructions, visit the [Caddy website](https://caddyserver.com/docs/install).
 
 ## How to Serve Using Caddy
 
@@ -66,4 +91,4 @@ This script downloads movies listed in the popular section from the URL provided
 
 ## Work in Progress
 
-- This project is a work in progress. Contributions and suggestions are welcome.
+- This project is a work in progress.
