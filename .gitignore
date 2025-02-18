@@ -1,3 +1,16 @@
 # Ignore the public/movies directory
 public/movies
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.swp
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore secrets
 secrets/*

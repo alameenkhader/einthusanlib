@@ -84,6 +84,29 @@ For more detailed installation instructions, visit the [Caddy website](https://c
    http://<your-server-ip-or-domain>
    ```
 
+## Setting Up a Cron Job
+
+To run the script every day at midnight, set up a cron job:
+
+1. Open the crontab file for editing:
+   ```sh
+   crontab -e
+   ```
+
+2. Add the following line to schedule the script to run every day at midnight:
+   ```plaintext
+   0 0 * * * cd /Users/alameenkhader/einthusanlib && /usr/bin/ruby main.rb
+   ```
+
+3. Save and close the crontab file.
+
+## Viewing Cron Logs
+
+To view the logs for cron jobs, use the following command:
+   ```sh
+   grep CRON /var/log/syslog
+   ```
+
 ## Additional Information
 
 - Ensure the `public/movies` directory is writable.
@@ -92,3 +115,8 @@ For more detailed installation instructions, visit the [Caddy website](https://c
 ## Work in Progress
 
 - This project is a work in progress.
+
+## Disclaimer
+
+- This project is for educational purposes only. The author is not responsible for any privacy issues or misuse of this script.
+
