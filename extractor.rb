@@ -4,17 +4,17 @@ require 'fileutils'
 require_relative 'config'
 require_relative 'downloader'
 
-def extract_movie_list
-  html_content = URI.open(URL).read
+def extract_movie_list(url)
+  html_content = URI.open(url).read
   soup = Nokogiri::HTML(html_content)
 
-  movies = []
-
-  # Find the section after the title 'Popularity View Last 2 Months'
-  popularity_section = soup.at_css('.results-info:contains("Popularity View Last 2 Months")')
+  # Find the section after the title 'Popularity View Last 30 Days'
+  popularity_section = soup.at_css('.results-info:contains("Popularity View Last 30 Days")')
   movies_list = popularity_section&.next_element
 
-  movies_list.css('ul li').each do |movie|
+  return [] unless movies_list
+
+  movies = movies_list.css('ul li').map do |movie|
     block2 = movie.at_css('.block2')
     next unless block2
 
@@ -24,14 +24,14 @@ def extract_movie_list
     full_url = BASE_URL + relative_url
     file_name = "#{title.downcase.gsub(/\s+/, '_')}.mp4"
     file_path = "#{DOWNLOAD_PATH}/#{file_name}"
-    movies << {
+    {
       title: title,
       image_url: image_url,
       einthusan_url: full_url,
       file_name: file_name,
       file_path: file_path
     }
-  end
+  end.compact
 
   movies
 end

@@ -10,9 +10,11 @@ def main
   LOGGER.info("\n\n========================================")
   LOGGER.info("Starting main process, Run ID: #{run_id}, #{Time.now}")
 
-  list = extract_movie_list
-
-  download_movies(list)
+  URLS.each do |url|
+    LOGGER.info("Processing URL: #{url}")
+    list = extract_movie_list(url)
+    download_movies(list)
+  end
 end
 
 main
