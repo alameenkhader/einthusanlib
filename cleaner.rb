@@ -2,7 +2,7 @@
 
 require_relative 'config'
 
-DAYS_TO_KEEP = 15
+DAYS_TO_KEEP = 21
 
 def cutoff_time
   Time.now - (DAYS_TO_KEEP * 24 * 60 * 60)

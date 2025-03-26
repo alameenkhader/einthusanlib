@@ -21,7 +21,7 @@ def download_movies(list)
   # Check available disk space
   available_mb = get_available_space(DOWNLOAD_PATH)
 
-  if available_mb < 500
+  if available_mb < 1500
     LOGGER.error "Insufficient disk space. Only #{available_mb.round(2)}MB available."
     return
   end
