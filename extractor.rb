@@ -22,9 +22,7 @@ def extract_movie_list(url)
     title = block2.at_css('.title h3')&.text || "Unknown Title"
     image_url = movie.at_css('.block1 img')&.[]('src') || "No Image URL"
     relative_url = block2.at_css('.title')&.[]('href') || "No URL"
-    # Fix: Look for time element in block3
     release_date = movie.at_css('.block3 .stats time')&.[]('datetime')
-    p "Found release date: #{release_date} for movie: #{title}" # Debug line
     release_datetime = release_date ? DateTime.parse(release_date) : DateTime.new(1970)
     full_url = BASE_URL + relative_url
     file_name = "#{title.downcase.gsub(/\s+/, '_')}.mp4"
