@@ -37,7 +37,10 @@ def extract_movie_list(url)
     }
   end.compact
 
-  movies.sort_by { |movie| movie[:release_date] }
+  three_weeks_ago = DateTime.now - 21 # 3 weeks = 21 days
+
+  movies.select { |movie| movie[:release_date] >= three_weeks_ago }
+        .sort_by { |movie| movie[:release_date] }
         .reverse
         .take(5)
 end
