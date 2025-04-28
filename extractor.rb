@@ -36,4 +36,6 @@ def extract_movie_list(url)
       release_date: release_datetime
     }
   end.compact
+
+  movies.first(5)
 end
