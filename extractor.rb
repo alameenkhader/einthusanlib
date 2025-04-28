@@ -36,9 +36,4 @@ def extract_movie_list(url)
       release_date: release_datetime
     }
   end.compact
-
-
-        movies.sort_by { |movie| movie[:release_date] }
-        .reverse
-        .take(5)
 end
