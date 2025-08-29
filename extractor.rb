@@ -46,6 +46,5 @@ def extract_movie_list(url)
     }
   end.compact
 
-  # movies.first(5)
-  movies.first(3)
+  movies.first(5)
 end
