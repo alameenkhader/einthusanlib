@@ -15,17 +15,26 @@ def extract_movie_list(url)
 
   return [] unless movies_list
 
+  # Extract language from URL
+  lang_code = ""
+  if url.match(/lang=([^&]+)/)
+    lang = $1
+    lang_code = lang[0..2].downcase  # Get first three letters of language
+  end
+
   movies = movies_list.css('ul li').map do |movie|
     block2 = movie.at_css('.block2')
     next unless block2
 
     title = block2.at_css('.title h3')&.text || "Unknown Title"
     image_url = movie.at_css('.block1 img')&.[]('src') || "No Image URL"
+    image_url = image_url.sub(/^\/\//, 'http://') if image_url.start_with?('//')
     relative_url = block2.at_css('.title')&.[]('href') || "No URL"
     release_date = movie.at_css('.block3 .stats time')&.[]('datetime')
     release_datetime = release_date ? DateTime.parse(release_date) : DateTime.new(1970)
     full_url = BASE_URL + relative_url
-    file_name = "#{title.downcase.gsub(/\s+/, '_')}.mp4"
+    # Add language code to filename before extension
+    file_name = "#{title.downcase.gsub(/\s+/, '_')}(#{lang_code}).mp4"
     file_path = "#{DOWNLOAD_PATH}/#{file_name}"
     {
       title: title,
@@ -37,5 +46,6 @@ def extract_movie_list(url)
     }
   end.compact
 
-  movies.first(5)
+  # movies.first(5)
+  movies.first(3)
 end

@@ -23,7 +23,7 @@ def download_movies(list)
 
   if available_mb < 1500
     LOGGER.error "Insufficient disk space. Only #{available_mb.round(2)}MB available."
-    return
+    raise StandardError, "Insufficient disk space"
   end
 
   list.each do |item|
