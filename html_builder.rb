@@ -19,7 +19,7 @@ end
 def build_html_page(media_list)
   LOGGER.info 'Building HTML page'
 
-  # Create directory if it doesn't exist
+  # Create directory if it doesn't exist/
   FileUtils.mkdir_p(File.dirname(HTML_FILE_PATH))
 
   html_content = <<-HTML
@@ -31,21 +31,27 @@ def build_html_page(media_list)
   <title>EinthusanLib</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
+    body {
+      background-color: #121212;
+      color: #f5f5f5;
+    }
     .media-card {
       height: 100%;
       transition: transform 0.3s ease;
+      background-color: #1e1e1e;
+      border-color: #333;
     }
     .media-card:hover {
       transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
     }
     .media-link {
-      color: inherit;
+      color: #f5f5f5;
       text-decoration: none;
       display: block;
     }
     .media-link:hover {
-      color: inherit;
+      color: #f5f5f5;
       text-decoration: none;
     }
     .media-img {
@@ -53,19 +59,22 @@ def build_html_page(media_list)
     }
     .card-title {
       margin-bottom: 0.5rem;
+      color: #f5f5f5;
     }
     .file-name {
       font-size: 0.8rem;
-      color: #6c757d;
+      color: #adb5bd;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+    .container h1 {
+      color: #f5f5f5;
     }
   </style>
 </head>
 <body>
   <div class="container py-5">
-    <h1 class="text-center mb-5">Einthusan Media Library</h1>
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
   HTML
@@ -90,9 +99,9 @@ def build_html_page(media_list)
     </div>
   </div>
 
-  <footer class="bg-light text-center py-3 mt-5">
+  <footer class="bg-dark text-light text-center py-3 mt-5">
     <div class="container">
-      <p class="mb-0">Generated on #{Time.now.strftime('%B %d, %Y at %H:%M')}</p>
+      <p class="mb-0">Last updated: #{Time.now.strftime('%B %d, %Y at %H:%M %Z')}</p>
     </div>
   </footer>
 
