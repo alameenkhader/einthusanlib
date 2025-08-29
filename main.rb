@@ -15,12 +15,16 @@ def main
   clean_old_downloads
   teardown_html_page
 
-  URLS.each do |url|
+  # Use reduce to merge all media lists while still downloading each individually
+  all_media = URLS.reduce([]) do |media_accumulator, url|
     LOGGER.info("Processing URL: #{url}")
     list = extract_movie_list(url)
     download_movies(list)
-    build_html_page(list)
+    media_accumulator + list  # This creates a new array combining both
   end
+
+  # Build HTML page with all merged media
+  build_html_page(all_media)
 end
 
 main
