@@ -10,11 +10,6 @@ def get_available_space(path)
 end
 
 def download_movies(list)
-  if ENV['SKIP_DOWNLOAD_MOVIES'] == 'true'
-    LOGGER.info "Skipping movie downloads as per configuration."
-    return
-  end
-
   FileUtils.mkdir_p(DOWNLOAD_PATH)
 
   # Clean up partial downloads
@@ -36,7 +31,10 @@ def download_movies(list)
     title = item[:title]
     file_path = item[:file_path]
 
-    next if File.exist?(file_path)
+    if File.exist?(file_path)
+      LOGGER.info "File already exists: #{file_path}. Skipping download."
+      next
+    end
 
     LOGGER.info "Downloading #{title} from #{url} to #{file_path}"
     system("youtube-dl -o '#{file_path}' #{url}")

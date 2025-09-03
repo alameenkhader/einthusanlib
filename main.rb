@@ -1,11 +1,8 @@
-require 'logger'
 require_relative 'config'
 require_relative 'extractor'
 require_relative 'downloader'
 require_relative 'cleaner'
 require_relative 'html_builder'
-
-LOGGER = Logger.new(LOG_FILE)
 
 def main
   run_id = Time.now.strftime("%Y%m%d%H%M%S")
@@ -19,7 +16,7 @@ def main
   all_media = URLS.reduce([]) do |media_accumulator, url|
     LOGGER.info("Processing URL: #{url}")
     list = extract_movie_list(url)
-    # download_movies(list)
+    download_movies(list)
     media_accumulator + list  # This creates a new array combining both
   end
 
