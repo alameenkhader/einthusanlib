@@ -10,6 +10,11 @@ def get_available_space(path)
 end
 
 def download_movies(list)
+  if ENV['SKIP_DOWNLOAD_MOVIES'] == 'true'
+    LOGGER.info "Skipping movie downloads as per configuration."
+    return
+  end
+
   FileUtils.mkdir_p(DOWNLOAD_PATH)
 
   # Clean up partial downloads

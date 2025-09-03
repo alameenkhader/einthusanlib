@@ -28,7 +28,7 @@ def build_html_page(media_list)
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EinthusanLib</title>
+  <title>Chalaflix</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -75,8 +75,11 @@ def build_html_page(media_list)
 </head>
 <body>
   <div class="container py-5">
+    <div class="text-center mb-4">
+      <img src="../banner.png" alt="Banner" class="img-fluid p-3" style="max-width: 500px;">
+    </div>
 
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 g-4">
   HTML
 
   media_list.each do |media|
