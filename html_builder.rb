@@ -76,7 +76,7 @@ def build_html_page(media_list)
 <body>
   <div class="container py-5">
     <div class="text-center mb-4">
-      <img src="../banner.png" alt="Banner" class="img-fluid p-3" style="max-width: 500px;">
+      <img src="./banner.png" alt="Banner" class="img-fluid p-3" style="max-width: 500px;">
     </div>
 
     <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 g-4">

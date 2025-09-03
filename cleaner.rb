@@ -12,7 +12,8 @@ def clean_old_downloads
   LOGGER.info 'Cleaning up old movies'
 
   Dir.glob("#{DOWNLOAD_PATH}/*").each do |file|
-    if File.file?(file) && File.mtime(file) < cutoff_time
+    # Hack: Skipping PNG and HTML files as they are needed for the website
+    if File.file?(file) && File.mtime(file) < cutoff_time && !file.end_with?('.png', '.html')
       LOGGER.info "Removing old file: #{file}"
       FileUtils.rm(file)
     end
