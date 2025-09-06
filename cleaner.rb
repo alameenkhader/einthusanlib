@@ -2,10 +2,8 @@
 
 require_relative 'config'
 
-DAYS_TO_KEEP = 7
-
 def cutoff_time
-  Time.now - (DAYS_TO_KEEP * 24 * 60 * 60)
+  Time.now - (DAYS_TO_KEEP_OLD_DOWNLOADS * 24 * 60 * 60)
 end
 
 def clean_old_downloads
