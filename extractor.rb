@@ -11,6 +11,12 @@ def extract_movie_list(url)
 
   # Find the section after the title 'Popularity View Last 30 Days'
   popularity_section = soup.at_css('.results-info:contains("Popularity View Last 30 Days")')
+
+  # Also look for the recent results section as an alternative
+  if !popularity_section
+    popularity_section = soup.at_css('.results-info h5:contains("Recent")')&.parent
+  end
+
   movies_list = popularity_section&.next_element
 
   return [] unless movies_list
