@@ -16,9 +16,8 @@ def main
   all_media = URLS.reduce([]) do |media_accumulator, url|
     LOGGER.info("Processing URL: #{url}")
     list = extract_movie_list(url)
-    p list
-    download_movies(list)
-    media_accumulator + list  # This creates a new array combining both
+    updated_list = download_movies(list)
+    media_accumulator + updated_list  # This creates a new array combining both
   end
 
   # Build HTML page with all merged media
