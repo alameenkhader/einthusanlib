@@ -4,6 +4,9 @@ require_relative 'downloader'
 require_relative 'cleaner'
 require_relative 'html_builder'
 
+# TODO: Update clean old downloads to
+# 1. remove partials as well
+# 2. honor the list all_media, do not remove if in the list
 def main
   run_id = Time.now.strftime("%Y%m%d%H%M%S")
   LOGGER.info("\n\n========================================")
