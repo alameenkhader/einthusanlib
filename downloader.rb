@@ -36,7 +36,7 @@ def download_movies(list)
 
     if File.exist?(file_path)
       LOGGER.info "File already exists: #{file_path}. Skipping download."
-      item[:status] = 'downloaded'
+      item[:status] = :downloaded
       next
     end
 

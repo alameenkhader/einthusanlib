@@ -20,7 +20,6 @@ def main
     media_accumulator + updated_list  # This creates a new array combining both
   end
 
-  # Build HTML page with all merged media
   build_html_page(all_media)
 end
 
