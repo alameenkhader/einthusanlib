@@ -26,18 +26,18 @@ def download_movies(list)
     title = item[:title]
     file_path = item[:file_path]
 
+    if File.exist?(file_path)
+      LOGGER.info "File already exists: #{file_path}. Skipping download."
+      item[:status] = :downloaded
+      next
+    end
+
     # Check available disk space
     available_mb = get_available_space(DOWNLOAD_PATH)
 
     if available_mb < 1500
       LOGGER.info "Insufficient disk space. Only #{available_mb.round(2)}MB available."
       break
-    end
-
-    if File.exist?(file_path)
-      LOGGER.info "File already exists: #{file_path}. Skipping download."
-      item[:status] = :downloaded
-      next
     end
 
     LOGGER.info "Downloading #{title} from #{url} to #{file_path}"
