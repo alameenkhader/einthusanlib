@@ -37,7 +37,7 @@ def download_movies(list)
 
     if available_mb < 1500
       LOGGER.info "Insufficient disk space. Only #{available_mb.round(2)}MB available."
-      break
+      next
     end
 
     LOGGER.info "Downloading #{title} from #{url} to #{file_path}"
