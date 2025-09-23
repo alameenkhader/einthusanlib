@@ -20,9 +20,6 @@ class Search
     begin
       html_content = URI.open(search_url).read
       parse_results(html_content)
-    rescue => e
-      Rails.logger.error "Search error: #{e.message}"
-      []
     end
   end
 
@@ -38,7 +35,7 @@ class Search
       extract_movie_data(movie)
     end.compact
 
-    movies
+    movies.compact
   end
 
   def extract_movie_data(movie_element)
@@ -55,21 +52,12 @@ class Search
     full_url = relative_url.start_with?('http') ? relative_url : "#{BASE_URL}#{relative_url}"
 
     release_date = movie_element.at_css('.block3 .stats time')&.[]('datetime')
-    release_datetime = if release_date
-                         begin
-                           DateTime.parse(release_date)
-                         rescue
-                           DateTime.new(1970)
-                         end
-                       else
-                         DateTime.new(1970)
-                       end
+    release_datetime = DateTime.parse(release_date) if release_date
 
-    {
-      title: title,
-      image_url: image_url,
-      einthusan_url: full_url,
-      release_date: release_datetime
-    }
+    Movie.find_or_create_by(einthusan_url: full_url) do |movie|
+      movie.title = title
+      movie.image_url = image_url
+      movie.released_at = release_datetime || DateTime.new(1970)
+    end
   end
 end
