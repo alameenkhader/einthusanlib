@@ -1,0 +1,17 @@
+<div class="container mt-4"></div>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-body">
+          <%= form_with url: movies_path, method: :get, local: true, class: "d-flex gap-2" do |form| %>
+            <%= form.text_field :search,
+                placeholder: "...",
+                value: params[:search],
+                class: "form-control" %>
+            <%= form.submit "Search", class: "btn btn-outline-light" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
