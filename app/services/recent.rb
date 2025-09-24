@@ -2,6 +2,8 @@ require 'nokogiri'
 require 'open-uri'
 
 # Designed to fetch and parse recent movies from Einthusan, best to run periodically
+#
+# TODO: Add logging to help debugging
 class Recent
   BASE_URL = 'https://einthusan.tv'
 
@@ -17,7 +19,6 @@ class Recent
       parse_results(html_content)
     rescue => e
       Rails.logger.error "Failed to fetch from #{url}: #{e.message}"
-      # Return existing movies from database if fetch fails
     end
   end
 
