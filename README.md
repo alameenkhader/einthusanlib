@@ -18,7 +18,10 @@ This script downloads movies listed in the popular section from the URL provided
    ```sh
    gem install nokogiri
 
-   # https://github.com/ytdl-org/youtube-dl  
+   # apt-get install -y python3-full
+   #
+   # apt-get install python3-pip
+   # https://github.com/ytdl-org/youtube-dl
    python3 -m venv path/to/venv
    source path/to/venv/bin/activate
    python3 -m pip install youtube-dl

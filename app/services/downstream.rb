@@ -8,10 +8,13 @@ class Downstream
   end
 
   def run
-    return if @movie.video.attached?
+    if @movie.video.attached?
+      return
+    end
 
     download
     attach
+    stream
     cleanup
   rescue => e
     broadcast_status_update("Failed")
@@ -27,27 +30,38 @@ class Downstream
 
     broadcast_status_update("Downloading...")
     # Findout if needs to resume or find out another job is already downloading then exit
-    # system("youtube-dl -o '#{download_path}' '#{@movie.einthusan_url}'")
+    system("/app/venv/bin/youtube-dl -o '#{download_path}' '#{@movie.einthusan_url}'")
   end
 
   def attach
-    # broadcast_status_update("Attaching...")
-    # @movie.video.attach(
-    #   io: File.open(download_path),
-    #   filename: File.basename(download_path)
-    # )
+    broadcast_status_update("Attaching...")
+    @movie.video.attach(
+      io: File.open(download_path),
+      filename: File.basename(download_path)
+    )
   end
 
   def cleanup
-    puts 'in cleanup'
-    puts 'file exist?', File.exist?(download_path)
-    return unless File.exist?(download_path)
-    broadcast_status_update("Cleaning...")
-    File.delete(download_path)
+    File.delete(download_path) if File.exist?(download_path)
   end
 
+  def stream
+    broadcast_status_update("Preparing to stream...")
+    Turbo::StreamsChannel.broadcast_action_to(
+      [@movie, :show],
+      action: "after",
+      target: "downstream-status" ,
+      html: <<~HTML
+      <script>
+            Turbo.visit('#{Rails.application.routes.url_helpers.stream_path(@movie)}')
+        </script>
+      HTML
+    )
+  end
+
+
   def download_path
-    "/tmp/movie_#{@movie.id}.mp4"
+    Rails.root.join("tmp", "downloads", "movie_#{@movie.id}.mp4").to_s
   end
 
   def broadcast_status_update(message)

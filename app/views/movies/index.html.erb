@@ -39,7 +39,7 @@
     <div class="col-md-8">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title text-center mb-4">Search Movies</h5>
+          <!-- <h5 class="card-title text-center mb-4">Search Movies</h5> -->
           <%= form_with url: movies_path, method: :get, local: true, class: "d-flex gap-2" do |form| %>
             <%= form.text_field :search,
                 placeholder: "Enter movie title...",

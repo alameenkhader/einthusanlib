@@ -9,6 +9,12 @@ class MoviesController < ApplicationController
 
   def show
     @movie = Movie.find(params[:id])
+
+    if @movie.video.attached?
+      redirect_to stream_path(@movie)
+      return
+    end
+
     DownstreamJob.set(wait: 5.seconds).perform_later(params[:id])
   end
 end

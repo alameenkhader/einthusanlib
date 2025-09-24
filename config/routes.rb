@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   # mount ActionCable.server => '/cable'
 
   resources :movies, only: [:index, :show]
+  resources :streams, only: [:show]
 end
