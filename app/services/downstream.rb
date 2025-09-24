@@ -8,9 +8,9 @@ class Downstream
   end
 
   def run
-    if @movie.video.attached?
-      return
-    end
+    return if @movie.video.attached? || downstreaming?
+
+    Rails.cache.write(cache_key, true, expires_in: 10.minutes)
 
     download
     attach
@@ -19,17 +19,24 @@ class Downstream
   rescue => e
     broadcast_status_update("Failed")
     raise e
+  ensure
+    Rails.cache.delete(cache_key)
   end
 
   private
 
+  def cache_key
+    @cache_key ||= "downstreaming_#{@movie.id}"
+  end
+
+  def downstreaming?
+    Rails.cache.exist?(cache_key)
+  end
+
   def download
-    puts 'in download'
-    puts 'file exist?', File.exist?(download_path)
     return if File.exist?(download_path)
 
     broadcast_status_update("Downloading...")
-    # Findout if needs to resume or find out another job is already downloading then exit
     system("/app/venv/bin/youtube-dl -o '#{download_path}' '#{@movie.einthusan_url}'")
   end
 
