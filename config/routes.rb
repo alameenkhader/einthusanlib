@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   root "movies#index"
 
   mount MissionControl::Jobs::Engine, at: "/jobs"
+  # mount ActionCable.server => '/cable'
 
   resources :movies, only: [:index, :show]
 end

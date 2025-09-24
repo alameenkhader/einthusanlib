@@ -1,5 +1,4 @@
 class MoviesController < ApplicationController
-  before_action :movie, only: [:show]
   def index
     if params[:search]
       @movies = Search.run(params[:search])
@@ -10,6 +9,6 @@ class MoviesController < ApplicationController
 
   def show
     @movie = Movie.find(params[:id])
-    DownstreamJob.perform_later(params[:id])
+    DownstreamJob.set(wait: 5.seconds).perform_later(params[:id])
   end
 end

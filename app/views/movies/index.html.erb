@@ -13,7 +13,7 @@
           <% @movies.each do |movie| %>
             <div class="col">
               <div class="card media-card">
-                <a href="<%= movie.einthusan_url %>" class="media-link" target="_blank">
+                <a href="<%= movie_path(movie) %>" class="media-link">
                   <img src="<%= movie.image_url %>" class="card-img-top media-img" alt="<%= movie.title %>" style="height: 300px; object-fit: cover;">
                   <div class="card-body">
                     <h5 class="card-title"><%= movie.title %></h5>

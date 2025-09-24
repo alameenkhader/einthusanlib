@@ -1,0 +1,11 @@
+<div class="container-fluid px-3 py-3">
+  <div class="card mx-auto" style="max-width: 400px;">
+    <img src="<%= @movie.image_url %>" class="card-img-top" alt="<%= @movie.title %>">
+
+    <div class="card-body">
+      <%= render 'downstream_status', message: 'Waiting to downstream...', movie: @movie %>
+    </div>
+  </div>
+</div>
+
+<%= turbo_stream_from @movie, :show %>
