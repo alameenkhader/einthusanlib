@@ -8,5 +8,5 @@ BASE_URL = 'https://einthusan.tv'
 DOWNLOAD_PATH = 'public/movies'
 LOG_FILE = 'main.log'
 LOGGER = Logger.new(LOG_FILE)
-DAYS_TO_KEEP_OLD_DOWNLOADS = 7
+DAYS_TO_KEEP_OLD_DOWNLOADS = 2
 
