@@ -1,9 +1,6 @@
 require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
-  # Allow WebSocket connections from your server's IP address on port 81.
-  config.action_cable.allowed_request_origins = [ "https://104.248.124.144:81" ]
-
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
