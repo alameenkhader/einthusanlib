@@ -6,9 +6,10 @@ A modern Ruby on Rails web application that fetches, downloads, and streams movi
 
 - **Backend**: Ruby on Rails 7.x
 - **Database**: SQLite3
+- **Frontend**: Turbo, Stimulus
 - **Styling**: Bootstrap 5
-- **Real-time**: Action Cable (WebSockets) + Turbo Streams
-- **Background Jobs**: ActiveJob with Async adapter
+- **Real-time**: Action Cable (WebSockets)
+- **Background Jobs**: ActiveJob
 - **File Storage**: Active Storage
 - **Movie Downloads**: youtube-dl / yt-dlp
 
@@ -19,7 +20,11 @@ A modern Ruby on Rails web application that fetches, downloads, and streams movi
 - Python 3.x (for youtube-dl)
 - SQLite3
 
-## 🚀 Installation
+---
+
+## 🚀 Local Development Setup
+
+Follow these steps to set up the application on your local machine for development.
 
 ### 1. Clone the Repository
 ```bash
@@ -27,9 +32,15 @@ git clone https://github.com/alameenkhader/einthusanlib.git
 cd einthusanlib
 ```
 
-### 2. Install Ruby Dependencies
+### 2. Install Dependencies
 ```bash
+# Install Ruby gems
 bundle install
+
+# Install Python libraries (youtube-dl)
+python3 -m venv venv
+source venv/bin/activate
+pip install youtube-dl
 ```
 
 ### 3. Setup Database
@@ -39,96 +50,25 @@ rails db:migrate
 rails db:seed
 ```
 
-### 4. Install Python Dependencies
-
-#### Using Virtual Environment (Recommended)
+### 4. Start the Application
 ```bash
-python3 -m venv /app/venv
-source /app/venv/bin/activate
-pip install youtube-dl # or python3 -m pip install youtube-dl
-```
-
-## 🐳 Docker Installation (Alternative)
-
-If you prefer using Docker for a containerized setup:
-
-### 1. Start Docker Container
-```bash
-docker run -it -p 3000:3000 --name chalaflix -v $(pwd):/app -w /app ubuntu:latest bash
-```
-
-### 2. Install System Dependencies
-```bash
-apt-get update && apt-get install -y build-essential git sqlite3 libsqlite3-dev libyaml-dev nodejs npm ruby-full
-```
-
-### 3. Install Ruby Dependencies
-```bash
-bundle install
-```
-
-### 4. Setup Database
-```bash
-rails db:create
-rails db:migrate
-rails db:seed
-```
-
-### 5. Install Python Dependencies
-```bash
-apt-get install -y python3 python3-pip python3-venv
-python3 -m venv /app/venv
-source /app/venv/bin/activate
-pip install youtube-dl
-```
-
-### 6. Start Rails Server
-```bash
-rails s -b 0.0.0.0
-```
-
-Visit `http://localhost:3000` to access the application.
-
-## 🎯 Usage
-
-### Start the Application
-```bash
+# Start the Rails server
 rails server
-```
 
+# In a separate terminal, start the background job processor
+bin/jobs
+```
 Visit `http://localhost:3000` to access the application.
 
-## ⏰ Setting Up a Cron Job
+---
 
-To automatically fetch recent movies on a schedule, you can set up a cron job to run the rake task periodically:
+## 🌐 Production Setup (Ubuntu Server)
 
-1. Open the crontab file for editing:
-   ```sh
-   crontab -e
-   ```
+This guide explains how to deploy the application to a production Ubuntu server using Caddy and Systemd.
 
-2. Add the following line to schedule the script to run every day at midnight:
-   ```plaintext
-   0 0 * * * cd /path/to/your/einthusanlib && rails movies:fetch_recent
-   ```
+### Step 1: Server Preparation
 
-3. For Docker environments, use:
-   ```plaintext
-   0 0 * * * docker exec chalaflix rails movies:fetch_recent
-   ```
-
-4. Save and close the crontab file.
-
-## 🌐 Serving with Caddy
-
-### 1. Install Caddy
-
-#### On macOS
-```bash
-brew install caddy
-```
-
-#### On Linux (Ubuntu/Debian)
+**1. Install Caddy**
 ```bash
 sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
 curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
@@ -137,44 +77,88 @@ sudo apt update
 sudo apt install caddy
 ```
 
-### 2. How to serve using caddy (Production environment)
+**2. Open Firewall Ports**
+You must open ports to allow web traffic and maintain access to your server.
+```bash
+# Always allow SSH first!
+sudo ufw allow ssh
 
-1. Update the Caddyfile:
-  ```sh
-  vi /etc/caddy/Caddyfile
-  ```
+# Allow HTTP and HTTPS if you are using a domain name
+sudo ufw allow http
+sudo ufw allow https
 
-2. Add the following configuration:
-  ```plaintext
-  :81 {
+# If you plan to use a custom port like 81, allow it too
+# sudo ufw allow 81
+
+sudo ufw enable
+```
+
+### Step 2: Deploy Application
+
+**1. Clone the Repository**
+Clone the project into a directory on your server (e.g., `/home/your-user/einthusanlib`).
+```bash
+git clone https://github.com/alameenkhader/einthusanlib.git
+cd einthusanlib
+```
+
+**2. Install Dependencies**
+```bash
+# Install Ruby gems
+bundle install
+
+# Install Python libraries
+python3 -m venv venv
+source venv/bin/activate
+pip install youtube-dl
+```
+
+### Step 3: Production Configuration
+
+**1. Setup the Database**
+```bash
+RAILS_ENV=production rails db:setup
+```
+*Note: This command will create, migrate, and seed the database. Ensure your `config/database.yml` is configured for your production environment.*
+
+**2. Precompile Assets**
+```bash
+RAILS_ENV=production rails assets:precompile
+```
+
+**3. Configure Caddy**
+Edit the Caddyfile to act as a reverse proxy for the Rails app.
+```bash
+sudo vi /etc/caddy/Caddyfile
+```
+Replace its content with one of the following options.
+
+**Option A: Using a Domain (Recommended)**
+This is the standard for production. Caddy will automatically handle HTTPS certificates.
+```plaintext
+your-domain.com {
     reverse_proxy localhost:3000
-  }
+}
+```
 
-  # For production with domain
-  # your-domain.com {
-  #     reverse_proxy localhost:3000
-  # }
-  ```
+**Option B: Using a Port (e.g., 81)**
+Use this if you don't have a domain and want to access the app via an IP address. This will use HTTP.
+```plaintext
+:81 {
+    reverse_proxy localhost:3000
+}
+```
+Reload Caddy to apply the changes:
+```bash
+sudo systemctl reload caddy
+```
 
-3. **Configure Rails**
-  ```bash
-  RAILS_ENV=production rails db:migrate
-  RAILS_ENV=production rails assets:precompile
-  ```
+### Step 4: Create Systemd Services
 
-3. **Start services:**
-  ```bash
-  # Start Rails in production
-  RAILS_ENV=production rails server -b 127.0.0.1 -p 3000
+Create `systemd` services to run the Rails server and background jobs persistently.
 
-  # Reload Caddy
-  systemctl reload caddy
-  ```
-
-### 6. Systemd Service (Linux)
-
-Create `/etc/systemd/system/einthusanlib.service`:
-
+**1. Rails Server Service**
+Create the file `/etc/systemd/system/einthusanlib-web.service`:
 ```ini
 [Unit]
 Description=Einthusanlib Rails App
@@ -183,25 +167,63 @@ After=network.target
 [Service]
 Type=simple
 User=your-user
-WorkingDirectory=/path/to/your/einthusanlib
+WorkingDirectory=/home/your-user/einthusanlib
 Environment=RAILS_ENV=production
-ExecStart=/usr/bin/rails server -b 127.0.0.1 -p 3000
+ExecStart=bundle exec rails server -b 127.0.0.1 -p 3000
 Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
 ```
 
-Enable and start:
-```bash
-sudo systemctl enable einthusanlib
-sudo systemctl start einthusanlib
-sudo systemctl enable caddy
-sudo systemctl start caddy
+**2. Background Jobs Service**
+Create the file `/etc/systemd/system/einthusanlib-jobs.service`:
+```ini
+[Unit]
+Description=Einthusanlib Background Jobs
+After=network.target
+
+[Service]
+Type=simple
+User=your-user
+WorkingDirectory=/home/your-user/einthusanlib
+Environment=RAILS_ENV=production
+ExecStart=bundle exec bin/jobs
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
 ```
+**Important:** In both files, replace `your-user` and `/home/your-user/einthusanlib` with your actual username and project path.
+
+### Step 5: Start Services
+
+Enable and start the new services.
+```bash
+# Enable and start the services
+sudo systemctl enable --now einthusanlib-web.service
+sudo systemctl enable --now einthusanlib-jobs.service
+
+# Verify they are running
+sudo systemctl status einthusanlib-web.service
+sudo systemctl status einthusanlib-jobs.service
+```
+
+### Step 6: Automatic Movie Fetching (Cron Job)
+
+To automatically fetch recent movies, set up a cron job to run the rake task.
+
+1. Open your crontab:
+   ```sh
+   crontab -e
+   ```
+
+2. Add the following line to run the task daily at midnight:
+   ```plaintext
+   0 0 * * * cd /home/your-user/einthusanlib && bin/rails movies:fetch_recent RAILS_ENV=production
+   ```
+   *Remember to use your correct project path.*
 
 ## ⚠️ Disclaimer
 
 This application is for educational and personal use only. Users are responsible for complying with applicable laws and the terms of service of content providers. The authors are not responsible for any misuse of this software.
-
-**Built with ❤️ using Ruby on Rails**
