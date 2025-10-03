@@ -14,3 +14,6 @@ Thumbs.db
 
 # Ignore secrets
 secrets/*
+
+storage/*
+tmp/*
