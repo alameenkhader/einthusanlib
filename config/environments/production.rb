@@ -2,7 +2,7 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   # Allow WebSocket connections from your server's IP address on port 81.
-  config.action_cable.allowed_request_origins = [ "http://104.248.124.144:81" ]
+  config.action_cable.allowed_request_origins = [ "https://104.248.124.144:81" ]
 
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -33,7 +33,7 @@ Rails.application.configure do
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # This is disabled because you are running on a non-standard HTTP port (81).
   # Enable this if you switch to a domain with standard HTTPS.
-  config.force_ssl = false
+  config.force_ssl = true
 
   # Skip http-to-https redirect for the default health check endpoint.
   # config.ssl_options = { redirect: { exclude: ->(request) { request.path == "/up" } } }
