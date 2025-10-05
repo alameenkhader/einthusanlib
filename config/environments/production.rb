@@ -30,7 +30,13 @@ Rails.application.configure do
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # This is disabled because you are running on a non-standard HTTP port (81).
   # Enable this if you switch to a domain with standard HTTPS.
-  config.force_ssl = true
+  config.force_ssl = false   # IMPORTANT: you are serving HTTP
+
+  config.action_cable.mount_path = '/cable'
+  config.action_cable.url = 'ws://104.248.124.144:81/cable'
+  config.action_cable.allowed_request_origins = [
+    "http://104.248.124.144:81"
+  ]
 
   # Skip http-to-https redirect for the default health check endpoint.
   # config.ssl_options = { redirect: { exclude: ->(request) { request.path == "/up" } } }
