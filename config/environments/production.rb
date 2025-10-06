@@ -38,6 +38,8 @@ Rails.application.configure do
     "http://104.248.124.144:81"
   ]
 
+  config.action_controller.default_url_options = { host: '104.248.124.144', port: 81, protocol: 'http' }
+
   # Skip http-to-https redirect for the default health check endpoint.
   # config.ssl_options = { redirect: { exclude: ->(request) { request.path == "/up" } } }
 

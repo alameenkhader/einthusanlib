@@ -12,9 +12,8 @@ class MoviesController < ApplicationController
 
     if @movie.video.attached?
       redirect_to stream_path(@movie)
-      return
+    else
+      DownstreamJob.set(wait: 5.seconds).perform_later(params[:id])
     end
-
-    DownstreamJob.set(wait: 5.seconds).perform_later(params[:id])
   end
 end
