@@ -8,10 +8,16 @@ class Downstream
   end
 
   def run
-    return if @movie.video.attached? || downstreaming?
+    return if @movie.video.attached?
+
+    if downstreaming?
+      broadcast_status_update("Downstreaming in progress...")
+      return
+    end
 
     Rails.cache.write(cache_key, true, expires_in: 10.minutes)
 
+    make_storage_space
     download
     attach
     stream
@@ -31,6 +37,21 @@ class Downstream
 
   def downstreaming?
     Rails.cache.exist?(cache_key)
+  end
+
+  def make_storage_space
+    # Get disk usage percentage and check if it's >= 80%
+    if system("[ $(df / | tail -1 | awk '{print $5}' | sed 's/%//') -ge 80 ]")
+      broadcast_status_update("Making storage space...")
+      # Find 3 oldest attached movie videos and purge them
+      Movie.joins(:video_attachment)
+        .where.not(id: @movie.id) # Don't delete current movie
+        .order('active_storage_attachments.created_at ASC')
+        .limit(3)
+        .each do |movie|
+          movie.video.purge if movie.video.attached?
+        end
+    end
   end
 
   def download
