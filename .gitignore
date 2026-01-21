@@ -117,6 +117,7 @@ tramp
 .env.development.local
 .env.test.local
 .env.production.local
+.aider/
 
 # Ignore Rails specific files
 *.rbc
@@ -133,3 +134,5 @@ pickle-email-*.html
 
 # Ignore application specific files
 main.log
+
+venv*
