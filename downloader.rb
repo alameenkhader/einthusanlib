@@ -41,7 +41,7 @@ def download_movies(list)
     end
 
     LOGGER.info "Downloading #{title} from #{url} to #{file_path}"
-    system("/app/venv/bin/youtube-dl -o '#{file_path}' #{url}")
+    system("./venv/bin/youtube-dl -o '#{file_path}' #{url}")
     item[:status] = :downloaded
   end
 
