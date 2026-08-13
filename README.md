@@ -18,6 +18,13 @@ bin/rails server
 
 `mise run setup` is idempotent, so you can re-run it any time to bring your environment up to date. The first run creates the Python virtualenv at `venv/` from the mise-managed python and installs `youtube-dl` into it.
 
+### Running on Termux (Android)
+
+```
+bash script/termux_setup.sh   # install deps, gems, and prepare the app (run once)
+bash script/termux_start.sh   # start the server on your LAN at http://<phone-ip>:3000
+```
+
 ### Pre-commit hooks
 
 `mise run setup` registers git hooks that run on every commit: **gitleaks** and **trufflehog** scan for leaked secrets, and **semgrep** runs security-focused static analysis (the `p/auto` ruleset). Any finding blocks the commit. To skip the hooks for a commit (use sparingly): `git commit --no-verify`.
