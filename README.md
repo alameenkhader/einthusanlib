@@ -1,189 +1,72 @@
-# Einthusanlib Rails App
+# Einthusanlib
 
 A modern Ruby on Rails web application that fetches, downloads, and streams movies from Einthusan with real-time progress updates.
-
-## 🛠 Technology Stack
-
-- **Backend**: Ruby on Rails 7.x
-- **Database**: SQLite3
-- **Frontend**: Turbo, Stimulus
-- **Styling**: Bootstrap 5
-- **Real-time**: Action Cable (WebSockets)
-- **File Storage**: Active Storage
-- **Movie Downloads**: youtube-dl / yt-dlp (inline — no background processor needed)
-
-## 📋 Prerequisites
-
-- Ruby 3.x
-- Rails 7.x
-- Python 3.x (for youtube-dl)
-- SQLite3
-
----
-
-## 🚀 Local Development Setup
-
-Follow these steps to set up the application on your local machine for development.
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/alameenkhader/einthusanlib.git
-cd einthusanlib
-```
-
-### 2. Install Dependencies
-```bash
-# Install Ruby gems
-bundle install
-
-# Install Python libraries (youtube-dl)
-python3 -m venv venv
-source venv/bin/activate
-pip install youtube-dl
-```
-
-### 3. Setup Database
-```bash
-rails db:create
-rails db:migrate
-rails db:seed
-```
-
-### 4. Start the Application
-```bash
-# Start the Rails server (downloads run inline in the web request — no background processor required)
-rails server
-```
-Visit `http://localhost:3000` to access the application.
-
-> 📘 See [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for the devcontainer workflow, running the test suite, and the testing conventions.
-
----
-
-## 🌐 Production Setup (Ubuntu Server)
-
-This guide explains how to deploy the application to a production Ubuntu server using Caddy and Systemd.
-
-### Step 1: Server Preparation
-
-**1. Install Caddy**
-```bash
-sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
-curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
-curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
-sudo apt update
-sudo apt install caddy
-```
-
-**2. Open Firewall Ports**
-You must open ports to allow web traffic and maintain access to your server.
-```bash
-# Always allow SSH first!
-sudo ufw allow ssh
-
-# Allow HTTP and HTTPS if you are using a domain name
-sudo ufw allow http
-sudo ufw allow https
-
-# If you plan to use a custom port like 81, allow it too
-# sudo ufw allow 81
-
-sudo ufw enable
-```
-
-### Step 2: Deploy Application
-
-**1. Clone the Repository**
-Clone the project into a directory on your server (e.g., `/home/your-user/einthusanlib`).
-```bash
-git clone https://github.com/alameenkhader/einthusanlib.git
-cd einthusanlib
-```
-
-**2. Install Dependencies**
-```bash
-# Install Ruby gems
-bundle install
-
-# Install Python libraries
-python3 -m venv venv
-source venv/bin/activate
-pip install youtube-dl
-```
-
-### Step 3: Production Configuration
-
-**1. Setup the Database**
-```bash
-RAILS_ENV=production rails db:setup
-```
-*Note: This command will create, migrate, and seed the database. Ensure your `config/database.yml` is configured for your production environment.*
-
-**2. Precompile Assets**
-```bash
-RAILS_ENV=production rails assets:precompile
-```
-
-**3. Configure Caddy**
-Edit the Caddyfile to act as a reverse proxy for the Rails app.
-```bash
-sudo vi /etc/caddy/Caddyfile
-```
-Replace its content with one of the following options.
-
-**Option A: Using a Domain (Recommended)**
-This is the standard for production. Caddy will automatically handle HTTPS certificates.
-```plaintext
-your-domain.com {
-    reverse_proxy localhost:3000
-}
-```
-
-**Option B: Using a Port (e.g., 81)**
-Use this if you don't have a domain and want to access the app via an IP address. This will use HTTP.
-```plaintext
-:81 {
-    reverse_proxy localhost:3000
-}
-```
-Reload Caddy to apply the changes:
-```bash
-sudo systemctl reload caddy
-```
-
-### Step 4: Create Systemd Services
-
-Create a `systemd` service to run the Rails server persistently. Downloads run inline in the web request, so no separate background-jobs service is needed.
-
-Create the file `/etc/systemd/system/einthusanlib-web.service`:
-```ini
-[Unit]
-Description=Einthusanlib Rails App
-After=network.target
-
-[Service]
-Type=simple
-User=your-user
-WorkingDirectory=/home/your-user/einthusanlib
-Environment=RAILS_ENV=production
-ExecStart=bundle exec rails server -b 127.0.0.1 -p 3000
-Restart=on-failure
-
-[Install]
-WantedBy=multi-user.target
-```
-**Important:** Replace `your-user` and `/home/your-user/einthusanlib` with your actual username and project path.
-
-### Step 5: Start the Service
-
-Enable and start the service.
-```bash
-sudo systemctl enable --now einthusanlib-web.service
-
-# Verify it is running
-sudo systemctl status einthusanlib-web.service
-```
 
 ## ⚠️ Disclaimer
 
 This application is for educational and personal use only. Users are responsible for complying with applicable laws and the terms of service of content providers. The authors are not responsible for any misuse of this software.
+
+## Development
+
+Run the app inside the provided devcontainer so gems and tools are already set up. See [.devcontainer/README.md](.devcontainer/README.md) for the container setup (VS Code Dev Containers or the devcontainer CLI).
+
+```
+docker compose up -d
+docker compose exec app bash
+bin/rails server
+```
+
+### Running tests
+
+```
+bin/rails test           # full suite
+bin/rails test test/services  # just services
+bin/rubocop              # style check (must stay clean)
+```
+
+The suite is integration/unit tests only — no browser/system tests (the Stimulus/Turbo glue is thin and untested, a deliberate tradeoff). No Chrome or driver gems are needed; CI runs `bin/rails test` directly.
+
+## Production
+
+Bare-metal setup for a low-resource, headless Linux box (no Docker). The app is SQLite-backed (Solid Cache and Solid Cable included), so no extra services like Redis are needed.
+
+### Prerequisites
+
+1. **Install Ruby 3.2.3** (the version pinned in `.ruby-version`) using your environment's preferred method, then verify with `ruby -v`.
+2. **Install system packages** `python3`, `python3-venv`, and `sqlite3` using your package manager.
+
+### Install
+
+```sh
+git clone <this-repo> einthusanlib
+cd einthusanlib
+
+python3 -m venv venv
+venv/bin/pip install youtube-dl
+
+bundle config set without 'development test'
+bundle install
+```
+
+### Configure
+
+1. Point the app at your host and port. Edit `config/environments/production.rb` and replace the hardcoded `104.248.124.144:81` in `default_url_options`, `action_cable.url`, and `action_cable.allowed_request_origins` with your own address.
+2. Export the environment (or add it to your shell profile):
+
+```sh
+export RAILS_ENV=production
+export YOUTUBE_DL_PATH="$PWD/venv/bin/youtube-dl"
+```
+
+No `SECRET_KEY_BASE` or `RAILS_MASTER_KEY` is needed — if unset, the session secret is generated once and persisted to `storage/.secret_key_base`, and the app never reads encrypted credentials.
+
+### Prepare and run
+
+```sh
+bin/rails db:prepare
+bin/rails assets:precompile
+
+bin/rails server -b 0.0.0.0 -p 3000
+```
+
+Run on a high port (no root required) and background it however your environment prefers.
