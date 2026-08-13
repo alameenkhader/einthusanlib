@@ -43,9 +43,9 @@ class RecentTest < ActiveSupport::TestCase
     assert_equal %w[One Two], movies.map(&:title)
   end
 
-  test "returns nil when the network fails" do
+  test "raises when the network fails" do
     URI.stub(:open, ->(*) { raise Errno::ECONNREFUSED }) do
-      assert_nil Recent.run
+      assert_raises(Errno::ECONNREFUSED) { Recent.run }
     end
   end
 end

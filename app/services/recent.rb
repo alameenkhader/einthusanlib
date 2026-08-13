@@ -14,9 +14,6 @@ class Recent
 
     html_content = URI.open(url).read
     parse_results(html_content)
-  rescue => e
-    Rails.logger.error "Failed to fetch from #{url}: #{e.message}"
-    nil
   end
 
   private

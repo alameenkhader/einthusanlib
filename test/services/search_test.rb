@@ -46,9 +46,9 @@ class SearchTest < ActiveSupport::TestCase
     assert_equal 1, Movie.where(einthusan_url: "https://einthusan.tv/movie/found").count
   end
 
-  test "returns nil when the network fails" do
+  test "raises when the network fails" do
     URI.stub(:open, ->(*) { raise Errno::ECONNREFUSED }) do
-      assert_nil Search.run("found")
+      assert_raises(Errno::ECONNREFUSED) { Search.run("found") }
     end
   end
 end

@@ -17,13 +17,8 @@ class Search
 
     search_url = "#{BASE_URL}/movie/results/?query=#{CGI.escape(@query)}"
 
-    begin
-      html_content = URI.open(search_url).read
-      parse_results(html_content)
-    rescue => e
-      Rails.logger.error "Failed to fetch from #{search_url}: #{e.message}"
-      nil
-    end
+    html_content = URI.open(search_url).read
+    parse_results(html_content)
   end
 
   private

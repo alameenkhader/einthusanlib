@@ -23,20 +23,22 @@ class Downstream
       return :busy
     end
 
-    Rails.cache.write(cache_key, true, expires_in: LOCK_TTL)
+    begin
+      Rails.cache.write(cache_key, true, expires_in: LOCK_TTL)
 
-    make_storage_space
-    download
-    attach
-    stream
-    cleanup
-    :done
-  rescue => e
-    broadcast_status_update("Download failed. Please contact the administrator.")
-    raise e
-  ensure
-    Rails.cache.delete(GLOBAL_LOCK_KEY)
-    Rails.cache.delete(cache_key)
+      make_storage_space
+      download
+      attach
+      stream
+      cleanup
+      :done
+    rescue StandardError => e # re-raise so failures surface loudly; SystemExit/Interrupt still propagate
+      broadcast_status_update("Download failed. Please contact the administrator.")
+      raise e
+    ensure
+      Rails.cache.delete(GLOBAL_LOCK_KEY)
+      Rails.cache.delete(cache_key)
+    end
   end
 
   private

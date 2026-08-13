@@ -17,6 +17,18 @@ class DownstreamTest < ActiveSupport::TestCase
     assert_equal :skipped, Downstream.run(movie)
   end
 
+  test "does not release locks when the video is already attached" do
+    movie = Movie.create!(title: "AttachedLocked", einthusan_url: "https://einthusan.tv/movie/attached-locked")
+    attach_video(movie)
+    Rails.cache.write(Downstream::GLOBAL_LOCK_KEY, true)
+    Rails.cache.write(Downstream.new(movie).send(:cache_key), true)
+
+    assert_equal :skipped, Downstream.run(movie)
+
+    assert Rails.cache.exist?(Downstream::GLOBAL_LOCK_KEY)
+    assert Rails.cache.exist?(Downstream.new(movie).send(:cache_key))
+  end
+
   test "returns busy when the movie is already downstreaming" do
     movie = Movie.create!(title: "Ongoing", einthusan_url: "https://einthusan.tv/movie/ongoing")
     Rails.cache.write(Downstream.new(movie).send(:cache_key), true)
@@ -24,11 +36,31 @@ class DownstreamTest < ActiveSupport::TestCase
     assert_equal :busy, Downstream.run(movie)
   end
 
+  test "does not release locks when the movie is already downstreaming" do
+    movie = Movie.create!(title: "OngoingLocked", einthusan_url: "https://einthusan.tv/movie/ongoing-locked")
+    Rails.cache.write(Downstream::GLOBAL_LOCK_KEY, true)
+    Rails.cache.write(Downstream.new(movie).send(:cache_key), true)
+
+    assert_equal :busy, Downstream.run(movie)
+
+    assert Rails.cache.exist?(Downstream::GLOBAL_LOCK_KEY)
+    assert Rails.cache.exist?(Downstream.new(movie).send(:cache_key))
+  end
+
   test "returns busy while another download holds the global lock" do
     movie = Movie.create!(title: "Locked", einthusan_url: "https://einthusan.tv/movie/locked")
     Rails.cache.write(Downstream::GLOBAL_LOCK_KEY, true)
 
     assert_equal :busy, Downstream.run(movie)
+  end
+
+  test "does not release the global lock while another download holds it" do
+    movie = Movie.create!(title: "LockedGlobal", einthusan_url: "https://einthusan.tv/movie/locked-global")
+    Rails.cache.write(Downstream::GLOBAL_LOCK_KEY, true)
+
+    assert_equal :busy, Downstream.run(movie)
+
+    assert Rails.cache.exist?(Downstream::GLOBAL_LOCK_KEY)
   end
 
   test "downloads, attaches and cleans up on the happy path" do
