@@ -16,7 +16,7 @@ WORKDIR /rails
 
 # Install base packages
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y curl libjemalloc2 libvips sqlite3 && \
+    apt-get install --no-install-recommends -y curl libjemalloc2 libvips sqlite3 python3 python3-venv && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 # Set production environment
@@ -62,6 +62,13 @@ COPY --from=build /rails /rails
 RUN groupadd --system --gid 1000 rails && \
     useradd rails --uid 1000 --gid 1000 --create-home --shell /bin/bash && \
     chown -R rails:rails db log storage tmp
+
+# Python venv with youtube-dl for inline movie downloads.
+ENV YOUTUBE_DL_PATH=/rails/venv/bin/youtube-dl
+RUN python3 -m venv /rails/venv && \
+    /rails/venv/bin/pip install --no-cache-dir youtube-dl && \
+    chown -R 1000:1000 /rails/venv
+
 USER 1000:1000
 
 # Entrypoint prepares the database.

@@ -30,6 +30,11 @@
 /tmp/storage/*
 !/tmp/storage/.keep
 
+# Ignore local Python venv, media files, and legacy code.
+/venv
+*.mp4
+/deprecated
+
 # Ignore assets.
 /node_modules/
 /app/assets/builds/*

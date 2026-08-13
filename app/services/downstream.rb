@@ -1,4 +1,7 @@
 class Downstream
+  GLOBAL_LOCK_KEY = "downstreaming_global"
+  LOCK_TTL = 15.minutes
+
   def self.run(movie)
     new(movie).run
   end
@@ -8,24 +11,31 @@ class Downstream
   end
 
   def run
-    return if @movie.video.attached?
+    return :skipped if @movie.video.attached?
 
     if downstreaming?
-      broadcast_status_update("Downstreaming in progress...")
-      return
+      broadcast_status_update("Download already in progress...")
+      return :busy
     end
 
-    Rails.cache.write(cache_key, true, expires_in: 10.minutes)
+    unless Rails.cache.write(GLOBAL_LOCK_KEY, true, unless_exist: true, expires_in: LOCK_TTL)
+      broadcast_status_update("Waiting for another download to finish...")
+      return :busy
+    end
+
+    Rails.cache.write(cache_key, true, expires_in: LOCK_TTL)
 
     make_storage_space
     download
     attach
     stream
     cleanup
+    :done
   rescue => e
-    broadcast_status_update("Failed")
+    broadcast_status_update("Download failed. Please contact the administrator.")
     raise e
   ensure
+    Rails.cache.delete(GLOBAL_LOCK_KEY)
     Rails.cache.delete(cache_key)
   end
 
@@ -40,13 +50,11 @@ class Downstream
   end
 
   def make_storage_space
-    # Get disk usage percentage and check if it's >= 80%
     if system("[ $(df / | tail -1 | awk '{print $5}' | sed 's/%//') -ge 80 ]")
       broadcast_status_update("Making storage space...")
-      # Find 3 oldest attached movie videos and purge them
       Movie.joins(:video_attachment)
-        .where.not(id: @movie.id) # Don't delete current movie
-        .order('active_storage_attachments.created_at ASC')
+        .where.not(id: @movie.id)
+        .order("active_storage_attachments.created_at ASC")
         .limit(3)
         .each do |movie|
           movie.video.purge if movie.video.attached?
@@ -58,7 +66,8 @@ class Downstream
     return if File.exist?(download_path)
 
     broadcast_status_update("Downloading...")
-    system("/app/venv/bin/youtube-dl -o '#{download_path}' '#{@movie.einthusan_url}'")
+    success = system("#{youtube_dl_path} -o '#{download_path}' '#{@movie.einthusan_url}'")
+    raise "youtube-dl failed for movie #{@movie.id}" unless success || File.exist?(download_path)
   end
 
   def attach
@@ -76,25 +85,28 @@ class Downstream
   def stream
     broadcast_status_update("Preparing to stream...")
     Turbo::StreamsChannel.broadcast_action_to(
-      [@movie, :show],
+      [ @movie, :show ],
       action: "after",
-      target: "downstream-status" ,
+      target: "downstream-status",
       html: <<~HTML
-      <script>
-            Turbo.visit('#{Rails.application.routes.url_helpers.stream_path(@movie)}')
-        </script>
+        <script>
+              Turbo.visit('#{Rails.application.routes.url_helpers.stream_path(@movie)}')
+          </script>
       HTML
     )
   end
-
 
   def download_path
     Rails.root.join("tmp", "downloads", "movie_#{@movie.id}.mp4").to_s
   end
 
+  def youtube_dl_path
+    ENV.fetch("YOUTUBE_DL_PATH", "/app/venv/bin/youtube-dl")
+  end
+
   def broadcast_status_update(message)
     Turbo::StreamsChannel.broadcast_replace_to(
-      [@movie, :show],
+      [ @movie, :show ],
       target: "downstream-status",
       partial: "movies/downstream_status",
       locals: { message: message, movie: @movie }

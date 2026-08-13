@@ -23,10 +23,5 @@ module App
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
-
-    Rails.application.configure do
-      MissionControl::Jobs.http_basic_auth_user = "dev"
-      MissionControl::Jobs.http_basic_auth_password = "secret"
-    end
   end
 end

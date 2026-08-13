@@ -9,9 +9,8 @@ A modern Ruby on Rails web application that fetches, downloads, and streams movi
 - **Frontend**: Turbo, Stimulus
 - **Styling**: Bootstrap 5
 - **Real-time**: Action Cable (WebSockets)
-- **Background Jobs**: ActiveJob
 - **File Storage**: Active Storage
-- **Movie Downloads**: youtube-dl / yt-dlp
+- **Movie Downloads**: youtube-dl / yt-dlp (inline — no background processor needed)
 
 ## 📋 Prerequisites
 
@@ -52,11 +51,8 @@ rails db:seed
 
 ### 4. Start the Application
 ```bash
-# Start the Rails server
+# Start the Rails server (downloads run inline in the web request — no background processor required)
 rails server
-
-# In a separate terminal, start the background job processor
-bin/jobs
 ```
 Visit `http://localhost:3000` to access the application.
 
@@ -155,9 +151,8 @@ sudo systemctl reload caddy
 
 ### Step 4: Create Systemd Services
 
-Create `systemd` services to run the Rails server and background jobs persistently.
+Create a `systemd` service to run the Rails server persistently. Downloads run inline in the web request, so no separate background-jobs service is needed.
 
-**1. Rails Server Service**
 Create the file `/etc/systemd/system/einthusanlib-web.service`:
 ```ini
 [Unit]
@@ -175,54 +170,17 @@ Restart=on-failure
 [Install]
 WantedBy=multi-user.target
 ```
+**Important:** Replace `your-user` and `/home/your-user/einthusanlib` with your actual username and project path.
 
-**2. Background Jobs Service**
-Create the file `/etc/systemd/system/einthusanlib-jobs.service`:
-```ini
-[Unit]
-Description=Einthusanlib Background Jobs
-After=network.target
+### Step 5: Start the Service
 
-[Service]
-Type=simple
-User=your-user
-WorkingDirectory=/home/your-user/einthusanlib
-Environment=RAILS_ENV=production
-ExecStart=bundle exec bin/jobs
-Restart=on-failure
-
-[Install]
-WantedBy=multi-user.target
-```
-**Important:** In both files, replace `your-user` and `/home/your-user/einthusanlib` with your actual username and project path.
-
-### Step 5: Start Services
-
-Enable and start the new services.
+Enable and start the service.
 ```bash
-# Enable and start the services
 sudo systemctl enable --now einthusanlib-web.service
-sudo systemctl enable --now einthusanlib-jobs.service
 
-# Verify they are running
+# Verify it is running
 sudo systemctl status einthusanlib-web.service
-sudo systemctl status einthusanlib-jobs.service
 ```
-
-### Step 6: Automatic Movie Fetching (Cron Job)
-
-To automatically fetch recent movies, set up a cron job to run the rake task.
-
-1. Open your crontab:
-   ```sh
-   crontab -e
-   ```
-
-2. Add the following line to run the task daily at midnight:
-   ```plaintext
-   0 0 * * * cd /home/your-user/einthusanlib && bin/rails movies:fetch_recent RAILS_ENV=production
-   ```
-   *Remember to use your correct project path.*
 
 ## ⚠️ Disclaimer
 

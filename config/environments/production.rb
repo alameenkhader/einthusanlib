@@ -1,4 +1,5 @@
 require "active_support/core_ext/integer/time"
+require "securerandom"
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
@@ -59,9 +60,19 @@ Rails.application.configure do
   # Replace the default in-process memory cache store with a durable alternative.
   config.cache_store = :solid_cache_store
 
-  # Replace the default in-process and non-durable queuing backend for Active Job.
-  config.active_job.queue_adapter = :solid_queue
-  config.solid_queue.connects_to = { database: { writing: :queue } }
+  # Sign and encrypt session cookies without requiring config/master.key. Uses
+  # ENV["SECRET_KEY_BASE"] when set, otherwise generates and persists a secret in
+  # the storage volume so it stays stable across restarts and container rebuilds.
+  config.secret_key_base = ENV["SECRET_KEY_BASE"].presence || begin
+    path = Rails.root.join("storage", ".secret_key_base")
+    if File.exist?(path)
+      File.read(path).strip
+    else
+      secret = SecureRandom.hex(64)
+      File.write(path, secret)
+      secret
+    end
+  end
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.

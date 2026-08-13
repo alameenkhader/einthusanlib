@@ -12,9 +12,10 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "movies#index"
 
-  mount MissionControl::Jobs::Engine, at: "/jobs"
-  mount ActionCable.server => '/cable'
+  mount ActionCable.server => "/cable"
 
-  resources :movies, only: [:index, :show]
-  resources :streams, only: [:show]
+  resources :movies, only: [ :index, :show ] do
+    member { post :download }
+  end
+  resources :streams, only: [ :show ]
 end
