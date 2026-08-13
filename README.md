@@ -56,6 +56,8 @@ rails server
 ```
 Visit `http://localhost:3000` to access the application.
 
+> 📘 See [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for the devcontainer workflow, running the test suite, and the testing conventions.
+
 ---
 
 ## 🌐 Production Setup (Ubuntu Server)
