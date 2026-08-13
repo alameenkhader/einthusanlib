@@ -16,6 +16,8 @@ bin/rails test test/services  # just services
 bin/rubocop              # style check (must stay clean)
 ```
 
+The suite is integration/unit tests only — no browser/system tests (the stimulus/Turbo glue is thin and untested, a deliberate tradeoff). No Chrome or driver gems are needed; CI runs `bin/rails test` directly.
+
 ## Testing conventions
 
 No test hits the real network, and none needs a real youtube-dl binary. Three rules keep it that way:
