@@ -103,7 +103,7 @@ class Downstream
   end
 
   def youtube_dl_path
-    ENV.fetch("YOUTUBE_DL_PATH", "/app/venv/bin/youtube-dl")
+    ENV.fetch("YOUTUBE_DL_PATH", Rails.root.join("venv", "bin", "youtube-dl").to_s)
   end
 
   def broadcast_status_update(message)

@@ -8,13 +8,15 @@ This application is for educational and personal use only. Users are responsible
 
 ## Development
 
-Run the app inside the provided devcontainer so gems and tools are already set up. See [.devcontainer/README.md](.devcontainer/README.md) for the container setup (VS Code Dev Containers or the devcontainer CLI).
+The project uses [mise](https://mise.jdx.dev) to manage the Ruby and Python toolchains and a Python virtualenv. Install mise (e.g. `brew install mise`), then activate it in your shell (see the mise docs for your shell).
 
 ```
-docker compose up -d
-docker compose exec app bash
+mise install        # installs ruby 3.2.3 and python 3.11
+mise run setup      # creates venv, installs youtube-dl, gems, and prepares the db
 bin/rails server
 ```
+
+`mise run setup` is idempotent, so you can re-run it any time to bring your environment up to date. The first run creates the Python virtualenv at `venv/` from the mise-managed python and installs `youtube-dl` into it.
 
 ### Running tests
 
@@ -32,7 +34,7 @@ Bare-metal setup for a low-resource, headless Linux box (no Docker). The app is 
 
 ### Prerequisites
 
-1. **Install Ruby 3.2.3** (the version pinned in `.ruby-version`) using your environment's preferred method, then verify with `ruby -v`.
+1. **Install Ruby 3.2.3** (the version pinned in `mise.toml`) using your environment's preferred method, then verify with `ruby -v`.
 2. **Install system packages** `python3`, `python3-venv`, and `sqlite3` using your package manager.
 
 ### Install
