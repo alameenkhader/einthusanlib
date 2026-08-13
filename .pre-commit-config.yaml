@@ -21,3 +21,10 @@ repos:
         entry: semgrep scan --config p/security-audit --error --metrics off
         language: system
         types_or: [ruby, javascript]
+
+      - id: rubocop
+        name: rubocop (style)
+        description: Ruby style checks on staged files
+        entry: bin/rubocop --force-exclusion
+        language: system
+        types_or: [ruby]
