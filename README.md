@@ -56,11 +56,13 @@ bundle install
 
 ### Configure
 
-1. Point the app at your host and port. Edit `config/environments/production.rb` and replace the hardcoded `104.248.124.144:81` in `default_url_options`, `action_cable.url`, and `action_cable.allowed_request_origins` with your own address.
+1. Point the app at your host and port with `PUBLIC_HOST` and `PUBLIC_PORT` (defaults: `104.248.124.144:80`). These configure `default_url_options`, `action_cable.url`, and `action_cable.allowed_request_origins`.
 2. Export the environment (or add it to your shell profile):
 
 ```sh
 export RAILS_ENV=production
+export PUBLIC_HOST=104.248.124.144
+export PUBLIC_PORT=81
 export YOUTUBE_DL_PATH="$PWD/venv/bin/youtube-dl"
 ```
 

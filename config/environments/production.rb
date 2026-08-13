@@ -33,13 +33,16 @@ Rails.application.configure do
   # Enable this if you switch to a domain with standard HTTPS.
   config.force_ssl = false   # nosemgrep: force-ssl-false.force-ssl-false - IMPORTANT: you are serving HTTP
 
+  public_host = ENV.fetch("PUBLIC_HOST", "104.248.124.144")
+  public_port = ENV.fetch("PUBLIC_PORT", "80")
+
   config.action_cable.mount_path = "/cable"
-  config.action_cable.url = "ws://104.248.124.144:81/cable"
+  config.action_cable.url = "ws://#{public_host}:#{public_port}/cable"
   config.action_cable.allowed_request_origins = [
-    "http://104.248.124.144:81"
+    "http://#{public_host}:#{public_port}"
   ]
 
-  config.action_controller.default_url_options = { host: "104.248.124.144", port: 81, protocol: "http" }
+  config.action_controller.default_url_options = { host: public_host, port: public_port, protocol: "http" }
 
   # Skip http-to-https redirect for the default health check endpoint.
   # config.ssl_options = { redirect: { exclude: ->(request) { request.path == "/up" } } }
