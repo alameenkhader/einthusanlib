@@ -1,0 +1,23 @@
+repos:
+  - repo: local
+    hooks:
+      - id: gitleaks
+        name: gitleaks (secrets)
+        description: Detect hardcoded secrets in staged changes
+        entry: gitleaks git --pre-commit --redact --staged --verbose
+        language: system
+        pass_filenames: false
+
+      - id: trufflehog
+        name: trufflehog (secrets)
+        description: Detect secrets in the diff since HEAD
+        entry: trufflehog git file://. --since-commit HEAD --results=verified --fail --trust-local-git-config
+        language: system
+        pass_filenames: false
+
+      - id: semgrep
+        name: semgrep (static analysis)
+        description: Security-focused static analysis via the p/auto ruleset
+        entry: semgrep scan --config p/security-audit --error --metrics off
+        language: system
+        types_or: [ruby, javascript]
