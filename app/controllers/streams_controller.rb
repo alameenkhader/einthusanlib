@@ -6,7 +6,7 @@ class StreamsController < ApplicationController
       send_data(
         @movie.video.download,
         type: @movie.video.content_type,
-        disposition: 'inline',
+        disposition: "inline",
         stream: true,
         buffer_size: 65536 # 64KB
       )

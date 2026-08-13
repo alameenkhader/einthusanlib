@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 # check=error=true
 
-# This Dockerfile is designed for production, not development. Use with Kamal or build'n'run by hand:
+# This Dockerfile is designed for production, not development. Use build'n'run by hand:
 # docker build -t app .
 # docker run -d -p 80:80 -e RAILS_MASTER_KEY=<value from config/master.key> --name app app
 
@@ -16,7 +16,7 @@ WORKDIR /rails
 
 # Install base packages
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y curl libjemalloc2 libvips sqlite3 python3 python3-venv && \
+    apt-get install --no-install-recommends -y curl libjemalloc2 sqlite3 python3 python3-venv && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 # Set production environment
