@@ -18,13 +18,6 @@ bin/rails server
 
 `mise run setup` is idempotent, so you can re-run it any time to bring your environment up to date. The first run creates the Python virtualenv at `venv/` from the mise-managed python and installs `youtube-dl` into it.
 
-### Running on Termux (Android)
-
-```
-bash script/termux_setup.sh   # install deps, gems, and prepare the app (run once)
-bash script/termux_start.sh   # start the server on your LAN at http://<phone-ip>:3000
-```
-
 ### Pre-commit hooks
 
 `mise run setup` registers git hooks that run on every commit: **gitleaks** and **trufflehog** scan for leaked secrets, and **semgrep** runs security-focused static analysis (the `p/auto` ruleset). Any finding blocks the commit. To skip the hooks for a commit (use sparingly): `git commit --no-verify`.
@@ -39,49 +32,9 @@ bin/rubocop              # style check (must stay clean)
 
 The suite is integration/unit tests only — no browser/system tests (the Stimulus/Turbo glue is thin and untested, a deliberate tradeoff). No Chrome or driver gems are needed; CI runs `bin/rails test` directly.
 
-## Production
+## Running on Termux (Android)
 
-Bare-metal setup for a low-resource, headless Linux box (no Docker). The app is SQLite-backed (Solid Cache and Solid Cable included), so no extra services like Redis are needed.
-
-### Prerequisites
-
-1. **Install Ruby 3.2.3** (the version pinned in `mise.toml`) using your environment's preferred method, then verify with `ruby -v`.
-2. **Install system packages** `python3`, `python3-venv`, and `sqlite3` using your package manager.
-
-### Install
-
-```sh
-git clone <this-repo> einthusanlib
-cd einthusanlib
-
-python3 -m venv venv
-venv/bin/pip install youtube-dl
-
-bundle config set without 'development test'
-bundle install
 ```
-
-### Configure
-
-1. Point the app at your host and port with `PUBLIC_HOST` and `PUBLIC_PORT` (defaults: `104.248.124.144:80`). These configure `default_url_options`, `action_cable.url`, and `action_cable.allowed_request_origins`.
-2. Export the environment (or add it to your shell profile):
-
-```sh
-export RAILS_ENV=production
-export PUBLIC_HOST=104.248.124.144
-export PUBLIC_PORT=81
-export YOUTUBE_DL_PATH="$PWD/venv/bin/youtube-dl"
+bash script/termux_setup.sh   # install deps, gems, and prepare the app (run once)
+bash script/termux_start.sh   # start the server on your LAN at http://<phone-ip>:3000
 ```
-
-No `SECRET_KEY_BASE` or `RAILS_MASTER_KEY` is needed — if unset, the session secret is generated once and persisted to `storage/.secret_key_base`, and the app never reads encrypted credentials.
-
-### Prepare and run
-
-```sh
-bin/rails db:prepare
-bin/rails assets:precompile
-
-bin/rails server -b 0.0.0.0 -p 3000
-```
-
-Run on a high port (no root required) and background it however your environment prefers.
