@@ -1,126 +1,87 @@
 # Einthusanlib
 
-## Description
+A modern Ruby on Rails web application that fetches, downloads, and streams movies from Einthusan with real-time progress updates.
 
-This script downloads movies listed in the popular section from the URL provided in the configuration file. It uses Nokogiri to parse the HTML content and youtube-dl to download the movies. The downloaded movies are saved in the specified directory and can be served using a file server like Caddy.
+## ⚠️ Disclaimer
 
-## Dependencies
+This application is for educational and personal use only. Users are responsible for complying with applicable laws and the terms of service of content providers. The authors are not responsible for any misuse of this software.
 
-- Ruby
-- Nokogiri
-- youtube-dl (you need Python and pip)
-- Logger (Ruby standard library)
-- Caddy (for serving the downloaded movies)
+## Development
 
-## How to Run the Script
+The project uses [mise](https://mise.jdx.dev) to manage the Ruby and Python toolchains and a Python virtualenv. Install mise (e.g. `brew install mise`), then activate it in your shell (see the mise docs for your shell).
 
-1. Install the dependencies:
-   ```sh
-   gem install nokogiri
+```
+mise install        # installs ruby 3.2.3, python 3.11, and the dev tools (pre-commit, gitleaks, trufflehog, semgrep)
+mise run setup      # creates venv, installs youtube-dl, gems, prepares the db, and registers pre-commit hooks
+bin/rails server
+```
 
-   # https://github.com/ytdl-org/youtube-dl
-   python3 -m venv path/to/venv
-   source path/to/venv/bin/activate
-   pip install youtube-dl or ./venv/bin/pip install youtube-dl
-   ```
+`mise run setup` is idempotent, so you can re-run it any time to bring your environment up to date. The first run creates the Python virtualenv at `venv/` from the mise-managed python and installs `youtube-dl` into it.
 
-2. Run the script:
-   ```sh
-   ruby main.rb
-   ```
+### Running on Termux (Android)
 
-## Configuration
+```
+bash script/termux_setup.sh   # install deps, gems, and prepare the app (run once)
+bash script/termux_start.sh   # start the server on your LAN at http://<phone-ip>:3000
+```
 
-- The configuration settings are located in the `config.rb` file.
-- Update the `URL`, `BASE_URL`, `DOWNLOAD_PATH`, and `LOG_FILE` constants as needed.
+### Pre-commit hooks
 
-## How to Install Caddy
+`mise run setup` registers git hooks that run on every commit: **gitleaks** and **trufflehog** scan for leaked secrets, and **semgrep** runs security-focused static analysis (the `p/auto` ruleset). Any finding blocks the commit. To skip the hooks for a commit (use sparingly): `git commit --no-verify`.
 
-### On Mac
+### Running tests
 
-1. Install Caddy using Homebrew:
-   ```sh
-   brew install caddy
-   ```
+```
+bin/rails test           # full suite
+bin/rails test test/services  # just services
+bin/rubocop              # style check (must stay clean)
+```
 
-### On Linux
+The suite is integration/unit tests only — no browser/system tests (the Stimulus/Turbo glue is thin and untested, a deliberate tradeoff). No Chrome or driver gems are needed; CI runs `bin/rails test` directly.
 
-1. Update the package list and install Caddy:
-   ```sh
-   sudo apt update
-   sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
-   curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo apt-key add -
-   curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
-   sudo apt update
-   sudo apt install caddy
-   ```
+## Production
 
-For more detailed installation instructions, visit the [Caddy website](https://caddyserver.com/docs/install).
+Bare-metal setup for a low-resource, headless Linux box (no Docker). The app is SQLite-backed (Solid Cache and Solid Cable included), so no extra services like Redis are needed.
 
-## How to Serve Using Caddy
+### Prerequisites
 
-1. Update the Caddyfile:
-   ```sh
-   vi /etc/caddy/Caddyfile
-   ```
+1. **Install Ruby 3.2.3** (the version pinned in `mise.toml`) using your environment's preferred method, then verify with `ruby -v`.
+2. **Install system packages** `python3`, `python3-venv`, and `sqlite3` using your package manager.
 
-2. Add the following configuration:
-   ```plaintext
-   :80 {
-       # Set this path to your site's directory.
-       root * /home/eithusanlib/public/movies
+### Install
 
-       # Enable the static file server.
-       file_server browse
-   }
-   ```
+```sh
+git clone <this-repo> einthusanlib
+cd einthusanlib
 
-3. Reload Caddy:
-   ```sh
-   systemctl reload caddy
-   ```
+python3 -m venv venv
+venv/bin/pip install youtube-dl
 
-## How to Access the Website
+bundle config set without 'development test'
+bundle install
+```
 
-1. Open your web browser.
-2. Navigate to the server's IP address or domain name.
-   ```plaintext
-   http://<your-server-ip-or-domain>
-   ```
+### Configure
 
-## Setting Up a Cron Job
+1. Point the app at your host and port with `PUBLIC_HOST` and `PUBLIC_PORT` (defaults: `104.248.124.144:80`). These configure `default_url_options`, `action_cable.url`, and `action_cable.allowed_request_origins`.
+2. Export the environment (or add it to your shell profile):
 
-To run the script every day at midnight, set up a cron job:
+```sh
+export RAILS_ENV=production
+export PUBLIC_HOST=104.248.124.144
+export PUBLIC_PORT=81
+export YOUTUBE_DL_PATH="$PWD/venv/bin/youtube-dl"
+```
 
-1. Open the crontab file for editing:
-   ```sh
-   crontab -e
-   ```
+No `SECRET_KEY_BASE` or `RAILS_MASTER_KEY` is needed — if unset, the session secret is generated once and persisted to `storage/.secret_key_base`, and the app never reads encrypted credentials.
 
-2. Add the following line to schedule the script to run every day at midnight:
-   ```plaintext
-   0 0 * * * cd /Users/alameenkhader/einthusanlib && /usr/bin/ruby main.rb
-   ```
+### Prepare and run
 
-3. Save and close the crontab file.
+```sh
+bin/rails db:prepare
+bin/rails assets:precompile
 
-## Viewing Cron Logs
+bin/rails server -b 0.0.0.0 -p 3000
+```
 
-To view the logs for cron jobs, use the following command:
-   ```sh
-   grep CRON /var/log/syslog
-   ```
-
-## Additional Information
-
-- Ensure the `public/movies` directory is writable.
-- Logs are written to `einthusan.log`.
-
-## Work in Progress
-
-- This project is a work in progress.
-
-## Disclaimer
-
-- This project is for educational purposes only. The author is not responsible for any privacy issues or misuse of this script.
-
+Run on a high port (no root required) and background it however your environment prefers.
