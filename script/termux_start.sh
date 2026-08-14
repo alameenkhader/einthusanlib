@@ -15,11 +15,23 @@ lan_ip() {
   ip="$(ip route get 8.8.8.8 2>/dev/null \
         | awk '/src/{for(i=1;i<=NF;i++) if($i=="src"){print $(i+1); exit}}')" || true
   if [ -z "$ip" ]; then
+    ip="$(python -c 'import socket
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+try:
+    s.connect(("8.8.8.8", 80))
+    print(s.getsockname()[0])
+except Exception:
+    pass' 2>/dev/null | grep -v '^127\.')" || true
+  fi
+  if [ -z "$ip" ]; then
     ip="$(ip -4 addr show scope global 2>/dev/null \
             | awk '/inet /{print $2}' | cut -d/ -f1 | grep -v '^127\.' | head -n1)" || true
   fi
   if [ -z "$ip" ]; then
     ip="$(getprop dhcp.wlan0.ipaddress 2>/dev/null)" || true
+  fi
+  if [ -z "$ip" ]; then
+    ip="$(getprop dhcp.wlan1.ipaddress 2>/dev/null)" || true
   fi
   printf '%s\n' "$ip"
 }
@@ -35,6 +47,17 @@ write_env() {
   if [ -z "$ip" ]; then
     ip="127.0.0.1"
     warn "Could not detect LAN IP; set PUBLIC_HOST manually in .env.termux"
+    {
+      command -v ip || printf '  (ip command not found - is iproute2 installed?)\n'
+      python -c 'import socket
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+try:
+    s.connect(("8.8.8.8", 80))
+    print("  udp-src:", s.getsockname()[0])
+except Exception as e:
+    print("  udp-src: error:", e)' 2>/dev/null || true
+      getprop dhcp.wlan0.ipaddress 2>/dev/null || true
+    } | while IFS= read -r line; do warn "$line"; done
   fi
   cat > .env.termux <<EOF
 export RACK_ENV=production
