@@ -8,13 +8,23 @@ warn() { printf '\033[1;33m[!] %s\033[0m\n' "$*"; }
 
 cd "$(dirname "$0")/.."
 
+log "termux_start.sh (PORT=$PORT)"
+
 lan_ip() {
-  ip -4 addr show scope global 2>/dev/null | awk '/inet /{print $2}' | cut -d/ -f1 | grep -v '^127\.' | head -n1
+  ip -4 addr show scope global 2>/dev/null \
+    | awk '/inet /{print $2}' \
+    | cut -d/ -f1 \
+    | grep -v '^127\.' \
+    | head -n1 \
+    || true
 }
 
 write_env() {
   local ip
   ip=$(lan_ip)
+  if [ -z "$ip" ]; then
+    ip="$(getprop dhcp.wlan0.ipaddress 2>/dev/null || true)"
+  fi
   if [ -z "$ip" ]; then
     ip="127.0.0.1"
     warn "Could not detect LAN IP; set PUBLIC_HOST manually in .env.termux"
