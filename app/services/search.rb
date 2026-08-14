@@ -1,8 +1,8 @@
-require "nokogiri"
-require "open-uri"
+require 'oga'
+require 'open-uri'
 
 class Search
-  BASE_URL = "https://einthusan.tv"
+  BASE_URL = 'https://einthusan.tv'.freeze
 
   def self.run(query)
     new(query).call
@@ -24,32 +24,28 @@ class Search
   private
 
   def parse_results(html_content)
-    soup = Nokogiri::HTML(html_content)
+    soup = Oga.parse_html(html_content)
 
     # Find movie results - typically in a results container
-    movie_elements = soup.css("ul li").select { |li| li.css(".block2").any? }
+    movie_elements = soup.css('ul li').select { |li| li.css('.block2').any? }
 
-    movies = movie_elements.first(4).map do |movie|
-      extract_movie_data(movie)
-    end.compact
-
-    movies.compact
+    movie_elements.first(4).map { |movie| extract_movie_data(movie) }.compact
   end
 
   def extract_movie_data(movie_element)
-    block2 = movie_element.at_css(".block2")
+    block2 = movie_element.at_css('.block2')
     return nil unless block2
 
-    title = block2.at_css(".title h3")&.text&.strip || "Unknown Title"
-    image_url = movie_element.at_css(".block1 img")&.[]("src") || ""
+    title = block2.at_css('.title h3')&.text&.strip || 'Unknown Title'
+    image_url = movie_element.at_css('.block1 img')&.get('src') || ''
 
     # Fix image URL if it's protocol-relative
-    image_url = image_url.sub(/^\/\//, "http://") if image_url.start_with?("//")
+    image_url = image_url.sub(%r{^//}, 'http://') if image_url.start_with?('//')
 
-    relative_url = block2.at_css(".title")&.[]("href") || ""
-    full_url = relative_url.start_with?("http") ? relative_url : "#{BASE_URL}#{relative_url}"
+    relative_url = block2.at_css('.title')&.get('href') || ''
+    full_url = relative_url.start_with?('http') ? relative_url : "#{BASE_URL}#{relative_url}"
 
-    release_date = movie_element.at_css(".block3 .stats time")&.[]("datetime")
+    release_date = movie_element.at_css('.block3 .stats time')&.get('datetime')
     release_datetime = DateTime.parse(release_date) if release_date
 
     Movie.find_or_create_by(einthusan_url: full_url) do |movie|

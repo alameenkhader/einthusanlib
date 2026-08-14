@@ -1,41 +1,36 @@
-require "test_helper"
+require 'test_helper'
 
-# Touch the constant so Zeitwerk autoloads the service (and its `require
-# "open-uri"`) before any stubbing runs. Requiring open-uri redefines
-# URI.open, which would silently clobber a Minitest stub installed first.
-Recent
-
-class RecentTest < ActiveSupport::TestCase
-  def stub_page(html)
-    URI.stub(:open, ->(*) { StringIO.new(html) }) { yield }
+class RecentTest < Minitest::Test
+  def stub_page(html, &)
+    URI.stub(:open, ->(*) { StringIO.new(html) }, &)
   end
 
-  test "parses the page and creates movies" do
-    html = einthusan_list_html([ { title: "Oldie", year: 1999, slug: "oldie" } ])
+  def test_parses_the_page_and_creates_movies
+    html = einthusan_list_html([ { title: 'Oldie', year: 1999, slug: 'oldie' } ])
 
     movies = stub_page(html) { Recent.run }
 
     assert_equal 1, movies.size
     movie = movies.first
-    assert_equal "Oldie", movie.title
-    assert_equal "https://einthusan.tv/movie/oldie", movie.einthusan_url
+    assert_equal 'Oldie', movie.title
+    assert_equal 'https://einthusan.tv/movie/oldie', movie.einthusan_url
     assert_equal 1999, movie.released_at.year
-    assert_equal "https://cdn.example.com/oldie.jpg", movie.image_url
+    assert_equal 'https://cdn.example.com/oldie.jpg', movie.image_url
   end
 
-  test "keeps existing movies instead of duplicating when the page is parsed again" do
-    stub_page(einthusan_list_html([ { title: "Oldie", year: 1999, slug: "oldie" } ])) { Recent.run }
+  def test_keeps_existing_movies_instead_of_duplicating_when_the_page_is_parsed_again
+    stub_page(einthusan_list_html([ { title: 'Oldie', year: 1999, slug: 'oldie' } ])) { Recent.run }
 
-    stub_page(einthusan_list_html([ { title: "Oldie", year: 1999, slug: "oldie" } ])) { Recent.run }
+    stub_page(einthusan_list_html([ { title: 'Oldie', year: 1999, slug: 'oldie' } ])) { Recent.run }
 
-    assert_equal 1, Movie.where(einthusan_url: "https://einthusan.tv/movie/oldie").count
+    assert_equal 1, Movie.where(einthusan_url: 'https://einthusan.tv/movie/oldie').count
   end
 
-  test "creates a movie per result and returns them" do
+  def test_creates_a_movie_per_result_and_returns_them
     html = einthusan_list_html([
-      { title: "One", year: 2001, slug: "one" },
-      { title: "Two", year: 2002, slug: "two" }
-    ])
+                                 { title: 'One', year: 2001, slug: 'one' },
+                                 { title: 'Two', year: 2002, slug: 'two' }
+                               ])
 
     movies = stub_page(html) { Recent.run }
 
@@ -43,7 +38,7 @@ class RecentTest < ActiveSupport::TestCase
     assert_equal %w[One Two], movies.map(&:title)
   end
 
-  test "raises when the network fails" do
+  def test_raises_when_the_network_fails
     URI.stub(:open, ->(*) { raise Errno::ECONNREFUSED }) do
       assert_raises(Errno::ECONNREFUSED) { Recent.run }
     end

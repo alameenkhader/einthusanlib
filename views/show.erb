@@ -1,0 +1,21 @@
+<div class="container-fluid px-3 py-3"
+     data-downstream
+     data-downstream-url="<%= download_movie_path(@movie) %>"
+     data-downstream-status-url="<%= status_movie_path(@movie) %>">
+  <div class="card mx-auto" style="max-width: 400px;">
+    <img src="<%= @movie.image_url %>" class="card-img-top" alt="<%= @movie.title %>">
+
+    <div class="card-body">
+      <div id="downstream-status" class="alert alert-dark text-center" data-downstream-state="<%= @status[:state] %>">
+        <div class="spinner-border spinner-border-sm me-2 <%= @status[:state] == 'idle' ? 'd-none' : '' %>" role="status">
+          <span class="visually-hidden">...</span>
+        </div>
+        <span id="downstream-status-message"><%= @status[:message] %></span>
+      </div>
+      <p id="downstream-progress" class="text-center text-muted small mb-1 d-none">Downloading...</p>
+      <div class="progress d-none" id="downstream-progress-bar" style="height: 8px;">
+        <div class="progress-bar" id="downstream-progress-fill" role="progressbar" style="width: 0%"></div>
+      </div>
+    </div>
+  </div>
+</div>

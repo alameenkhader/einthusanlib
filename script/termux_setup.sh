@@ -8,8 +8,8 @@ cd "$(dirname "$0")/.."
 install_packages() {
   log "Updating Termux package lists"
   pkg update -y
-  log "Installing packages: ruby python sqlite clang make binutils pkg-config tzdata iproute2"
-  pkg install -y ruby python sqlite clang make binutils pkg-config tzdata iproute2
+  log "Installing packages: ruby python sqlite clang make binutils pkg-config tzdata iproute2 aria2"
+  pkg install -y ruby python sqlite clang make binutils pkg-config tzdata iproute2 aria2
 }
 
 setup_venv() {
@@ -31,9 +31,7 @@ setup_gems() {
 
 prepare_app() {
   log "Preparing database"
-  RAILS_ENV=production bin/rails db:prepare
-  log "Precompiling assets"
-  RAILS_ENV=production bin/rails assets:precompile
+  RAILS_ENV=production bundle exec rake db:prepare
 }
 
 install_packages

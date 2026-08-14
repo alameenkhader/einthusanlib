@@ -35,5 +35,5 @@ write_env
 log "Acquiring wake lock (keeps server alive with screen off)"
 termux-wake-lock 2>/dev/null || warn "termux-wake-lock failed; server may pause when screen locks"
 
-log "Starting Rails server at http://${PUBLIC_HOST}:${PORT}"
-exec bin/rails server -b 0.0.0.0 -p "$PORT"
+log "Starting server at http://${PUBLIC_HOST}:${PORT}"
+exec bundle exec puma -b tcp://0.0.0.0:${PORT} config.ru

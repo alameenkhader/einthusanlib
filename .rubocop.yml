@@ -1,8 +1,49 @@
-# Omakase Ruby styling for Rails
-inherit_gem: { rubocop-rails-omakase: rubocop.yml }
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.2
+  Exclude:
+    - "vendor/bundle/**/*"
+    - "bin/*"
 
-# Overwrite or add rules to create your own house style
-#
-# # Use `[a, [b, c]]` not `[ a, [ b, c ] ]`
-# Layout/SpaceInsideArrayLiteralBrackets:
-#   Enabled: false
+# House style: single quotes unless interpolating, spaces inside array brackets
+# (matches the omakase-era codebase), no magic comments.
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Layout/SpaceInsideArrayLiteralBrackets:
+  EnforcedStyle: space
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+# No doc-comment convention in this codebase.
+Style/Documentation:
+  Enabled: false
+
+# Static-analysis false positive: `AppCache.write` mirrors Rails.cache and
+# returns `true`, which this cop misreads as a predicate method.
+Naming/PredicateMethod:
+  Enabled: false
+
+# The scraper deliberately fetches remote HTML from a fixed base URL.
+Security/Open:
+  Enabled: false
+
+# Metrics are relaxed to fit the compact scraper/service methods.
+Metrics/AbcSize:
+  Max: 30
+
+Metrics/MethodLength:
+  Max: 30
+
+Metrics/ClassLength:
+  Max: 150
+
+Metrics/CyclomaticComplexity:
+  Max: 15
+
+Metrics/PerceivedComplexity:
+  Max: 15

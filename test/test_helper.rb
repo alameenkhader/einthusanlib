@@ -1,63 +1,62 @@
-ENV["RAILS_ENV"] ||= "test"
-require_relative "../config/environment"
-require "rails/test_help"
-require "minitest/mock"
+ENV['RACK_ENV'] = 'test'
+ENV['SECRET_KEY_BASE'] ||= 'test-secret-for-sessions-test-secret-for-sessions-test-secret-for-sessions-test'
 
-module ActiveSupport
-  class TestCase
-    # Run tests in parallel with specified workers
-    parallelize(workers: :number_of_processors)
+require_relative '../config/boot'
+require_relative '../app'
 
-    # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
-    # Tests mostly create records via Movie.create! since the scrapers do too.
-    fixtures :all
+require 'minitest/autorun'
+require 'minitest/mock'
+require 'rack/test'
 
-    # Start every test with a clean in-memory cache. Services and controllers
-    # share keys like "recent_movies" and "downstreaming_<id>", so this keeps
-    # tests isolated and deterministic.
-    setup do
-      Rails.cache = ActiveSupport::Cache::MemoryStore.new
-      Movie.delete_all
-      ActiveStorage::Attachment.delete_all
-      ActiveStorage::Blob.delete_all
-    end
+class Minitest::Test
+  include Rack::Test::Methods
 
-    # Attach a tiny in-memory video to a movie so attached-video code paths
-    # (streaming, downstream skip) can run without fixture files on disk.
-    def attach_video(movie, content: "fake video bytes", type: "video/mp4")
-      blob = ActiveStorage::Blob.create_and_upload!(
-        io: StringIO.new(content),
-        filename: "movie_#{movie.id}.mp4",
-        content_type: type
-      )
-      movie.video.attach(blob)
-    end
+  def app
+    Chalaflix
+  end
 
-    # Builds the minimal Einthusan results-page HTML that the Recent and Search
-    # scrapers parse. One movie = one <li>; pass the same movie as a Hash with
-    # :title, :year and :slug keys (slug also becomes the image/URL).
-    def einthusan_list_html(movies)
-      items = movies.map do |movie|
-        year = movie[:year] || 1970
-        <<~LI
-          <li>
-            <div class="block1"><img src="//cdn.example.com/#{movie[:slug]}.jpg"></div>
-            <div class="block2">
-              <a class="title" href="/movie/#{movie[:slug]}"><h3>#{movie[:title]}</h3></a>
-              <div class="info"><p>#{year}</p></div>
-            </div>
-            <div class="block3"><div class="stats"><time datetime="#{year}-05-01"></time></div></div>
-          </li>
-        LI
-      end.join
+  def setup
+    Movie.delete_all
+    CacheEntry.delete_all
+    FileUtils.rm_rf(App::ROOT.join('storage', 'movies'))
+    FileUtils.mkdir_p(App::ROOT.join('storage', 'movies'))
+    FileUtils.rm_rf(App::ROOT.join('tmp', 'downloads'))
+    FileUtils.mkdir_p(App::ROOT.join('tmp', 'downloads'))
+  end
 
-      <<~HTML
-        <div id="UIMovieSummary">
-          <ul>
-          #{items}
-          </ul>
-        </div>
-      HTML
-    end
+  # Attach a tiny video to a movie so attached-video code paths (streaming,
+  # downstream skip) can run without fixture files on disk.
+  def attach_video(movie, content: 'fake video bytes', type: 'video/mp4')
+    path = App::ROOT.join('tmp', 'downloads', "movie_#{movie.id}.mp4")
+    FileUtils.mkdir_p(path.dirname)
+    File.write(path, content)
+    movie.attach_video_file(path, content_type: type)
+  end
+
+  # Builds the minimal Einthusan results-page HTML that the Recent and Search
+  # scrapers parse. One movie = one <li>; pass the same movie as a Hash with
+  # :title, :year and :slug keys (slug also becomes the image/URL).
+  def einthusan_list_html(movies)
+    items = movies.map do |movie|
+      year = movie[:year] || 1970
+      <<~LI
+        <li>
+          <div class="block1"><img src="//cdn.example.com/#{movie[:slug]}.jpg"></div>
+          <div class="block2">
+            <a class="title" href="/movie/#{movie[:slug]}"><h3>#{movie[:title]}</h3></a>
+            <div class="info"><p>#{year}</p></div>
+          </div>
+          <div class="block3"><div class="stats"><time datetime="#{year}-05-01"></time></div></div>
+        </li>
+      LI
+    end.join
+
+    <<~HTML
+      <div id="UIMovieSummary">
+        <ul>
+        #{items}
+        </ul>
+      </div>
+    HTML
   end
 end
