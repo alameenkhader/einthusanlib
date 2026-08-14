@@ -34,7 +34,20 @@ The suite is integration/unit tests only — no browser/system tests (the Stimul
 
 ## Running on Termux (Android)
 
+If the repo is private, no GitHub login is needed on the phone — the package script builds the app source and transfers it for you:
+
 ```
+# on your Mac (inside the repo)
+bash script/package.sh                # package + pick transfer method in a menu
+bash script/package.sh --scp <phone-ip>   # package + transfer directly over scp
+
+# menu option 1) scp requires Termux sshd once on the phone:
+#   pkg install openssh && passwd && sshd   (sshd listens on port 8022)
+# menu option 2) prints USB / Downloads steps instead
+
+# on the phone
+tar xzf einthusanlib.tar.gz
+cd einthusanlib
 bash script/termux_setup.sh   # install deps, gems, and prepare the app (run once)
 bash script/termux_start.sh   # start the server on your LAN at http://<phone-ip>:3000
 ```
