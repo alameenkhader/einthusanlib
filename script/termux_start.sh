@@ -20,7 +20,7 @@ write_env() {
     warn "Could not detect LAN IP; set PUBLIC_HOST manually in .env.termux"
   fi
   cat > .env.termux <<EOF
-export RAILS_ENV=production
+export RACK_ENV=production
 export PORT=$PORT
 export PUBLIC_HOST=$ip
 export PUBLIC_PORT=$PORT
@@ -36,4 +36,4 @@ log "Acquiring wake lock (keeps server alive with screen off)"
 termux-wake-lock 2>/dev/null || warn "termux-wake-lock failed; server may pause when screen locks"
 
 log "Starting server at http://${PUBLIC_HOST}:${PORT}"
-exec bundle exec puma -b tcp://0.0.0.0:${PORT} config.ru
+exec bundle exec puma -b tcp://0.0.0.0:"${PORT}" config.ru
