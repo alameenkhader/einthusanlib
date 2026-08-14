@@ -9,6 +9,16 @@ ActiveRecord::Tasks::DatabaseTasks.db_dir = 'db'
 ActiveRecord::Tasks::DatabaseTasks.migrations_paths = [ 'db/migrate' ]
 ActiveRecord::Tasks::DatabaseTasks.root = App::ROOT.to_s
 
+# Standalone ActiveRecord (no Rails): DatabaseTasks.seed_loader defaults to
+# Rails.application, which would raise NameError on db:prepare whenever a
+# db/seeds.rb is present. This app has no seed data, so provide a no-op loader.
+noop_seed_loader = Class.new do
+  def load_seed
+    # Nothing to seed.
+  end
+end
+ActiveRecord::Tasks::DatabaseTasks.seed_loader = noop_seed_loader.new
+
 namespace :db do
   desc 'Create the database'
   task create: :environment do
