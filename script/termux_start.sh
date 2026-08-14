@@ -19,6 +19,11 @@ lan_ip() {
     || true
 }
 
+public_ip() {
+  python -c 'import urllib.request
+print(urllib.request.urlopen("https://api.ipify.org", timeout=5).read().decode().strip())' 2>/dev/null || true
+}
+
 write_env() {
   local ip
   ip=$(lan_ip)
@@ -42,8 +47,15 @@ EOF
 write_env
 . ./.env.termux
 
+public_ip=$(public_ip)
+if [ -n "$public_ip" ]; then
+  log "Public (WAN) address: http://${public_ip}:${PORT} (externally reachable only with port forwarding)"
+else
+  warn "Could not determine public IP (offline?); LAN access still works."
+fi
+
 log "Acquiring wake lock (keeps server alive with screen off)"
 termux-wake-lock 2>/dev/null || warn "termux-wake-lock failed; server may pause when screen locks"
 
-log "Starting server at http://${PUBLIC_HOST}:${PORT}"
+log "LAN address: http://${PUBLIC_HOST}:${PORT}"
 exec bundle exec puma -b tcp://0.0.0.0:"${PORT}" config.ru
