@@ -11,12 +11,17 @@ cd "$(dirname "$0")/.."
 log "termux_start.sh (PORT=$PORT)"
 
 lan_ip() {
-  ip -4 addr show scope global 2>/dev/null \
-    | awk '/inet /{print $2}' \
-    | cut -d/ -f1 \
-    | grep -v '^127\.' \
-    | head -n1 \
-    || true
+  local ip=""
+  ip="$(ip route get 8.8.8.8 2>/dev/null \
+        | awk '/src/{for(i=1;i<=NF;i++) if($i=="src"){print $(i+1); exit}}')" || true
+  if [ -z "$ip" ]; then
+    ip="$(ip -4 addr show scope global 2>/dev/null \
+            | awk '/inet /{print $2}' | cut -d/ -f1 | grep -v '^127\.' | head -n1)" || true
+  fi
+  if [ -z "$ip" ]; then
+    ip="$(getprop dhcp.wlan0.ipaddress 2>/dev/null)" || true
+  fi
+  printf '%s\n' "$ip"
 }
 
 public_ip() {
@@ -27,9 +32,6 @@ print(urllib.request.urlopen("https://api.ipify.org", timeout=5).read().decode()
 write_env() {
   local ip
   ip=$(lan_ip)
-  if [ -z "$ip" ]; then
-    ip="$(getprop dhcp.wlan0.ipaddress 2>/dev/null || true)"
-  fi
   if [ -z "$ip" ]; then
     ip="127.0.0.1"
     warn "Could not detect LAN IP; set PUBLIC_HOST manually in .env.termux"
@@ -58,4 +60,7 @@ log "Acquiring wake lock (keeps server alive with screen off)"
 termux-wake-lock 2>/dev/null || warn "termux-wake-lock failed; server may pause when screen locks"
 
 log "LAN address: http://${PUBLIC_HOST}:${PORT}"
+if [ "$PUBLIC_HOST" = "127.0.0.1" ]; then
+  warn "localhost-only mode: connect the phone and computer to the same Wi-Fi to access via LAN."
+fi
 exec bundle exec puma -b tcp://0.0.0.0:"${PORT}" config.ru

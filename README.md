@@ -52,3 +52,23 @@ cd einthusanlib
 bash script/termux_setup.sh   # install deps, gems, and prepare the app (run once)
 bash script/termux_start.sh   # start the server on your LAN at http://<phone-ip>:3000
 ```
+
+### Accessing from a computer
+
+The server is reachable two ways at once: `localhost:3000` on the phone itself, and
+`http://<phone-ip>:3000` from any device on the same Wi-Fi. Open the printed `LAN address`
+(e.g. `http://192.168.1.50:3000`) in a browser on your computer.
+
+To check connectivity from the computer:
+
+    ping <phone-ip>
+    curl -sI http://<phone-ip>:3000
+
+If that doesn't load:
+- make sure the phone is on Wi-Fi, not mobile data;
+- confirm the printed address is a private IP (`192.168.x.x` / `10.x.x.x`), not `127.0.0.1`;
+- disable "AP/client isolation" (or a guest network) on your router, which blocks
+  device-to-device traffic.
+
+The server can't be reached from the internet on mobile data (carriers use CG-NAT, which
+blocks inbound connections). If you ever need remote access, use a tunnel such as Tailscale.
