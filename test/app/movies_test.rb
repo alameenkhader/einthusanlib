@@ -62,6 +62,34 @@ class MoviesTest < Minitest::Test
     assert_includes last_response.body, 'No movies found'
   end
 
+  def test_index_renders_a_request_button_for_a_requestable_movie
+    movie = Movie.create!(title: 'Requestable Card', einthusan_url: 'https://einthusan.tv/movie/req-card')
+    Recent.stub(:run, -> { [] }) { get '/' }
+
+    assert_equal 200, last_response.status
+    assert_includes last_response.body, '+ Request'
+    assert_includes last_response.body, "/movies/#{movie.id}/request"
+  end
+
+  def test_index_renders_the_requested_badge_for_a_queued_movie
+    Movie.create!(title: 'Queued Card', einthusan_url: 'https://einthusan.tv/movie/queued-card',
+                  requested_at: Time.current)
+    Recent.stub(:run, -> { [] }) { get '/' }
+
+    assert_equal 200, last_response.status
+    assert_includes last_response.body, 'Requested'
+  end
+
+  def test_index_renders_the_watch_badge_for_an_attached_movie
+    movie = Movie.create!(title: 'Watch Card', einthusan_url: 'https://einthusan.tv/movie/watch-card')
+    attach_video(movie)
+    Recent.stub(:run, -> { [] }) { get '/' }
+
+    assert_equal 200, last_response.status
+    assert_includes last_response.body, 'Watch'
+    assert_includes last_response.body, "/streams/#{movie.id}"
+  end
+
   def test_show_renders_the_movie_when_no_video_is_attached
     movie = Movie.create!(title: 'Page Movie', einthusan_url: 'https://einthusan.tv/movie/page')
 
@@ -69,7 +97,7 @@ class MoviesTest < Minitest::Test
 
     assert_equal 200, last_response.status
     assert_includes last_response.body, 'Page Movie'
-    assert_includes last_response.body, 'downstream-status'
+    assert_includes last_response.body, 'Request Download'
   end
 
   def test_show_redirects_to_the_stream_when_a_video_is_attached
@@ -88,55 +116,39 @@ class MoviesTest < Minitest::Test
     assert_equal 404, last_response.status
   end
 
-  def test_status_reports_the_download_status_as_json
-    movie = Movie.create!(title: 'Status', einthusan_url: 'https://einthusan.tv/movie/status')
+  def test_request_sets_requested_at_and_redirects_to_the_show_page
+    movie = Movie.create!(title: 'Request Me', einthusan_url: 'https://einthusan.tv/movie/request-me')
+
+    post "/movies/#{movie.id}/request"
+
+    assert_equal 302, last_response.status
+    assert_equal "/movies/#{movie.id}", URI.parse(last_response.headers['Location']).path
+    assert movie.reload.requested_at.present?
+  end
+
+  def test_request_is_a_noop_when_a_video_is_already_attached
+    movie = Movie.create!(title: 'Already', einthusan_url: 'https://einthusan.tv/movie/already')
+    attach_video(movie)
+
+    post "/movies/#{movie.id}/request"
+
+    assert_equal 302, last_response.status
+    assert_nil movie.reload.requested_at
+  end
+
+  def test_request_returns_404_for_a_missing_movie
+    post '/movies/999999/request'
+
+    assert_equal 404, last_response.status
+  end
+
+  def test_download_and_status_routes_are_gone
+    movie = Movie.create!(title: 'Gone', einthusan_url: 'https://einthusan.tv/movie/gone')
 
     get "/movies/#{movie.id}/status"
+    assert_equal 404, last_response.status
 
-    assert_equal 200, last_response.status
-    assert_equal 'application/json', last_response.content_type
-    status = JSON.parse(last_response.body)
-    assert_equal 'idle', status['state']
-  end
-
-  def test_download_reports_conflict_while_a_download_is_busy
-    movie = Movie.create!(title: 'Busy', einthusan_url: 'https://einthusan.tv/movie/busy')
-    seen = nil
-
-    Downstream.stub(:enqueue, lambda { |m|
-      seen = m
-      :busy
-    }) do
-      post "/movies/#{movie.id}/download"
-    end
-
-    assert_equal 409, last_response.status
-    assert_equal movie, seen
-  end
-
-  def test_download_returns_ok_when_downstream_starts
-    movie = Movie.create!(title: 'Done', einthusan_url: 'https://einthusan.tv/movie/done')
-
-    Downstream.stub(:enqueue, ->(_m) { :ok }) do
-      post "/movies/#{movie.id}/download"
-    end
-
-    assert_equal 200, last_response.status
-  end
-
-  def test_download_also_accepts_the_skipped_result
-    movie = Movie.create!(title: 'Already', einthusan_url: 'https://einthusan.tv/movie/already')
-
-    Downstream.stub(:enqueue, ->(_m) { :skipped }) do
-      post "/movies/#{movie.id}/download"
-    end
-
-    assert_equal 200, last_response.status
-  end
-
-  def test_download_returns_404_for_a_missing_movie
-    post '/movies/999999/download'
-
+    post "/movies/#{movie.id}/download"
     assert_equal 404, last_response.status
   end
 end

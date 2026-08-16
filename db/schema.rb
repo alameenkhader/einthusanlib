@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 20_260_814_000_001) do
+ActiveRecord::Schema[8.0].define(version: 20_260_815_000_001) do
   create_table 'cache_entries', force: :cascade do |t|
     t.string 'key', null: false
     t.binary 'value'
@@ -30,8 +30,12 @@ ActiveRecord::Schema[8.0].define(version: 20_260_814_000_001) do
     t.datetime 'video_attached_at'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
+    t.datetime 'requested_at'
+    t.datetime 'download_started_at'
+    t.datetime 'download_failed_at'
     t.index [ 'einthusan_url' ], name: 'index_movies_on_einthusan_url', unique: true
     t.index [ 'released_at' ], name: 'index_movies_on_released_at'
+    t.index [ 'requested_at' ], name: 'index_movies_on_requested_at'
     t.index [ 'title' ], name: 'index_movies_on_title'
   end
 end

@@ -1,16 +1,16 @@
-# Reads the current download status for a movie so the front-end can poll it.
+# Derives the current download state for a movie from the database columns and
+# the downloader's progress log. Nothing is cached: each request recomputes it.
 class Status
   def self.for(movie)
-    entry = AppCache.read(Downstream.status_key(movie))
-    status = entry || { state: 'idle', message: 'Waiting to downstream...' }
-    status[:redirect] = "/streams/#{movie.id}" if movie.video_attached?
-    if (progress = Downstream.download_progress(movie))
-      status[:downloaded] = progress[:downloaded]
-      status[:total] = progress[:total]
-      status[:percent] = progress[:percent]
-      status[:dl_bytes_per_sec] = progress[:dl_bytes_per_sec]
-      status[:eta_seconds] = progress[:eta_seconds]
+    case movie.state
+    when :watchable
+      { state: :watchable, redirect: "/streams/#{movie.id}" }
+    when :downloading
+      { state: :downloading, progress: Downstream.download_progress(movie) }
+    when :requested
+      { state: :requested, failed: movie.download_failed_at.present? }
+    else
+      { state: :requestable }
     end
-    status
   end
 end

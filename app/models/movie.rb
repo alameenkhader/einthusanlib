@@ -8,6 +8,28 @@ class Movie < ApplicationRecord
     video_file_name.present?
   end
 
+  def requested?
+    requested_at.present?
+  end
+
+  def downloading?
+    download_started_at.present? && !video_attached?
+  end
+
+  def request!
+    update!(requested_at: Time.current) unless video_attached?
+  end
+
+  # :watchable (video attached), :downloading (in progress now),
+  # :requested (queued), :requestable (nothing set).
+  def state
+    return :watchable if video_attached?
+    return :downloading if downloading?
+    return :requested if requested?
+
+    :requestable
+  end
+
   def video_path
     App::ROOT.join('storage', 'movies', "#{id}.mp4").to_s
   end

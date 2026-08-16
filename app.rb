@@ -19,16 +19,7 @@ class Chalaflix < Sinatra::Base
     set :raise_errors, false
     set :dump_errors, true
 
-    # Token-based CSRF (rack-protection) mirrors the old Rails meta tag +
-    # X-CSRF-Token header flow. AuthenticityToken is opt-in in rack-protection
-    # 4, and we deny (403) on failure rather than the default drop_session,
-    # which just clears the session and lets the request through.
-    protect_use = [ :authenticity_token ]
-    protect_use = [] if App.env == 'test'
-    set :protection,
-        use: protect_use,
-        except: %i[ip_spoofing remote_token remote_referrer session_hijacking],
-        reaction: :deny
+    Scheduler.start unless App.env == 'test'
   end
 
   get '/' do
@@ -50,19 +41,10 @@ class Chalaflix < Sinatra::Base
     erb :show
   end
 
-  post '/movies/:id/download' do
+  post '/movies/:id/request' do
     @movie = Movie.find(params[:id].to_i)
-
-    halt 409 if Downstream.enqueue(@movie) == :busy
-
-    halt 200
-  end
-
-  get '/movies/:id/status' do
-    @movie = Movie.find(params[:id].to_i)
-
-    content_type :json
-    Status.for(@movie).to_json
+    @movie.request!
+    redirect movie_path(@movie)
   end
 
   get '/streams/:id' do
@@ -72,6 +54,8 @@ class Chalaflix < Sinatra::Base
 
     send_file @movie.video_path, type: @movie.video_content_type, disposition: 'inline'
   end
+
+  helpers Formatting
 
   helpers do
     def movies_path
@@ -86,12 +70,8 @@ class Chalaflix < Sinatra::Base
       "/streams/#{movie.id}"
     end
 
-    def download_movie_path(movie)
-      "/movies/#{movie.id}/download"
-    end
-
-    def status_movie_path(movie)
-      "/movies/#{movie.id}/status"
+    def request_movie_path(movie)
+      "/movies/#{movie.id}/request"
     end
 
     def recent_movies
