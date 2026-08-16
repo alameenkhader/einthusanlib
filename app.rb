@@ -78,7 +78,7 @@ class Chalaflix < Sinatra::Base
       AppCache.fetch(RECENT_CACHE_KEY, expires_in: RECENT_CACHE_TTL) do
         Recent.run
       end
-      Movie.recent.limit(20).to_a
+      Movie.recent.limit(8).to_a
     end
   end
 
