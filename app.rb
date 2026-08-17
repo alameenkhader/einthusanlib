@@ -1,89 +1,60 @@
 require_relative 'config/boot'
 
 require 'sinatra/base'
-require 'rack/protection'
 require 'json'
 
 class Chalaflix < Sinatra::Base
-  RECENT_CACHE_KEY = 'recent_movies'.freeze
-  RECENT_CACHE_TTL = 24.hours
-
   configure do
     set :root, __dir__
     set :views, File.join(__dir__, 'views')
     set :public_folder, File.join(__dir__, 'public')
     set :environment, App.env.to_sym
-    set :sessions, secret: App.session_secret, expire_after: 30.days
-    set :logging, true
     set :show_exceptions, false
     set :raise_errors, false
     set :dump_errors, true
-
-    Scheduler.start unless App.env == 'test'
   end
 
   get '/' do
-    @movies = if params[:search] && !params[:search].strip.empty?
-                Search.run(params[:search])
-              else
-                recent_movies
-              end
+    @status = Downloader.status
+    @library = library_files
+    @notice = params[:notice]
     erb :index
   end
 
-  get '/movies/:id' do
-    @movie = Movie.find(params[:id].to_i)
-
-    redirect stream_path(@movie) if @movie.video_attached?
-
-    @status = Status.for(@movie)
-
-    erb :show
+  post '/downloads' do
+    result = Downloader.start(params[:url])
+    notice = case result
+             when :started then nil
+             when :busy then 'A download is already in progress.'
+             when :invalid then 'That URL is not from einthusan.tv.'
+             end
+    redirect notice ? "/?notice=#{URI.encode_www_form_component(notice)}" : '/'
   end
 
-  post '/movies/:id/request' do
-    @movie = Movie.find(params[:id].to_i)
-    @movie.request!
-    redirect movie_path(@movie)
+  get '/status.json' do
+    content_type :json
+    Downloader.status.to_json
   end
 
-  get '/streams/:id' do
-    @movie = Movie.find(params[:id].to_i)
+  get '/watch/:filename' do
+    filename = params[:filename].to_s
+    halt 404 unless filename.match?(/\A[A-Za-z0-9._-]+\z/)
 
-    halt 404 unless @movie.video_attached?
+    path = File.join(App.movies_dir, filename)
+    halt 404 unless File.file?(path)
 
-    send_file @movie.video_path, type: @movie.video_content_type, disposition: 'inline'
+    send_file path, type: 'video/mp4', disposition: 'inline'
   end
 
   helpers Formatting
 
   helpers do
-    def movies_path
-      '/'
+    def library_files
+      Dir.glob(App.movies_dir.join('*.mp4'))
+         .sort_by { |path| File.mtime(path) }
+         .reverse
+         .map { |path| { name: File.basename(path), mtime: File.mtime(path) } }
     end
-
-    def movie_path(movie)
-      "/movies/#{movie.id}"
-    end
-
-    def stream_path(movie)
-      "/streams/#{movie.id}"
-    end
-
-    def request_movie_path(movie)
-      "/movies/#{movie.id}/request"
-    end
-
-    def recent_movies
-      AppCache.fetch(RECENT_CACHE_KEY, expires_in: RECENT_CACHE_TTL) do
-        Recent.run
-      end
-      Movie.recent.limit(8).to_a
-    end
-  end
-
-  error ActiveRecord::RecordNotFound do
-    halt 404
   end
 
   error do

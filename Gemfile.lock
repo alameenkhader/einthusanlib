@@ -1,35 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (8.0.3)
-      activesupport (= 8.0.3)
-    activerecord (8.0.3)
-      activemodel (= 8.0.3)
-      activesupport (= 8.0.3)
-      timeout (>= 0.4.0)
-    activesupport (8.0.3)
-      base64
-      benchmark (>= 0.3)
-      bigdecimal
-      concurrent-ruby (~> 1.0, >= 1.3.1)
-      connection_pool (>= 2.2.5)
-      drb
-      i18n (>= 1.6, < 2)
-      logger (>= 1.4.2)
-      minitest (>= 5.1)
-      securerandom (>= 0.3)
-      tzinfo (~> 2.0, >= 2.0.5)
-      uri (>= 0.13.1)
-    ansi (1.6.0)
     ast (2.4.3)
     base64 (0.3.0)
-    benchmark (0.4.1)
-    bigdecimal (3.2.3)
-    concurrent-ruby (1.3.5)
-    connection_pool (2.5.4)
-    drb (2.2.3)
-    i18n (1.14.7)
-      concurrent-ruby (~> 1.0)
     json (2.15.0)
     language_server-protocol (3.17.0.5)
     lint_roller (1.1.0)
@@ -37,9 +10,6 @@ GEM
     minitest (5.25.5)
     mustermann (3.1.1)
     nio4r (2.7.4)
-    oga (3.5)
-      ast
-      ruby-ll (~> 2.2)
     parallel (1.27.0)
     parser (3.3.9.0)
       ast (~> 2.4.1)
@@ -77,11 +47,7 @@ GEM
     rubocop-ast (1.47.1)
       parser (>= 3.3.7.2)
       prism (~> 1.4)
-    ruby-ll (2.2.0)
-      ansi
-      ast
     ruby-progressbar (1.13.0)
-    securerandom (0.4.1)
     sinatra (4.2.1)
       logger (>= 1.6.0)
       mustermann (~> 3.0)
@@ -89,17 +55,10 @@ GEM
       rack-protection (= 4.2.1)
       rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
-    sqlite3 (2.7.4-aarch64-linux-gnu)
-    sqlite3 (2.7.4-arm64-darwin)
-    sqlite3 (2.7.4-x86_64-linux-gnu)
     tilt (2.8.0)
-    timeout (0.4.3)
-    tzinfo (2.0.6)
-      concurrent-ruby (~> 1.0)
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
     unicode-emoji (4.1.0)
-    uri (1.0.3)
 
 PLATFORMS
   aarch64-linux-gnu
@@ -107,17 +66,13 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  activerecord (~> 8.0)
   minitest
-  oga (~> 3.5)
   puma (>= 5.0)
   rack-test
   rackup (~> 2.2)
   rake
   rubocop
   sinatra (~> 4.1)
-  sqlite3 (>= 2.1)
-  tzinfo-data
 
 BUNDLED WITH
    2.4.19

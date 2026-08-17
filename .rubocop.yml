@@ -4,7 +4,6 @@ AllCops:
   Exclude:
     - "vendor/bundle/**/*"
     - "bin/*"
-    - "db/schema.rb"
 
 # House style: single quotes unless interpolating, spaces inside array brackets
 # (matches the omakase-era codebase), no magic comments.

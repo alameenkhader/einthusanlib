@@ -1,71 +1,65 @@
-<div class="container mt-4">
-  <% if @movies && @movies.any? %>
-    <div class="row mb-5">
-      <div class="col-12">
-        <h2 class="text-white mb-4">
-          <% if params[:search] %>
-            Search Results for "<%= params[:search] %>"
-          <% end %>
-        </h2>
+<% if @notice %>
+  <div class="alert alert-warning" role="alert"><%= @notice %></div>
+<% end %>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
-          <% @movies.each do |movie| %>
-            <% status = Status.for(movie) %>
-            <div class="col">
-              <div class="card media-card h-100">
-                <a href="<%= movie_path(movie) %>" class="media-link">
-                  <img src="<%= movie.image_url %>" class="card-img-top media-img" alt="<%= movie.title %>" style="height: 300px; object-fit: cover;">
-                </a>
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title"><%= movie.title %></h5>
-                  <p class="text-muted small">
-                    Released: <%= movie.released_at&.strftime('%Y') || 'Unknown' %>
-                  </p>
-                  <div class="mt-auto">
-                    <% if status[:state] == :watchable %>
-                      <a href="<%= stream_path(movie) %>" class="btn btn-success btn-sm w-100">Watch</a>
-                    <% elsif status[:state] == :downloading %>
-                      <span class="badge text-bg-warning w-100 py-2">
-                        Downloading <%= status[:progress] ? "#{status[:progress][:percent]}%" : '...' %>
-                      </span>
-                    <% elsif status[:state] == :requested %>
-                      <span class="badge text-bg-info w-100 py-2">
-                        Requested<%= status[:failed] ? ' · will retry' : '' %>
-                      </span>
-                    <% else %>
-                      <form method="post" action="<%= request_movie_path(movie) %>">
-                        <button type="submit" class="btn btn-outline-light btn-sm w-100">+ Request</button>
-                      </form>
-                    <% end %>
-                  </div>
-                </div>
-              </div>
-            </div>
-          <% end %>
-        </div>
-      </div>
-    </div>
-  <% elsif params[:search] %>
-    <div class="alert alert-warning mb-4" role="alert">
-      No movies found for "<%= params[:search] %>". Try a different search term.
-    </div>
-  <% end %>
-
-  <div class="row justify-content-center">
-    <div class="col-md-8">
-      <div class="card">
-        <div class="card-body">
-          <form action="<%= movies_path %>" method="get" class="d-flex gap-2">
-            <input type="text" name="search"
-                placeholder="Enter movie title..."
-                value="<%= params[:search] %>"
-                class="form-control">
-            <button type="submit" class="btn btn-outline-light">Search</button>
-          </form>
-        </div>
+<div class="row justify-content-center mb-4">
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card-body">
+        <form action="/downloads" method="post" class="d-flex gap-2">
+          <input type="url" name="url"
+              placeholder="Paste an einthusan.tv movie URL..."
+              class="form-control" required>
+          <button type="submit" class="btn btn-outline-light" id="download-btn">Download</button>
+        </form>
       </div>
     </div>
   </div>
-
-  <div class="mb-5"></div>
 </div>
+
+<div class="row justify-content-center mb-4">
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card-body" id="status-panel" data-download-state="<%= @status[:state] %>">
+        <% if @status[:state] == :downloading %>
+          <p class="mb-1"><strong>Downloading</strong> <span id="download-name"><%= @status[:filename] %></span></p>
+          <div class="progress mb-2" style="height: 20px;">
+            <div class="progress-bar" id="progress-bar" style="width: <%= @status[:progress] ? @status[:progress][:percent] : 0 %>%"></div>
+          </div>
+          <p class="text-muted small mb-0" id="progress-text">
+            <%= format_progress(@status[:progress]) %>
+          </p>
+        <% elsif @status[:state] == :done %>
+          <div class="alert alert-success mb-0">
+            Done: <%= @status[:filename] %> — <a href="/watch/<%= @status[:filename] %>" class="alert-link">Watch</a>
+          </div>
+        <% elsif @status[:state] == :error %>
+          <div class="alert alert-danger mb-0">
+            Download failed: <%= @status[:error] %>
+          </div>
+        <% else %>
+          <p class="text-muted mb-0">Nothing downloading. Paste a movie URL above to start.</p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% if @library.any? %>
+  <h5 class="text-white mb-3">Downloaded (<%= @library.length %>)</h5>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <% @library.each do |file| %>
+      <div class="col">
+        <div class="card media-card h-100">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title"><%= file[:name] %></h5>
+            <p class="text-muted small">Downloaded <%= file[:mtime].strftime('%Y-%m-%d %H:%M') %></p>
+            <div class="mt-auto">
+              <a href="/watch/<%= file[:name] %>" class="btn btn-success btn-sm w-100">Watch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>

@@ -6,18 +6,12 @@ groups = [ :default ]
 groups << ENV['RACK_ENV'].to_sym if %w[development test].include?(ENV['RACK_ENV'])
 Bundler.require(*groups)
 
-require 'active_support/all'
-require 'active_record'
 require 'logger'
-require 'securerandom'
 require 'fileutils'
 require 'pathname'
-require 'yaml'
-require 'erb'
 require 'json'
-require 'date'
-require 'cgi'
-require 'open-uri'
+require 'uri'
+require 'erb'
 
 module App
   ROOT = Pathname.new(File.expand_path('..', __dir__))
@@ -30,44 +24,26 @@ module App
     @logger ||= Logger.new($stdout)
   end
 
-  # Stable secret for signed session cookies. Uses ENV["SECRET_KEY_BASE"] when
-  # set, otherwise generates and persists a secret in storage/ so it stays
-  # stable across restarts (same pattern as the old Rails production config).
-  def self.session_secret
-    @session_secret ||= ENV['SECRET_KEY_BASE'].presence || begin
-      path = ROOT.join('storage', '.secret_key_base')
-      if File.exist?(path)
-        File.read(path).strip
-      else
-        FileUtils.mkdir_p(path.dirname)
-        secret = SecureRandom.hex(64)
-        File.write(path, secret)
-        secret
-      end
-    end
+  # Directory that holds finished, watchable movies.
+  def self.movies_dir
+    ROOT.join('storage', 'movies')
+  end
+
+  # Directory where an in-progress download lands before it is moved to
+  # movies_dir. Leftovers here (a crashed run) are wiped on boot.
+  def self.downloads_dir
+    ROOT.join('tmp', 'downloads')
   end
 end
 
-FileUtils.mkdir_p(App::ROOT.join('storage', 'movies'))
-FileUtils.mkdir_p(App::ROOT.join('tmp', 'downloads'))
+FileUtils.mkdir_p(App.movies_dir)
+FileUtils.mkdir_p(App.downloads_dir)
 
-db_configuration = YAML.safe_load(
-  ERB.new(File.read(App::ROOT.join('config', 'database.yml'))).result,
-  aliases: true
-)
+# Boot-time self-healing: any partial/control file left by a crashed download is
+# stale by definition (there is no in-flight download on boot), so remove them.
+Dir.glob(App.downloads_dir.join('movie_*.mp4.{part,aria2,log}')).each do |path|
+  FileUtils.rm_f(path)
+end
 
-ActiveRecord::Base.configurations = ActiveRecord::DatabaseConfigurations.new(db_configuration)
-ActiveRecord::Base.establish_connection(App.env.to_sym)
-ActiveRecord::Base.logger = App.logger if ENV['RAILS_LOG_TO_STDOUT']
-ActiveRecord::Base.connection.execute('PRAGMA journal_mode = WAL')
-
-require_relative '../app/models/application_record'
-require_relative '../app/models/movie'
-require_relative '../app/models/cache_entry'
-require_relative '../app/lib/app_cache'
 require_relative '../app/helpers/formatting'
-require_relative '../app/services/recent'
-require_relative '../app/services/search'
-require_relative '../app/services/downstream'
-require_relative '../app/services/scheduler'
-require_relative '../app/services/status'
+require_relative '../app/services/downloader'
