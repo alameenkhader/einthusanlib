@@ -3,7 +3,6 @@ AllCops:
   TargetRubyVersion: 3.2
   Exclude:
     - "vendor/bundle/**/*"
-    - "bin/*"
 
 # House style: single quotes unless interpolating, spaces inside array brackets
 # (matches the omakase-era codebase), no magic comments.
