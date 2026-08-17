@@ -1,4 +1,5 @@
 require 'fileutils'
+require 'timeout'
 
 # Single in-flight downloader with no persistent state. A download only runs
 # while someone has pasted a URL; the scheduler, queue, and database are gone.
@@ -62,7 +63,7 @@ class Downloader
 
     # Replaces the movies dir with just the KEEP_LATEST newest files.
     def cleanup_library
-      files = Dir.glob(App.movies_dir.join('*.mp4'))
+      files = Dir.glob(App.movies_dir.join('*'))
                  .sort_by { |path| File.mtime(path) }
                  .reverse
       files.drop(KEEP_LATEST).each { |path| FileUtils.rm_f(path) }
@@ -70,7 +71,7 @@ class Downloader
 
     # Removes partial/control files from earlier (possibly crashed) runs.
     def cleanup_stale_partials
-      Dir.glob(App.downloads_dir.join('movie_*.mp4.{part,aria2,log}')).each do |path|
+      Dir.glob(App.downloads_dir.join('*.{part,aria2,log}')).each do |path|
         FileUtils.rm_f(path)
       end
     end
@@ -137,9 +138,16 @@ class Downloader
     # Runs outside the request cycle, so @current is touched on this thread.
     def run_download(download)
       cleanup_stale_partials
-      download_in_progress(download)
+      @current = download.merge(filename: resolve_filename(download[:url]))
+      if File.exist?(movies_dir.join(@current[:filename]))
+        @current = @current.merge(state: :error,
+                                  error: "already downloaded: #{@current[:filename]}")
+        return
+      end
+
+      download_in_progress(@current)
     rescue StandardError => e
-      @current = download.merge(state: :error, error: e.message)
+      @current = @current.merge(state: :error, error: e.message)
       App.logger.error("downloader: #{e.full_message}")
     end
 
@@ -155,6 +163,33 @@ class Downloader
     end
 
     private
+
+    # Asks youtube-dl for the video's real title so the saved file is named
+    # after what is actually downloading. Falls back to a timestamp name when
+    # the title can't be determined (unreachable site, unknown extractor, ...).
+    def resolve_filename(url)
+      out = Timeout.timeout(30) do
+        `#{youtube_dl_path} --get-filename -o '%(title)s.%(ext)s' '#{url}'`
+      end
+      name = sanitize_filename(out.to_s.lines.first.to_s)
+      return name if name.match?(/[A-Za-z0-9]/)
+
+      "movie_#{Time.now.to_i}.mp4"
+    rescue StandardError
+      "movie_#{Time.now.to_i}.mp4"
+    end
+
+    # Keeps only characters the /watch route accepts ([A-Za-z0-9._-]) and caps
+    # the length so the name fits on any filesystem.
+    def sanitize_filename(raw)
+      base, ext = raw.strip.split(/\.(?=[^.]+\z)/, 2)
+      ext_ok = ext&.match?(/\A[A-Za-z0-9]+\z/)
+      clean = base.to_s.gsub(/[^A-Za-z0-9._-]+/, '_').gsub(/_+/, '_')
+                  .sub(/\A[._]+/, '')
+                  .sub(/[._]+\z/, '')
+                  .slice(0, ext_ok ? 120 - ext.length - 1 : 120)
+      ext_ok && !clean.empty? ? "#{clean}.#{ext}" : clean
+    end
 
     def download_in_progress(download)
       path = download_path(download[:filename])

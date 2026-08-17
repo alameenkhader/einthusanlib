@@ -50,7 +50,7 @@ class Chalaflix < Sinatra::Base
 
   helpers do
     def library_files
-      Dir.glob(App.movies_dir.join('*.mp4'))
+      Dir.glob(App.movies_dir.join('*'))
          .sort_by { |path| File.mtime(path) }
          .reverse
          .map { |path| { name: File.basename(path), mtime: File.mtime(path) } }

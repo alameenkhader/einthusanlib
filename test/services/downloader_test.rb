@@ -76,4 +76,36 @@ class DownloaderTest < Minitest::Test
     assert_equal(396 * 1024, progress[:dl_bytes_per_sec])
     assert_equal((40 * 60) + 2, progress[:eta_seconds])
   end
+
+  def test_sanitize_filename_strips_unsafe_characters
+    name = Downloader.send(:sanitize_filename, '  Cool/Movie: Title! (2020).mp4  ')
+    assert_equal 'Cool_Movie_Title_2020.mp4', name
+  end
+
+  def test_resolve_filename_uses_the_video_title
+    Downloader.stub(:`, ->(_cmd) { "Cool Movie.mp4\n" }) do
+      assert_equal 'Cool_Movie.mp4', Downloader.send(:resolve_filename, VALID_URL)
+    end
+  end
+
+  def test_resolve_filename_falls_back_when_title_is_unknown
+    Downloader.stub(:`, ->(_cmd) { '' }) do
+      assert_match(/\Amovie_\d+\.mp4\z/, Downloader.send(:resolve_filename, VALID_URL))
+    end
+  end
+
+  def test_run_download_aborts_when_the_file_is_already_in_the_library
+    download = { url: VALID_URL, filename: 'movie_1.mp4', state: :downloading, error: nil, started_at: Time.now }
+    File.write(File.join(App.movies_dir, 'Cool_Movie.mp4'), 'existing')
+
+    Downloader.stub(:resolve_filename, 'Cool_Movie.mp4') do
+      Downloader.stub(:download_in_progress, ->(_download) { flunk 'must not download' }) do
+        Downloader.send(:run_download, download)
+      end
+    end
+
+    assert_equal :error, Downloader.current[:state]
+    assert_match(/already downloaded/, Downloader.current[:error])
+    assert_equal 'Cool_Movie.mp4', Downloader.current[:filename]
+  end
 end

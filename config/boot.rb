@@ -41,7 +41,7 @@ FileUtils.mkdir_p(App.downloads_dir)
 
 # Boot-time self-healing: any partial/control file left by a crashed download is
 # stale by definition (there is no in-flight download on boot), so remove them.
-Dir.glob(App.downloads_dir.join('movie_*.mp4.{part,aria2,log}')).each do |path|
+Dir.glob(App.downloads_dir.join('*.{part,aria2,log}')).each do |path|
   FileUtils.rm_f(path)
 end
 
