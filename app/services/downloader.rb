@@ -14,8 +14,8 @@ class Downloader
   # anything older is deleted before a new download starts (keep the last 3).
   KEEP_LATEST = 3
 
-  # The einthusan CDN throttles per-connection (single-connection downloads
-  # crawl at ~10-25 KiB/s). When aria2c is available we fan out with 16 parallel
+  # Many CDNs throttle per-connection (single-connection downloads crawl at
+  # ~10-25 KiB/s). When aria2c is available we fan out with 16 parallel
   # connections and min split 1M, which measured ~2.3 MB/s aggregate and gets a
   # 1.1 GiB movie done inside the 6h signed-URL TTL. Falls back to the plain
   # youtube-dl command when aria2c is not installed.
@@ -36,7 +36,8 @@ class Downloader
     end
 
     # Validates the URL and starts a download. Returns :busy when one is already
-    # running, :invalid when the URL is not from einthusan.tv, otherwise :started.
+    # running, :invalid when the URL is not a well-formed http(s) URL, otherwise
+    # :started.
     def start(url)
       return :busy if downloading?
 
@@ -144,7 +145,7 @@ class Downloader
 
     def valid_url?(url)
       uri = URI.parse(url)
-      uri.is_a?(URI::HTTP) && uri.host == 'einthusan.tv'
+      uri.is_a?(URI::HTTP) && uri.host
     rescue URI::InvalidURIError
       false
     end

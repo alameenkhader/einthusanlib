@@ -1,11 +1,11 @@
 require_relative '../test_helper'
 
 class DownloaderTest < Minitest::Test
-  VALID_URL = 'https://einthusan.tv/movie/watch/abc/?lang=malayalam'.freeze
+  VALID_URL = 'https://example.com/movie/watch/abc/'.freeze
 
-  def test_start_rejects_a_non_einthusan_url
-    assert_equal :invalid, Downloader.start('https://example.com/movie')
+  def test_start_rejects_an_unparsable_or_unsupported_url
     assert_equal :invalid, Downloader.start('not a url')
+    assert_equal :invalid, Downloader.start('ftp://example.com/movie')
   end
 
   def test_start_is_busy_while_a_download_is_running

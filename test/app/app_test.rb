@@ -5,12 +5,12 @@ class AppTest < Minitest::Test
     get '/'
 
     assert last_response.ok?
-    assert_includes last_response.body, 'Paste an einthusan.tv movie URL'
+    assert_includes last_response.body, 'Paste a media URL'
   end
 
   def test_post_downloads_starts_and_redirects_home
     Downloader.stub(:start, :started) do
-      post '/downloads', url: 'https://einthusan.tv/movie/watch/abc/?lang=malayalam'
+      post '/downloads', url: 'https://example.com/movie/watch/abc/'
     end
 
     assert last_response.redirect?
@@ -19,7 +19,7 @@ class AppTest < Minitest::Test
 
   def test_post_downloads_notices_when_busy
     Downloader.stub(:start, :busy) do
-      post '/downloads', url: 'https://einthusan.tv/movie/watch/abc/?lang=malayalam'
+      post '/downloads', url: 'https://example.com/movie/watch/abc/'
     end
 
     assert last_response.redirect?

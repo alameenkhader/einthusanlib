@@ -25,6 +25,6 @@ repos:
       - id: rubocop
         name: rubocop (style)
         description: Ruby style checks on staged files
-        entry: bin/rubocop --force-exclusion
+        entry: bundle exec rubocop --force-exclusion
         language: system
         types_or: [ruby]

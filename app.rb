@@ -26,7 +26,7 @@ class Chalaflix < Sinatra::Base
     notice = case result
              when :started then nil
              when :busy then 'A download is already in progress.'
-             when :invalid then 'That URL is not from einthusan.tv.'
+             when :invalid then 'That URL is not supported.'
              end
     redirect notice ? "/?notice=#{URI.encode_www_form_component(notice)}" : '/'
   end
