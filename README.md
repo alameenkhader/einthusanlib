@@ -43,22 +43,6 @@ To update later, `git pull` inside the repo and re-run `bash script/termux_setup
 
 Downloads run while the server is up, so keep the phone on Wi-Fi with the app awake (termux_start.sh acquires a wake lock). A download interrupted by a crash or reboot is detected and cleaned automatically.
 
-### Accessing from a computer
-
-The server is reachable two ways at once: `localhost:3000` on the phone itself, and `http://<phone-ip>:3000` from any device on the same Wi-Fi. Open the printed `LAN address` (e.g. `http://192.168.1.50:3000`) in a browser on your computer.
-
-To check connectivity from the computer:
-
-    ping <phone-ip>
-    curl -sI http://<phone-ip>:3000
-
-If that doesn't load:
-- make sure the phone is on Wi-Fi, not mobile data;
-- confirm the printed address is a private IP (`192.168.x.x` / `10.x.x.x`), not `127.0.0.1`;
-- disable "AP/client isolation" (or a guest network) on your router, which blocks device-to-device traffic.
-
-The server can't be reached from the internet on mobile data (carriers use CG-NAT, which blocks inbound connections). If you ever need remote access, use a tunnel such as Tailscale.
-
 ## Disclaimer
 
 This application is for educational and personal use only. Users are responsible for complying with applicable laws and the terms of service of content providers. The authors are not responsible for any misuse of this software.
